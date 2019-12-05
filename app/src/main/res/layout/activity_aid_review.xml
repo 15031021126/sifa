@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    tools:context="com.liuhezhineng.ximengsifa.business.legalaid.ApplyForLegalAidActivity">
+
+    <include layout="@layout/top_bar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <include layout="@layout/business_base" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:visibility="visible"
+                    android:orientation="horizontal">
+
+                    <View
+                        android:layout_width="4dp"
+                        android:layout_height="18dp"
+                        android:background="#63aeff" />
+
+                    <TextView
+                        style="@style/ChartFieldStyle"
+                        android:text="审批表信息" />
+                    <View style="@style/DividingLineStyle_horizontal" />
+
+                </LinearLayout>
+
+                <LinearLayout style="@style/LinearStyle">
+                    <include layout="@layout/required" />
+                    <TextView
+                        style="@style/ChartFieldKeyStyle"
+                        android:text="文化程度" />
+
+                    <TextView
+                        android:id="@+id/tv_wenhua"
+                        style="@style/ChartFieldInputValueStyle"
+                        android:hint="@string/please_select" />
+                </LinearLayout>
+                <View style="@style/DividingLineStyle_horizontal" />
+                <LinearLayout style="@style/LinearStyle">
+
+                    <include layout="@layout/required" />
+
+                    <TextView
+                        style="@style/ChartFieldKeyStyle"
+                        android:text="人群类别" />
+
+                    <TextView
+                        android:id="@+id/tv_renqun"
+                        style="@style/ChartFieldInputValueStyle"
+                        android:hint="@string/please_select" />
+                </LinearLayout>
+                <View style="@style/DividingLineStyle_horizontal" />
+                <LinearLayout style="@style/LinearStyle">
+
+                    <include layout="@layout/required" />
+
+                    <TextView
+                        style="@style/ChartFieldKeyStyle"
+                        android:text="是否符合法律援助经济困难的标准" />
+
+                    <TextView
+                        android:id="@+id/tv_biaozhun"
+                        style="@style/ChartFieldInputValueStyle"
+                        android:hint="@string/please_select" />
+                </LinearLayout>
+                <View style="@style/DividingLineStyle_horizontal" />
+                <LinearLayout style="@style/LinearStyle">
+
+                    <include layout="@layout/required" />
+
+                    <TextView
+                        style="@style/ChartFieldKeyStyle"
+                        android:text="案件来源" />
+
+                    <TextView
+                        android:id="@+id/tv_case"
+                        style="@style/ChartFieldInputValueStyle"
+                        android:hint="@string/please_select" />
+                </LinearLayout>
+
+                <View style="@style/DividingLineStyle_horizontal" />
+                <LinearLayout style="@style/LinearStyle">
+
+                    <include layout="@layout/required" />
+
+                    <TextView
+                        style="@style/ChartFieldKeyStyle"
+                        android:text="申请事项" />
+
+                    <TextView
+                        android:id="@+id/tv_matters"
+                        style="@style/ChartFieldInputValueStyle"
+                        android:hint="@string/please_select" />
+                </LinearLayout>
+                <View style="@style/DividingLineStyle_horizontal" />
+                <LinearLayout style="@style/LinearStyle">
+
+                    <include layout="@layout/required" />
+
+                    <TextView
+                        style="@style/ChartFieldKeyStyle"
+                        android:text="申请事项所属阶段" />
+
+                    <TextView
+                        android:id="@+id/tv_matters_stage"
+                        style="@style/ChartFieldInputValueStyle"
+                        android:hint="@string/please_select" />
+                </LinearLayout>
+                <View style="@style/DividingLineStyle_horizontal" />
+                <LinearLayout style="@style/LinearStyle">
+
+                    <include layout="@layout/required" />
+
+                    <TextView
+                        style="@style/ChartFieldKeyStyle"
+                        android:text="审查日期" />
+
+                    <TextView
+                        android:id="@+id/tv_review_data"
+                        style="@style/ChartFieldInputValueStyle"
+                        android:hint="@string/please_select" />
+                </LinearLayout>
+                <View style="@style/DividingLineStyle_horizontal" />
+                <LinearLayout style="@style/LinearStyle"
+                    android:orientation="vertical">
+
+                    <include layout="@layout/required" />
+
+                    <TextView
+                        style="@style/ChartFieldKeyStyle"
+                        android:text="审查意见" />
+
+                    <EditText
+                        android:id="@+id/et_examination_opinion"
+                        style="@style/BigEditText"
+                        android:hint="请输入审查意见" />
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/ll_shenpi"
+                    android:visibility="gone"
+                    android:layout_width="match_parent"
+                    android:orientation="vertical"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout style="@style/LinearStyle">
+
+                        <include layout="@layout/required" />
+
+                        <TextView
+                            style="@style/ChartFieldKeyStyle"
+                            android:text="审批日期" />
+
+                        <TextView
+                            android:id="@+id/tv_shenpi_data"
+                            style="@style/ChartFieldInputValueStyle"
+                            android:hint="@string/please_select" />
+                    </LinearLayout>
+                    <View style="@style/DividingLineStyle_horizontal" />
+                    <LinearLayout style="@style/LinearStyle"
+                        android:orientation="vertical">
+
+                        <include layout="@layout/required" />
+
+                        <TextView
+                            style="@style/ChartFieldKeyStyle"
+                            android:text="审批意见" />
+
+                        <EditText
+                            android:id="@+id/et_shenpi_opinion"
+                            style="@style/BigEditText"
+                            android:hint="请输入审批意见" />
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+            <LinearLayout
+                android:id="@+id/ll_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <include layout="@layout/layout_break_business" />
+
+                <Button
+                    android:id="@+id/btn_no"
+                    style="@style/BottomButton"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="退回" />
+
+                <Button
+                    android:id="@+id/btn_yes"
+                    style="@style/BottomButton"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="通过" />
+
+            </LinearLayout>
+
+
+
+
+
+
+
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

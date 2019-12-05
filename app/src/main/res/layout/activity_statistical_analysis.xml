@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:tl="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:fitsSystemWindows="true"
+  android:orientation="vertical"
+  tools:context="com.liuhezhineng.ximengsifa.module.StatisticalAnalysisActivity">
+
+  <include layout="@layout/top_bar"/>
+
+  <com.flyco.tablayout.SlidingTabLayout
+    android:id="@+id/sliding_tab_layout"
+    android:layout_width="match_parent"
+    android:layout_height="42dp"
+    android:layout_gravity="center_horizontal"
+    android:background="#ffffff"
+    tl:tl_bar_color="#ffffff"
+    tl:tl_indicator_color="#2C97DE"
+    tl:tl_indicator_corner_radius="8dp"
+    tl:tl_tab_padding="16dp"
+    tl:tl_tab_space_equal="true"
+    tl:tl_textSelectColor="#63aeff"
+    tl:tl_textUnselectColor="#000000"
+    tl:tl_textsize="14dp"/>
+
+  <View
+    style="@style/DividingLineStyle_horizontal"/>
+
+  <LinearLayout
+    android:id="@+id/ll_date"
+    android:layout_width="match_parent"
+    android:layout_height="36dp"
+    android:background="#f4f4f4"
+    android:gravity="center">
+
+    <TextView
+      android:id="@+id/tv_date"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_gravity="center_vertical"
+      android:textColor="#1296db"
+      tools:text="2018-01-01~2012-01-01"/>
+
+    <ImageView
+      android:layout_width="15dp"
+      android:layout_height="15dp"
+      android:layout_marginLeft="5dp"
+      android:layout_gravity="center_vertical"
+      android:src="@drawable/nabla"/>
+  </LinearLayout>
+
+  <android.support.v4.view.ViewPager
+    android:id="@+id/view_pager"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"/>
+</LinearLayout>

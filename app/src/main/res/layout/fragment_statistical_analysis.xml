@@ -1,0 +1,46 @@
+<android.support.v4.widget.NestedScrollView
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent">
+
+  <LinearLayout
+    android:descendantFocusability="blocksDescendants"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.github.mikephil.charting.charts.PieChart
+      android:id="@+id/pic_chart"
+      android:layout_width="match_parent"
+      android:layout_height="300dp"
+      android:layout_gravity="center_horizontal"/>
+
+    <View style="@style/DividingLineStyle_horizontal"/>
+
+    <LinearLayout
+      style="@style/LinearStyle">
+
+      <TextView
+        android:id="@+id/tv_key"
+        style="@style/ChartFieldKeyStyle"
+        android:text="统计类别"/>
+
+      <TextView
+        android:id="@+id/tv_value"
+        style="@style/ChartFieldInputValueStyle"
+        android:gravity="end"
+        android:text="案件数"/>
+    </LinearLayout>
+
+    <View style="@style/DividingLineStyle_horizontal"/>
+
+    <android.support.v7.widget.RecyclerView
+      android:overScrollMode="never"
+      android:id="@+id/rv_statistical"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:background="#ffffff"
+      tools:listitem="@layout/statistical_item"/>
+  </LinearLayout>
+</android.support.v4.widget.NestedScrollView>

@@ -1,0 +1,10 @@
+<Button
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:id="@+id/btn_deprecate"
+  android:layout_width="0dp"
+  android:layout_height="wrap_content"
+  android:layout_weight="1"
+  android:layout_margin="@dimen/dp_12"
+  android:background="@drawable/circle_shape"
+  android:text="@string/deprecate"
+  android:textColor="#ffffff"/>

@@ -1,0 +1,34 @@
+人民调解流程：
+    1、大众发起（即申请人）人民调解申请 ApplyForPeoplesMediationActivity
+        申请人：lishupingrmtjy3401 00000000
+        案发旗县：二连浩特市
+        案发乡镇：二连浩特市
+        人调委员会：物业纠纷人调委员会
+        人调员（负责人）：李树平
+        1.1、代理人申请
+    2、人民调解员审核 ReviewActivity
+        2.1、通过之后回到申请人那里
+        2.2、退回之后回到申请人那里
+    3、填写人民调解受理登记表 RegisterFormActivity
+    4、填写调查记录表 RecordActivity
+    5、填写人民调解记录表 MediateRecordActivity
+    6、填写人民调解协议书 AgreementActivity
+    7、填写回访记录 ReturnVisitActivity
+    8、填写卷宗 DossierActivity
+
+测试账号：account: liangmin  pwd: 00000000
+
+一、填写表单
+   1、表单字段（必填，选填）
+   2、字段填写时校验
+二、校验数据
+   1、必填字段是否填写
+   2、所有填写字段是否符合规则
+三、上传数据
+   1. onStart() showLoadingDialog()
+   2. onProgress() loadingProgress()
+   3. onSuccess()  showSuccess
+   4. onError() showErrorDialog()
+   5. onFinish() dismissLoadingDialog()
+
+申请表单被申请人基本情况下面少条分割线

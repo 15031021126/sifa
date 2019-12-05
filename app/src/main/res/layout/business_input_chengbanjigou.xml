@@ -1,0 +1,49 @@
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:id="@+id/ll_zhiding_chengbanjigou"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:fitsSystemWindows="true"
+  android:orientation="vertical">
+
+  <TextView
+    style="@style/ChartFieldStyle"
+    android:text="指定承办机构"/>
+
+  <View style="@style/DividingLineStyle_horizontal"/>
+
+  <LinearLayout
+    android:id="@+id/ll_law_office"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="3dp">
+
+    <TextView
+      style="@style/ChartFieldKeyStyle"
+      android:text="律所"/>
+
+    <TextView
+      android:id="@+id/tv_lawyer_office"
+      style="@style/ChartFieldInputValueStyle"/>
+  </LinearLayout>
+
+  <View style="@style/DividingLineStyle_horizontal"/>
+
+  <LinearLayout
+    android:id="@+id/ll_legal_office"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="3dp">
+
+    <TextView
+      style="@style/ChartFieldKeyStyle"
+      android:text="基层法律服务所"/>
+
+    <TextView
+      android:id="@+id/tv_legal_office"
+      style="@style/ChartFieldInputValueStyle"/>
+  </LinearLayout>
+
+  <View style="@style/DividingLineStyle_horizontal"/>
+
+</LinearLayout>

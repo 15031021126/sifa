@@ -1,0 +1,113 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:orientation="vertical"
+  tools:context="com.liuhezhineng.ximengsifa.module.newhome.NewHomeFragment">
+
+  <include layout="@layout/title_bar"/>
+
+  <com.scwang.smartrefresh.layout.SmartRefreshLayout
+    android:id="@+id/refreshLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:srlAccentColor="@android:color/black"
+    app:srlEnableLoadMore="false"
+    app:srlEnablePreviewInEditMode="true"
+    app:srlPrimaryColor="@android:color/white">
+
+    <com.scwang.smartrefresh.layout.header.ClassicsHeader
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"/>
+
+    <ScrollView
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:overScrollMode="never">
+
+      <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#f4f4f4"
+        android:orientation="vertical">
+
+        <com.youth.banner.Banner
+          android:id="@+id/banner"
+          android:layout_width="match_parent"
+          android:layout_height="150dp"
+          app:image_scale_type="fit_xy"/>
+
+        <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="5dp"
+          android:padding="@dimen/dp_12"
+          android:background="#ffffff">
+
+          <ImageView
+            android:layout_width="40dp"
+            android:layout_height="20dp"
+            android:src="@drawable/hot"/>
+
+          <View
+            android:layout_width="0.1dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="@dimen/dp_12"
+            android:layout_marginLeft="@dimen/dp_12"
+            android:background="#999696"/>
+
+          <ViewFlipper
+            android:id="@+id/view_flipper"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:flipInterval="3000"
+            android:inAnimation="@anim/anim_marquee_in"
+            android:outAnimation="@anim/anim_marquee_out"/>
+        </LinearLayout>
+
+        <android.support.v7.widget.RecyclerView
+          android:id="@+id/rv_services"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="5dp"
+          android:layout_marginLeft="2.5dp"
+          android:layout_marginRight="2.5dp"
+          app:layoutManager="GridLayoutManager"
+          app:spanCount="3"
+          tools:listitem="@layout/layout_new_home_services_item"/>
+
+        <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="100dp"
+          android:layout_marginTop="10dp"
+          android:background="#ffffff">
+
+            <ImageView
+                android:id="@+id/iv_fast_legal"
+                android:layout_width="0dp"
+                android:layout_height="80dp"
+                android:layout_weight="1"
+                android:layout_margin="10dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/home_page_fast_legal"/>
+
+          <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="#eeeeee"/>
+
+          <ImageView
+            android:id="@+id/iv_12348"
+            android:layout_width="0dp"
+            android:layout_height="80dp"
+            android:layout_weight="1"
+            android:layout_margin="10dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/home_page_12348"/>
+        </LinearLayout>
+
+      </LinearLayout>
+    </ScrollView>
+  </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+</LinearLayout>

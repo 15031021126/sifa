@@ -1,0 +1,63 @@
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:id="@+id/ll_case_undertaker"
+  android:layout_width="match_parent"
+  android:layout_height="wrap_content"
+  android:orientation="vertical">
+
+  <View
+    style="@style/TitleTopViewStyle"/>
+
+  <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:orientation="horizontal">
+
+    <View
+      style="@style/TitleLeftViewStyle"/>
+
+    <TextView
+      style="@style/ChartFieldStyle"
+      android:text="案件承办人"/>
+  </LinearLayout>
+
+  <View style="@style/DividingLineStyle_horizontal"/>
+
+  <LinearLayout
+    android:id="@+id/ll_peoples_mediation_committee"
+    style="@style/LinearStyle">
+
+    <TextView
+      style="@style/ChartFieldKeyStyle"
+      android:singleLine="false"
+      android:text="人员调解员委员会"/>
+
+    <TextView
+      android:id="@+id/tv_peoples_mediation_committee"
+      style="@style/ChartFieldInputValueStyle"
+      android:hint="@string/please_select"
+      android:singleLine="false"
+      tools:text="@string/test"/>
+  </LinearLayout>
+
+  <View style="@style/DividingLineStyle_horizontal"/>
+
+  <LinearLayout
+    android:id="@+id/ll_peoples_mediator"
+    style="@style/LinearStyle">
+
+    <TextView
+      style="@style/ChartFieldKeyStyle"
+      android:singleLine="false"
+      android:text="人员调解员"/>
+
+    <TextView
+      android:id="@+id/tv_peoples_mediator"
+      style="@style/ChartFieldInputValueStyle"
+      android:hint="@string/please_select"/>
+  </LinearLayout>
+
+  <View style="@style/DividingLineStyle_horizontal"/>
+</LinearLayout>

@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <include layout="@layout/top_bar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:background="#f4f4f4" />
+
+            <LinearLayout style="@style/LinearStyle">
+
+                <TextView
+                    style="@style/ChartFieldKeyStyle"
+                    android:text="预约号：" />
+
+                <TextView
+                    android:id="@+id/tv_order_no"
+                    style="@style/ChartFieldInputValueStyle"
+                    android:hint="@null" />
+            </LinearLayout>
+
+            <View style="@style/DividingLineStyle_horizontal" />
+
+            <LinearLayout style="@style/LinearStyle">
+
+                <TextView
+                    style="@style/ChartFieldKeyStyle"
+                    android:text="工作人员：" />
+
+                <TextView
+                    android:id="@+id/tv_worker"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:textColor="#333333"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <View style="@style/DividingLineStyle_horizontal" />
+
+            <LinearLayout style="@style/LinearStyle">
+
+                <TextView
+                    style="@style/ChartFieldKeyStyle"
+                    android:text="预约人姓名：" />
+
+                <TextView
+                    android:id="@+id/tv_order_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:textColor="#333333"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <View style="@style/DividingLineStyle_horizontal" />
+
+            <LinearLayout style="@style/LinearStyle">
+
+                <TextView
+                    style="@style/ChartFieldKeyStyle"
+                    android:text="联系电话：" />
+
+                <TextView
+                    android:id="@+id/tv_order_phone"
+                    style="@style/ChartFieldInputValueStyle"
+                    android:hint="@null" />
+            </LinearLayout>
+
+            <View style="@style/DividingLineStyle_horizontal" />
+
+            <LinearLayout style="@style/LinearStyle">
+
+                <TextView
+                    style="@style/ChartFieldKeyStyle"
+                    android:text="预约详细：" />
+
+                <TextView
+                    android:id="@+id/tv_order_details"
+                    style="@style/ChartFieldInputValueStyle"
+                    android:hint="@null"/>
+            </LinearLayout>
+
+            <View style="@style/DividingLineStyle_horizontal" />
+
+            <LinearLayout style="@style/LinearStyle">
+
+                <TextView
+                    style="@style/ChartFieldKeyStyle"
+                    android:text="预约时间：" />
+
+                <TextView
+                    android:id="@+id/tv_order_date"
+                    style="@style/ChartFieldInputValueStyle"
+                    android:hint="@null" />
+            </LinearLayout>
+
+            <View style="@style/DividingLineStyle_horizontal" />
+
+            <LinearLayout
+                style="@style/LinearStyle"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/ChartFieldKeyStyle"
+                    android:text="预约内容：" />
+
+                <TextView
+                    android:id="@+id/tv_order_content"
+                    style="@style/BigEditText"
+                    android:paddingEnd="40dp"
+                    android:paddingRight="40dp" />
+            </LinearLayout>
+
+            <View style="@style/DividingLineStyle_horizontal" />
+
+            <LinearLayout
+                android:id="@+id/ll_reject_reason"
+                style="@style/LinearStyle"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/ChartFieldKeyStyle"
+                    android:text="拒绝原因：" />
+
+                <TextView
+                    android:id="@+id/tv_reject_reason"
+                    style="@style/BigEditText"
+                    android:hint="请详细描述预约内容"
+                    android:paddingEnd="40dp"
+                    android:paddingRight="40dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="42dp"
+                android:layout_marginLeft="@dimen/dp_12"
+                android:layout_marginRight="@dimen/dp_12"
+                android:layout_marginBottom="30dp">
+
+                <TextView
+                    android:id="@+id/tv_reject"
+                    android:layout_width="0dp"
+                    android:layout_height="42dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/circle_shape"
+                    android:gravity="center"
+                    android:text="拒绝"
+                    android:textColor="#ffffff"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/tv_agree"
+                    android:layout_width="0dp"
+                    android:layout_height="42dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/circle_shape"
+                    android:gravity="center"
+                    android:text="同意"
+                    android:textColor="#ffffff"
+                    android:textSize="16sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

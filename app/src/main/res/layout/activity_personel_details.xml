@@ -1,0 +1,405 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:fitsSystemWindows="true"
+  android:orientation="vertical"
+  tools:context="com.liuhezhineng.ximengsifa.module.service.deprecate.PersonnelDetailsActivity">
+
+  <com.qmuiteam.qmui.widget.QMUITopBar
+    android:id="@+id/top_bar"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/title_bar"
+    app:qmui_topbar_bg_color="@color/blue"
+    app:qmui_topbar_separator_color="@color/blue"
+    app:qmui_topbar_title_color="@color/qmui_config_color_white"/>
+
+  <ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:orientation="vertical">
+
+      <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+          android:layout_width="match_parent"
+          android:layout_height="200dp"
+          android:background="@color/blue"/>
+
+        <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_margin="20dp"
+          android:background="@drawable/search_shape"
+          android:gravity="center"
+          android:orientation="vertical">
+
+          <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/iv_avatar"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/default_avatar"/>
+
+          <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/iv_avatar"
+            android:gravity="center_horizontal"
+            android:text="姓名"
+            android:textColor="@color/blue"
+            tools:text="@string/test"/>
+
+          <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/tv_name">
+
+            <ImageView
+              android:layout_width="15dp"
+              android:layout_height="15dp"
+              android:layout_gravity="center"
+              android:src="@drawable/float_phone"/>
+
+            <TextView
+              android:id="@+id/tv_phone"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:paddingLeft="8dp"
+              android:text="暂无"
+              android:textColor="@color/blue"
+              tools:text="17878787878"/>
+
+            <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_marginStart="3dp"
+              android:layout_marginLeft="3dp"
+              android:text="点击拨打"
+              android:textColor="@color/qmui_config_color_gray_5"
+              android:textSize="10sp"/>
+          </LinearLayout>
+
+          <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="20dp">
+
+            <TextView
+              android:id="@+id/tv_online_qa"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:paddingLeft="8dp"
+              android:background="@drawable/blue_wrapper_shape"
+              android:text="在线咨询"
+              android:textColor="@color/blue"/>
+
+            <TextView
+              android:id="@+id/tv_advisory"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_marginLeft="5dp"
+              android:paddingLeft="8dp"
+              android:background="@drawable/blue_wrapper_shape"
+              android:text="给TA留言"
+              android:textColor="@color/blue"/>
+          </LinearLayout>
+        </LinearLayout>
+      </FrameLayout>
+
+      <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:orientation="vertical">
+
+        <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:padding="@dimen/dp_12">
+
+          <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="性别"/>
+
+          <TextView
+            android:id="@+id/tv_sex"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_gravity="end"
+            android:gravity="end"
+            android:text="暂无"
+            android:textColor="@color/qmui_config_color_gray_5"/>
+        </LinearLayout>
+
+        <View
+          style="@style/DividingLineStyle_horizontal"/>
+
+        <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:padding="@dimen/dp_12">
+
+          <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="年龄"/>
+
+          <TextView
+            android:id="@+id/tv_age"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_gravity="end"
+            android:gravity="end"
+            android:text="暂无"
+            android:textColor="@color/qmui_config_color_gray_5"/>
+        </LinearLayout>
+
+        <View
+          style="@style/DividingLineStyle_horizontal"/>
+
+        <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:padding="@dimen/dp_12">
+
+          <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="学历"/>
+
+          <TextView
+            android:id="@+id/tv_education"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_gravity="end"
+            android:gravity="end"
+            android:text="暂无"
+            android:textColor="@color/qmui_config_color_gray_5"/>
+        </LinearLayout>
+
+        <View
+          style="@style/DividingLineStyle_horizontal"/>
+
+        <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:padding="@dimen/dp_12">
+
+          <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="民族"/>
+
+          <TextView
+            android:id="@+id/tv_ethnic"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_gravity="end"
+            android:gravity="end"
+            android:text="暂无"
+            android:textColor="@color/qmui_config_color_gray_5"/>
+        </LinearLayout>
+
+        <View
+          style="@style/DividingLineStyle_horizontal"/>
+
+        <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:padding="@dimen/dp_12">
+
+          <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="政治面貌"/>
+
+          <TextView
+            android:id="@+id/tv_political_face"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_gravity="end"
+            android:gravity="end"
+            android:text="暂无"
+            android:textColor="@color/qmui_config_color_gray_5"/>
+        </LinearLayout>
+
+        <View
+          style="@style/DividingLineStyle_horizontal"/>
+
+        <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:padding="@dimen/dp_12">
+
+          <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="执业年限"/>
+
+          <TextView
+            android:id="@+id/tv_practising_year"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_gravity="end"
+            android:gravity="end"
+            android:text="暂无"
+            android:textColor="@color/qmui_config_color_gray_5"/>
+        </LinearLayout>
+
+        <View
+          style="@style/DividingLineStyle_horizontal"/>
+
+        <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:padding="@dimen/dp_12">
+
+          <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="所属地区"/>
+
+          <TextView
+            android:id="@+id/tv_area"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_gravity="end"
+            android:gravity="end"
+            android:text="暂无"
+            android:textColor="@color/qmui_config_color_gray_5"/>
+        </LinearLayout>
+
+        <View
+          style="@style/DividingLineStyle_horizontal"/>
+
+        <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:padding="@dimen/dp_12">
+
+          <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="执业证号"/>
+
+          <TextView
+            android:id="@+id/tv_code"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_gravity="end"
+            android:gravity="end"
+            android:text="暂无"
+            android:textColor="@color/qmui_config_color_gray_5"/>
+        </LinearLayout>
+
+        <View
+          style="@style/DividingLineStyle_horizontal"/>
+
+        <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:padding="@dimen/dp_12">
+
+          <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="所属机构"/>
+
+          <TextView
+            android:id="@+id/tv_affiliation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_gravity="end"
+            android:gravity="end"
+            android:text="暂无"
+            android:textColor="@color/qmui_config_color_gray_5"/>
+        </LinearLayout>
+
+        <View
+          style="@style/DividingLineStyle_horizontal"/>
+
+        <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:padding="@dimen/dp_12">
+
+          <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="蒙汉双通"/>
+
+          <TextView
+            android:id="@+id/tv_is_mongolian"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_gravity="end"
+            android:gravity="end"
+            android:text="暂无"
+            android:textColor="@color/qmui_config_color_gray_5"/>
+        </LinearLayout>
+
+        <View
+          style="@style/DividingLineStyle_horizontal"/>
+
+        <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:padding="@dimen/dp_12"
+          android:orientation="vertical">
+
+          <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="个人简介"/>
+
+          <TextView
+            android:id="@+id/tv_intro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="5dp"
+            android:text="@string/test"
+            android:textColor="@color/qmui_config_color_gray_5"/>
+        </LinearLayout>
+
+        <View
+          style="@style/DividingLineStyle_horizontal"/>
+      </LinearLayout>
+    </LinearLayout>
+  </ScrollView>
+</LinearLayout>

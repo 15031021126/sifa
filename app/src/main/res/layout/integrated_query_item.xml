@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="wrap_content"
+  android:layout_marginTop="5dp"
+  android:layout_marginBottom="5dp"
+  android:background="#ffffff"
+  android:orientation="vertical">
+
+  <LinearLayout
+    style="@style/LinearShowStyle">
+
+    <TextView
+      style="@style/ChartFieldKeyStyle"
+      android:text="案件标题"
+      android:textColor="#999999"/>
+
+    <TextView
+      android:id="@+id/tv_title"
+      style="@style/EndChartFieldValueStyle"
+      android:textColor="#333333"
+      tools:text="抢劫"/>
+  </LinearLayout>
+
+  <LinearLayout
+    style="@style/LinearShowStyle">
+
+    <TextView
+      style="@style/ChartFieldKeyStyle"
+      android:text="申请时间"
+      android:textColor="#999999"/>
+
+    <TextView
+      android:id="@+id/tv_date"
+      style="@style/EndChartFieldValueStyle"
+      android:textColor="#333333"
+      tools:text="2018-01-11"/>
+  </LinearLayout>
+
+  <LinearLayout
+    style="@style/LinearShowStyle">
+
+    <TextView
+      style="@style/ChartFieldKeyStyle"
+      android:text="案发地区"
+      android:textColor="#999999"/>
+
+    <TextView
+      android:id="@+id/tv_area"
+      style="@style/EndChartFieldValueStyle"
+      android:textColor="#333333"
+      tools:text="北京"/>
+  </LinearLayout>
+
+  <LinearLayout
+    style="@style/LinearShowStyle">
+
+    <TextView
+      style="@style/ChartFieldKeyStyle"
+      android:text="案件类别"
+      android:textColor="#999999"/>
+
+    <TextView
+      android:id="@+id/tv_category"
+      style="@style/EndChartFieldValueStyle"
+      android:textColor="#333333"
+      tools:text="法律援助"/>
+  </LinearLayout>
+
+  <LinearLayout
+    style="@style/LinearShowStyle">
+
+    <TextView
+      style="@style/ChartFieldKeyStyle"
+      android:text="办理进度"
+      android:textColor="#999999"/>
+
+    <TextView
+      android:id="@+id/tv_process"
+      style="@style/EndChartFieldValueStyle"
+      android:textColor="#333333"
+      tools:text="办理中"/>
+  </LinearLayout>
+
+  <LinearLayout
+    style="@style/LinearShowStyle">
+
+    <TextView
+      style="@style/ChartFieldKeyStyle"
+      android:text="申请人"
+      android:textColor="#999999"/>
+
+    <TextView
+      android:id="@+id/tv_request_user"
+      style="@style/EndChartFieldValueStyle"
+      android:textColor="#333333"
+      tools:text="李四"/>
+  </LinearLayout>
+
+  <LinearLayout
+    style="@style/LinearShowStyle">
+
+    <TextView
+      style="@style/ChartFieldKeyStyle"
+      android:text="申请人手机号"
+      android:textColor="#999999"/>
+
+    <TextView
+      android:id="@+id/tv_phone"
+      style="@style/EndChartFieldValueStyle"
+      android:textColor="#333333"
+      tools:text="12123123434"/>
+  </LinearLayout>
+</LinearLayout>

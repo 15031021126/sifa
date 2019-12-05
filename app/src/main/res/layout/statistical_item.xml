@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="match_parent"
+  android:layout_height="wrap_content"
+  android:orientation="vertical">
+
+  <LinearLayout
+    style="@style/LinearStyle">
+
+    <TextView
+      android:id="@+id/tv_key"
+      style="@style/ChartFieldKeyStyle"
+      android:text="锡林浩特"/>
+
+    <TextView
+      android:id="@+id/tv_value"
+      style="@style/ChartFieldInputValueStyle"
+      android:gravity="end"
+      android:text="1234"/>
+  </LinearLayout>
+</LinearLayout>

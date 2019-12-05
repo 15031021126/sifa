@@ -1,0 +1,145 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion versions.compileSdk
+    defaultConfig {
+        applicationId "com.liuhezhineng.ximengsifa"
+        minSdkVersion versions.minSdk
+        targetSdkVersion versions.targetSdk
+        versionCode versions.code
+        versionName versions.name
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        multiDexEnabled true
+
+        manifestPlaceholders = [
+                JPUSH_PKGNAME: "com.liuhezhineng.ximengsifa",
+                JPUSH_APPKEY : "a182c005bccdde6ebf707b73", //JPush上注册的包名对应的appkey.
+                JPUSH_CHANNEL: "developer-default", //暂时填写默认值即可.
+        ]
+        ndk {
+            abiFilters 'armeabi', 'armeabi-v7a'
+        }
+    }
+
+    dexOptions {
+        javaMaxHeapSize "4g"
+    }
+
+    lintOptions {
+        disable 'GoogleAppIndexingWarning'
+        baseline file("AndroidManifest.xml")
+        checkReleaseBuilds false
+        abortOnError false
+    }
+
+    def keystoreFilepath = ''
+    def keystorePSW = ''
+    def keystoreAlias = ''
+    def keystoreAliasPSW = ''
+    // default keystore file, PLZ config file file_paths in local.properties
+    def keyFile = file('s.keystore.temp')
+
+    Properties properties = new Properties()
+    // local.properties file in the root director
+    properties.load(project.rootProject.file('local.properties').newDataInputStream())
+    keystoreFilepath = properties.getProperty("keystore.path")
+
+    if (keystoreFilepath) {
+        keystorePSW = properties.getProperty("keystore.password")
+        keystoreAlias = properties.getProperty("keystore.alias")
+        keystoreAliasPSW = properties.getProperty("keystore.alias_password")
+        keyFile = file(keystoreFilepath)
+    }
+
+    signingConfigs {
+        release {
+            storeFile keyFile
+            storePassword keystorePSW
+            keyAlias keystoreAlias
+            keyPassword keystoreAliasPSW
+        }
+        debug {}
+    }
+
+    buildTypes {
+        release {
+            debuggable false
+//            minifyEnabled true //启用Proguard
+//            shrinkResources true //是否清理无用资源,依赖于minifyEnabled
+//            zipAlignEnabled true //是否启用zipAlign压缩
+            signingConfig signingConfigs.release
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+        debug {
+            debuggable true
+            minifyEnabled false  //不启用Proguard
+            shrinkResources false //是否清理无用资源,依赖于minifyEnabled
+            zipAlignEnabled false //是否启用zipAlign压缩
+            signingConfig signingConfigs.debug
+        }
+    }
+    compileOptions {
+        sourceCompatibility = '1.8'
+        targetCompatibility = '1.8'
+    }
+
+    applicationVariants.all { variant ->
+        variant.outputs.all {
+            outputFileName = "智慧司法_v_${variant.versionName}.apk"
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'com.android.support.test:runner:1.0.2'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+    implementation 'com.android.support.constraint:constraint-layout:1.1.3'
+    implementation libraries.supportv7
+    implementation libraries.supportv4
+    implementation libraries.design
+    implementation libraries.recyclerview
+    implementation libraries.cardview
+    implementation libraries.butterknife
+    annotationProcessor libraries.butterknifecompiler
+    implementation 'com.android.support:multidex:1.0.3'
+    implementation 'com.qmuiteam:qmui:1.1.2'
+    implementation 'com.squareup.picasso:picasso:2.71828'
+    implementation 'com.google.code.gson:gson:2.8.2'
+    implementation 'com.blankj:utilcode:1.13.12'
+    implementation project(path: ':imagepicker')
+    implementation project(path: ':okgo')
+    implementation 'de.hdodenhof:circleimageview:2.2.0'
+    implementation 'com.gcssloop.recyclerview:pagerlayoutmanager:2.3.8'
+    //1.1.0 API改动过大，老用户升级需谨慎
+    implementation 'com.scwang.smartrefresh:SmartRefreshLayout:1.1.0-alpha-5'
+    implementation 'com.scwang.smartrefresh:SmartRefreshHeader:1.1.0-alpha-5'
+    implementation 'me.yokeyword:fragmentation:1.3.3'
+    implementation 'com.contrarywind:wheelview:4.0.5'
+    implementation 'com.contrarywind:Android-PickerView:4.1.3'
+    implementation 'com.flyco.tablayout:FlycoTabLayout_Lib:2.1.2@aar'
+    // Android 23 Marshmallow 6.0
+    implementation 'com.yanzhenjie:permission:2.0.0-rc12'
+    // JPush
+    implementation 'cn.jiguang.sdk:jpush:3.1.6'
+    implementation 'cn.jiguang.sdk:jcore:1.2.5'
+    implementation 'com.github.PhilJay:MPAndroidChart:v3.0.3'
+    // 首页 banner
+    implementation 'com.youth.banner:banner:1.4.10'
+    implementation files('libs/usc.jar')
+    implementation files('libs/chitvideo.jar')
+    implementation 'com.github.huangyanbin:SmartTable:1.7.1'
+    implementation 'com.jakewharton.rxbinding3:rxbinding:3.0.0-alpha1'
+    //    implementation 'com.lzy.net:okrx2:2.0.2'
+    implementation files('libs/BaiduLBS_Android.jar')
+    implementation files('libs/component_common_sdk_1.0.0.jar')
+    implementation files('libs/IndoorscapeAlbumPlugin.jar')
+    implementation project(':easeui')
+
+    api 'org.greenrobot:eventbus:3.1.1'
+
+    implementation 'com.github.barteksc:android-pdf-viewer:2.8.2'
+
+    implementation 'me.texy.treeview:treeview_lib:1.0.4'
+}

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="wrap_content"
+  android:background="#f4f4f4"
+  android:fitsSystemWindows="true"
+  android:orientation="vertical"
+  tools:context="com.liuhezhineng.ximengsifa.module.service.personnelinstitutions.evaluate.EvaluateCommitActivity">
+
+  <include layout="@layout/top_bar"/>
+
+  <ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:orientation="vertical">
+
+      <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_be_evaluate_user"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layoutManager="LinearLayoutManager"
+        tools:listitem="@layout/layout_be_evaluate_user_item"/>
+
+      <EditText
+        android:id="@+id/et_evaluate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp"
+        android:background="@drawable/border"
+        android:baselineAligned="false"
+        android:gravity="start"
+        android:hint="请说说我们的优点和美中不足的地方吧"
+        android:minHeight="100dp"
+        android:textColor="@color/qmui_config_color_gray_5"
+        android:textSize="14sp"/>
+    </LinearLayout>
+  </ScrollView>
+</LinearLayout>

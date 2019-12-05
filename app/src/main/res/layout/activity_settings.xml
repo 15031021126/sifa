@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:background="@color/gray"
+  android:fitsSystemWindows="true"
+  android:orientation="vertical"
+  tools:context=".module.mine.SettingsActivity">
+
+  <include layout="@layout/top_bar"/>
+
+  <ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:orientation="vertical">
+
+      <com.qmuiteam.qmui.widget.grouplist.QMUIGroupListView
+        android:id="@+id/qmui_settings_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"/>
+
+      <LinearLayout
+        android:id="@+id/ll_logout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <View
+          style="@style/DividingLineStyle_horizontal"
+          android:layout_marginTop="24dp"/>
+
+        <TextView
+          android:id="@+id/tv_logout"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:padding="@dimen/dp_12"
+          android:background="#ffffff"
+          android:gravity="center"
+          android:text="@string/logout"
+          android:textColor="@color/qmui_config_color_black"
+          android:textSize="@dimen/sp_20"/>
+
+        <View
+          style="@style/DividingLineStyle_horizontal"
+          android:layout_marginBottom="20dp"/>
+
+      </LinearLayout>
+    </LinearLayout>
+  </ScrollView>
+</LinearLayout>

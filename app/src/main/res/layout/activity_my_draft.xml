@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:fitsSystemWindows="true"
+  android:orientation="vertical"
+  tools:context="com.liuhezhineng.ximengsifa.business.peoplesmediation.havedone.MyDraftActivity">
+
+  <include layout="@layout/top_bar"/>
+
+  <com.scwang.smartrefresh.layout.SmartRefreshLayout
+    android:id="@+id/refreshLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:srlAccentColor="@android:color/black"
+    app:srlEnablePreviewInEditMode="true"
+    app:srlPrimaryColor="@android:color/white">
+
+    <com.scwang.smartrefresh.layout.header.ClassicsHeader
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"/>
+
+    <FrameLayout
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:background="#f4f4f4">
+
+      <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_draft"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        app:layoutManager="LinearLayoutManager"
+        tools:listitem="@layout/business_item"/>
+
+      <include layout="@layout/no_data"/>
+    </FrameLayout>
+
+    <com.scwang.smartrefresh.layout.footer.ClassicsFooter
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"/>
+  </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+</LinearLayout>

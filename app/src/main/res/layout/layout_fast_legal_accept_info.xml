@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <View style="@style/TitleTopViewStyle" />
+
+    <LinearLayout style="@style/LinearStyle">
+
+        <TextView
+            style="@style/ChartFieldKeyStyle"
+            android:text="受理人" />
+
+        <TextView
+            android:id="@+id/tv_accept_people"
+            style="@style/ChartFieldShowValueStyle" />
+    </LinearLayout>
+
+    <View style="@style/DividingLineStyle_horizontal" />
+
+    <LinearLayout style="@style/LinearStyle">
+
+        <TextView
+            style="@style/ChartFieldKeyStyle"
+            android:text="受理人工号" />
+
+        <TextView
+            android:id="@+id/tv_accept_people_no"
+            style="@style/ChartFieldShowValueStyle" />
+    </LinearLayout>
+
+    <View style="@style/DividingLineStyle_horizontal" />
+
+    <LinearLayout style="@style/LinearStyle">
+
+        <TextView
+            style="@style/ChartFieldKeyStyle"
+            android:text="受理案件编号" />
+
+        <TextView
+            android:id="@+id/tv_case_no"
+            style="@style/ChartFieldShowValueStyle" />
+    </LinearLayout>
+
+    <View style="@style/DividingLineStyle_horizontal" />
+</LinearLayout>

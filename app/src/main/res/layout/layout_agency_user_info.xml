@@ -1,0 +1,75 @@
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:id="@+id/ll_agency"
+  android:layout_width="match_parent"
+  android:layout_height="wrap_content"
+  android:fitsSystemWindows="true"
+  android:orientation="vertical">
+
+  <View
+    android:layout_width="match_parent"
+    android:layout_height="8dp"
+    android:background="@color/qmui_config_color_gray_9"/>
+
+  <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:orientation="horizontal">
+
+    <View
+      android:layout_width="4dp"
+      android:layout_height="18dp"
+      android:background="#63aeff"/>
+
+    <TextView
+      style="@style/ChartFieldStyle"
+      android:text="代理人基本情况"/>
+  </LinearLayout>
+
+  <View style="@style/DividingLineStyle_horizontal"/>
+
+  <LinearLayout
+    style="@style/LinearStyle">
+
+    <TextView
+      style="@style/ChartFieldKeyStyle"
+      android:text="姓名"/>
+
+    <EditText
+      android:id="@+id/et_agent_name"
+      style="@style/ChartFieldInputValueStyle"/>
+  </LinearLayout>
+
+  <View style="@style/DividingLineStyle_horizontal"/>
+
+  <LinearLayout
+    style="@style/LinearStyle">
+
+    <TextView
+      style="@style/ChartFieldKeyStyle"
+      android:text="@string/id_card_num"/>
+
+    <EditText
+      android:id="@+id/et_agent_id_card_num"
+      style="@style/ChartFieldInputValueStyle"
+      android:maxLength="18"/>
+  </LinearLayout>
+
+  <View style="@style/DividingLineStyle_horizontal"/>
+
+  <LinearLayout
+    style="@style/LinearStyle">
+
+    <TextView
+      style="@style/ChartFieldKeyStyle"
+      android:text="代理人类型"/>
+
+    <TextView
+      android:id="@+id/et_agent_person"
+      style="@style/ChartFieldInputValueStyle"
+      android:hint="@string/please_select"/>
+  </LinearLayout>
+
+  <View style="@style/DividingLineStyle_horizontal"/>
+</LinearLayout>

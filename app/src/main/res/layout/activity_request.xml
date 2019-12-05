@@ -1,0 +1,524 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:fitsSystemWindows="true"
+  android:orientation="vertical"
+  tools:context="com.liuhezhineng.ximengsifa.business.legalaid.ApplyForLegalAidActivity">
+
+  <include layout="@layout/top_bar"/>
+
+  <ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:orientation="vertical">
+
+      <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <View
+          style="@style/TitleTopViewStyle"/>
+
+        <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:gravity="center_vertical"
+          android:orientation="horizontal">
+
+          <View
+            style="@style/TitleLeftViewStyle"/>
+
+          <TextView
+            style="@style/ChartFieldStyle"
+            android:text="申请人基本情况"/>
+        </LinearLayout>
+
+        <View style="@style/DividingLineStyle_horizontal"/>
+
+        <LinearLayout
+          style="@style/LinearStyle">
+
+          <TextView
+            style="@style/ChartFieldKeyStyle"
+            android:text="姓名"/>
+
+          <TextView
+            android:id="@+id/tv_name"
+            style="@style/ChartFieldShowValueStyle"/>
+        </LinearLayout>
+
+        <View style="@style/DividingLineStyle_horizontal"/>
+
+        <LinearLayout
+          style="@style/LinearStyle">
+
+          <TextView
+            style="@style/ChartFieldKeyStyle"
+            android:text="@string/sex"/>
+
+          <TextView
+            android:id="@+id/tv_sex"
+            style="@style/ChartFieldShowValueStyle"/>
+        </LinearLayout>
+
+        <View style="@style/DividingLineStyle_horizontal"/>
+
+        <LinearLayout
+          style="@style/LinearStyle">
+
+          <TextView
+            style="@style/ChartFieldKeyStyle"
+            android:text="@string/ethnic"/>
+
+          <TextView
+            android:id="@+id/tv_ethnic"
+            style="@style/ChartFieldShowValueStyle"/>
+        </LinearLayout>
+
+        <View style="@style/DividingLineStyle_horizontal"/>
+
+        <LinearLayout
+          style="@style/LinearStyle">
+
+          <TextView
+            style="@style/ChartFieldKeyStyle"
+            android:text="所在旗县"/>
+
+          <TextView
+            android:id="@+id/tv_county"
+            style="@style/ChartFieldShowValueStyle"/>
+        </LinearLayout>
+
+        <View style="@style/DividingLineStyle_horizontal"/>
+
+        <LinearLayout
+          style="@style/LinearStyle">
+
+          <TextView
+            style="@style/ChartFieldKeyStyle"
+            android:text="所在乡镇"/>
+
+          <TextView
+            android:id="@+id/tv_town"
+            style="@style/ChartFieldShowValueStyle"/>
+        </LinearLayout>
+
+        <View style="@style/DividingLineStyle_horizontal"/>
+
+        <LinearLayout
+          style="@style/LinearStyle">
+
+          <TextView
+            style="@style/ChartFieldKeyStyle"
+            android:text="联系电话"/>
+
+          <TextView
+            android:id="@+id/tv_phone"
+            style="@style/ChartFieldShowValueStyle"/>
+        </LinearLayout>
+
+        <View style="@style/DividingLineStyle_horizontal"/>
+
+        <LinearLayout
+          style="@style/LinearStyle">
+
+          <TextView
+            style="@style/ChartFieldKeyStyle"
+            android:text="@string/birthday"/>
+
+          <TextView
+            android:id="@+id/tv_birthday"
+            style="@style/ChartFieldShowValueStyle"/>
+        </LinearLayout>
+
+        <View style="@style/DividingLineStyle_horizontal"/>
+
+        <LinearLayout
+          style="@style/LinearStyle">
+
+          <TextView
+            style="@style/ChartFieldKeyStyle"
+            android:text="@string/id_card_num"/>
+
+          <TextView
+            android:id="@+id/tv_id_card_num"
+            style="@style/ChartFieldShowValueStyle"/>
+        </LinearLayout>
+
+        <View style="@style/DividingLineStyle_horizontal"/>
+
+        <LinearLayout
+          style="@style/LinearStyle">
+
+          <TextView
+            style="@style/ChartFieldKeyStyle"
+            android:text="职业或职务"/>
+
+          <TextView
+            android:id="@+id/tv_occupation"
+            style="@style/ChartFieldShowValueStyle"/>
+        </LinearLayout>
+
+        <View style="@style/DividingLineStyle_horizontal"/>
+
+        <LinearLayout
+          style="@style/LinearStyle">
+
+          <TextView
+            style="@style/ChartFieldKeyStyle"
+            android:text="经常居住地"/>
+
+          <TextView
+            android:id="@+id/tv_address"
+            style="@style/ChartFieldShowValueStyle"/>
+        </LinearLayout>
+
+        <View style="@style/DividingLineStyle_horizontal"/>
+
+        <LinearLayout
+          style="@style/LinearStyle">
+
+          <TextView
+            style="@style/ChartFieldKeyStyle"
+            android:text="户籍所在地"/>
+
+          <TextView
+            android:id="@+id/tv_domicile"
+            style="@style/ChartFieldShowValueStyle"/>
+        </LinearLayout>
+
+        <View style="@style/DividingLineStyle_horizontal"/>
+
+      </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_proxy"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fitsSystemWindows="true"
+            android:orientation="vertical">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="8dp"
+                android:background="@color/qmui_config_color_gray_9" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <View
+                    android:layout_width="4dp"
+                    android:layout_height="18dp"
+                    android:background="#63aeff" />
+
+                <TextView
+                    style="@style/ChartFieldStyle"
+                    android:text="代理人基本情况" />
+            </LinearLayout>
+
+            <View style="@style/DividingLineStyle_horizontal" />
+
+            <LinearLayout style="@style/LinearStyle">
+
+                <TextView
+                    style="@style/ChartFieldKeyStyle"
+                    android:text="姓名" />
+
+                <TextView
+                    android:id="@+id/tv_agent_name"
+                    style="@style/ChartFieldShowValueStyle" />
+            </LinearLayout>
+
+            <View style="@style/DividingLineStyle_horizontal" />
+
+            <LinearLayout style="@style/LinearStyle">
+
+                <TextView
+                    style="@style/ChartFieldKeyStyle"
+                    android:text="@string/id_card_num" />
+
+                <TextView
+                    android:id="@+id/tv_agent_id_card"
+                    style="@style/ChartFieldShowValueStyle"/>
+            </LinearLayout>
+
+            <View style="@style/DividingLineStyle_horizontal" />
+
+            <LinearLayout style="@style/LinearStyle">
+
+                <TextView
+                    style="@style/ChartFieldKeyStyle"
+                    android:text="代理人类型" />
+
+                <TextView
+                    android:id="@+id/tv_agent_type"
+                    style="@style/ChartFieldShowValueStyle"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <View
+          style="@style/TitleTopViewStyle"/>
+
+        <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:gravity="center_vertical"
+          android:orientation="horizontal">
+
+          <View
+            style="@style/TitleLeftViewStyle"/>
+
+          <TextView
+            style="@style/ChartFieldStyle"
+            android:text="被申请人基本情况"/>
+        </LinearLayout>
+
+        <LinearLayout
+          style="@style/LinearStyle">
+
+          <TextView
+            style="@style/ChartFieldKeyStyle"
+            android:text="姓名"/>
+
+          <TextView
+            android:id="@+id/tv_name_1"
+            style="@style/ChartFieldShowValueStyle"/>
+        </LinearLayout>
+
+        <View style="@style/DividingLineStyle_horizontal"/>
+
+        <LinearLayout
+          style="@style/LinearStyle">
+
+          <TextView
+            style="@style/ChartFieldKeyStyle"
+            android:text="@string/sex"/>
+
+          <TextView
+            android:id="@+id/tv_sex_1"
+            style="@style/ChartFieldShowValueStyle"/>
+        </LinearLayout>
+
+        <View style="@style/DividingLineStyle_horizontal"/>
+
+        <LinearLayout
+          style="@style/LinearStyle">
+
+          <TextView
+            style="@style/ChartFieldKeyStyle"
+            android:text="@string/ethnic"/>
+
+          <TextView
+            android:id="@+id/tv_ethnic_1"
+            style="@style/ChartFieldShowValueStyle"/>
+        </LinearLayout>
+
+        <View style="@style/DividingLineStyle_horizontal"/>
+
+        <LinearLayout
+          style="@style/LinearStyle">
+
+          <TextView
+            style="@style/ChartFieldKeyStyle"
+            android:text="所在旗县"/>
+
+          <TextView
+            android:id="@+id/tv_county_1"
+            style="@style/ChartFieldShowValueStyle"/>
+        </LinearLayout>
+
+        <View style="@style/DividingLineStyle_horizontal"/>
+
+        <LinearLayout
+          style="@style/LinearStyle">
+
+          <TextView
+            style="@style/ChartFieldKeyStyle"
+            android:text="所在乡镇"/>
+
+          <TextView
+            android:id="@+id/tv_town_1"
+            style="@style/ChartFieldShowValueStyle"/>
+        </LinearLayout>
+
+        <View style="@style/DividingLineStyle_horizontal"/>
+
+        <LinearLayout
+          style="@style/LinearStyle">
+
+          <TextView
+            style="@style/ChartFieldKeyStyle"
+            android:text="联系电话"/>
+
+          <TextView
+            android:id="@+id/tv_phone_num_1"
+            style="@style/ChartFieldShowValueStyle"/>
+        </LinearLayout>
+
+        <View style="@style/DividingLineStyle_horizontal"/>
+
+        <LinearLayout
+          style="@style/LinearStyle">
+
+          <TextView
+            style="@style/ChartFieldKeyStyle"
+            android:text="@string/birthday"/>
+
+          <TextView
+            android:id="@+id/tv_birthday_1"
+            style="@style/ChartFieldShowValueStyle"/>
+        </LinearLayout>
+
+        <View style="@style/DividingLineStyle_horizontal"/>
+
+        <LinearLayout
+          style="@style/LinearStyle">
+
+          <TextView
+            style="@style/ChartFieldKeyStyle"
+            android:text="@string/id_card_num"/>
+
+          <TextView
+            android:id="@+id/tv_id_card_num_1"
+            style="@style/ChartFieldShowValueStyle"/>
+        </LinearLayout>
+
+        <View style="@style/DividingLineStyle_horizontal"/>
+
+        <LinearLayout
+          style="@style/LinearStyle">
+
+          <TextView
+            style="@style/ChartFieldKeyStyle"
+            android:text="职业或职务"/>
+
+          <TextView
+            android:id="@+id/tv_occupation_1"
+            style="@style/ChartFieldShowValueStyle"/>
+        </LinearLayout>
+
+        <View style="@style/DividingLineStyle_horizontal"/>
+
+        <LinearLayout
+          style="@style/LinearStyle">
+
+          <TextView
+            style="@style/ChartFieldKeyStyle"
+            android:text="经常居住地"/>
+
+          <TextView
+            android:id="@+id/tv_address_1"
+            style="@style/ChartFieldShowValueStyle"/>
+        </LinearLayout>
+
+        <View style="@style/DividingLineStyle_horizontal"/>
+
+        <LinearLayout
+          style="@style/LinearStyle">
+
+          <TextView
+            style="@style/ChartFieldKeyStyle"
+            android:text="户籍所在地"/>
+
+          <TextView
+            android:id="@+id/tv_domicile_1"
+            style="@style/ChartFieldShowValueStyle"/>
+        </LinearLayout>
+
+        <View style="@style/DividingLineStyle_horizontal"/>
+
+      </LinearLayout>
+
+      <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true"
+        android:orientation="vertical">
+
+        <View
+          style="@style/TitleTopViewStyle"/>
+
+        <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:gravity="center_vertical"
+          android:orientation="horizontal">
+
+          <View
+            style="@style/TitleLeftViewStyle"/>
+
+          <TextView
+            style="@style/ChartFieldStyle"
+            android:text="案件基本情况"/>
+        </LinearLayout>
+
+        <View style="@style/DividingLineStyle_horizontal"/>
+
+        <LinearLayout
+          style="@style/LinearStyle">
+
+          <TextView
+            style="@style/ChartFieldKeyStyle"
+            android:text="案件标题"/>
+
+          <TextView
+            android:id="@+id/tv_case_title"
+            style="@style/ChartFieldShowValueStyle"
+            android:layout_height="wrap_content"
+            android:singleLine="false"
+            tools:text="@string/test"/>
+        </LinearLayout>
+
+        <View style="@style/DividingLineStyle_horizontal"/>
+
+        <include layout="@layout/duplicate_annex"/>
+
+        <View style="@style/DividingLineStyle_horizontal"/>
+
+        <LinearLayout
+          style="@style/LinearStyle"
+          android:orientation="vertical">
+
+          <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+              style="@style/ChartFieldKeyStyle"
+              android:layout_width="match_parent"
+              android:text="案情及申请理由陈述"/>
+          </LinearLayout>
+
+          <TextView
+            android:id="@+id/tv_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:padding="3dp"
+            android:background="@drawable/border"
+            android:baselineAligned="false"
+            android:gravity="start"
+            android:minHeight="100dp"
+            android:textSize="14sp"/>
+        </LinearLayout>
+
+        <include layout="@layout/office"/>
+      </LinearLayout>
+    </LinearLayout>
+  </ScrollView>
+</LinearLayout>

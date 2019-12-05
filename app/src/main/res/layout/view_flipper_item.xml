@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/tv_hot"
+    style="@style/TextViewStyle"
+    android:layout_gravity="start"
+    android:ellipsize="end"
+    android:gravity="start"
+    android:maxLines="1"
+    android:paddingStart="12dp"
+    android:paddingLeft="12dp"
+    android:paddingEnd="0dp"
+    android:paddingRight="0dp"
+    android:singleLine="true"
+    android:textSize="14sp"
+    tools:text="司法部部长张军代表：加快推进专业调节和行业调解" />

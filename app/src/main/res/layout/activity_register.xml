@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:background="@color/qmui_config_color_white"
+  android:fitsSystemWindows="true"
+  android:orientation="vertical">
+
+  <include layout="@layout/top_bar"/>
+
+  <FrameLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:orientation="vertical">
+
+      <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12sp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp">
+
+        <EditText
+          android:id="@+id/et_name"
+          style="@style/EditTextStyle"
+          android:padding="@dimen/dp_12"
+          android:hint="@string/please_enter_your_name"
+          android:maxLength="16"
+          android:singleLine="true"
+          android:textSize="14sp"/>
+      </LinearLayout>
+
+      <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        >
+
+        <EditText
+          android:id="@+id/et_id_card_num"
+          style="@style/EditTextStyle"
+          android:padding="@dimen/dp_12"
+          android:hint="@string/please_enter_id_card_num"
+          android:maxLength="18"
+          android:singleLine="true"
+          android:textSize="14sp"/>
+      </LinearLayout>
+
+      <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        >
+
+        <EditText
+          android:id="@+id/et_account"
+          style="@style/EditTextStyle"
+          android:padding="@dimen/dp_12"
+          android:hint="@string/please_enter_phone_number"
+          android:inputType="phone"
+          android:maxLength="11"
+          android:textSize="14sp"/>
+      </LinearLayout>
+
+      <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        >
+
+        <EditText
+          android:id="@+id/et_password"
+          style="@style/EditTextStyle"
+          android:padding="@dimen/dp_12"
+          android:hint="@string/please_enter_password"
+          android:inputType="textPassword"
+          android:maxLength="18"
+          android:textSize="14sp"/>
+      </LinearLayout>
+
+      <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp">
+
+        <EditText
+          android:id="@+id/et_confirm_pwd"
+          style="@style/EditTextStyle"
+          android:padding="@dimen/dp_12"
+          android:hint="@string/please_enter_confirm_pwd"
+          android:inputType="textPassword"
+          android:textSize="14sp"/>
+      </LinearLayout>
+
+      <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        >
+
+        <EditText
+          android:id="@+id/et_verification_code"
+          style="@style/EditTextStyle"
+          android:paddingLeft="12dp"
+          android:hint="@string/please_enter_verification_code"
+          android:inputType="number"
+          android:maxLength="6"
+          android:textSize="14sp"/>
+
+        <TextView
+          android:id="@+id/tv_get_verification_code"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_gravity="end"
+          android:padding="@dimen/dp_12"
+          android:text="@string/get_verification_code"/>
+      </FrameLayout>
+
+      <Button
+        android:id="@+id/btn_register"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="12dp"
+        android:background="@drawable/circle_shape"
+        android:maxLength="18"
+        android:text="@string/register"
+        android:textColor="#ffffff"
+        android:textSize="18sp"/>
+    </LinearLayout>
+
+    <com.qmuiteam.qmui.widget.QMUIEmptyView
+      android:id="@+id/empty_view"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"/>
+  </FrameLayout>
+</LinearLayout>

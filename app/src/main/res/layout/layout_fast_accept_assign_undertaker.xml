@@ -1,0 +1,40 @@
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="match_parent"
+  android:layout_height="wrap_content"
+  android:orientation="vertical">
+
+  <View
+    style="@style/TitleTopViewStyle"/>
+
+  <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:orientation="horizontal">
+
+    <View
+      style="@style/TitleLeftViewStyle"/>
+
+    <TextView
+      style="@style/ChartFieldStyle"
+      android:text="指定承办人"/>
+  </LinearLayout>
+
+  <View style="@style/DividingLineStyle_horizontal"/>
+
+  <LinearLayout
+    style="@style/LinearStyle">
+
+    <TextView
+      style="@style/ChartFieldKeyStyle"
+      android:text="承办人"/>
+
+    <TextView
+      android:id="@+id/tv_undertaker"
+      style="@style/ChartFieldInputValueStyle"
+      android:hint="@string/please_select"/>
+  </LinearLayout>
+
+  <View style="@style/DividingLineStyle_horizontal"/>
+</LinearLayout>

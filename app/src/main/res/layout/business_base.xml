@@ -1,0 +1,373 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="wrap_content"
+  android:orientation="vertical">
+
+  <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <View
+      android:layout_width="match_parent"
+      android:layout_height="8dp"
+      android:background="@color/qmui_config_color_gray_9"/>
+
+    <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:gravity="center_vertical"
+      android:orientation="horizontal">
+
+      <View
+        android:layout_width="4dp"
+        android:layout_height="18dp"
+        android:background="#63aeff"/>
+
+      <TextView
+        style="@style/ChartFieldStyle"
+        android:text="申请人基本情况"/>
+    </LinearLayout>
+
+    <View style="@style/DividingLineStyle_horizontal"/>
+
+    <LinearLayout
+      style="@style/LinearShowStyle">
+
+      <TextView
+        style="@style/ChartFieldKeyStyle"
+        android:text="姓名"/>
+
+      <TextView
+        android:id="@+id/et_name"
+        style="@style/ChartFieldValueStyle"/>
+    </LinearLayout>
+
+    <LinearLayout
+      style="@style/LinearShowStyle">
+
+      <TextView
+        style="@style/ChartFieldKeyStyle"
+        android:text="@string/sex"/>
+
+      <TextView
+        android:id="@+id/tv_sex"
+        style="@style/ChartFieldValueStyle"/>
+    </LinearLayout>
+
+    <LinearLayout
+      style="@style/LinearShowStyle">
+
+      <TextView
+        style="@style/ChartFieldKeyStyle"
+        android:text="@string/ethnic"/>
+
+      <TextView
+        android:id="@+id/tv_ethnic"
+        style="@style/ChartFieldValueStyle"/>
+    </LinearLayout>
+
+    <LinearLayout
+      style="@style/LinearShowStyle">
+
+      <TextView
+        style="@style/ChartFieldKeyStyle"
+        android:text="@string/birthday"/>
+
+      <TextView
+        android:id="@+id/tv_birthday"
+        style="@style/ChartFieldValueStyle"/>
+    </LinearLayout>
+
+    <LinearLayout
+      style="@style/LinearShowStyle">
+
+      <TextView
+        style="@style/ChartFieldKeyStyle"
+        android:text="@string/id_card_num"/>
+
+      <TextView
+        android:id="@+id/et_id_card_num"
+        style="@style/ChartFieldValueStyle"/>
+    </LinearLayout>
+
+    <LinearLayout
+      style="@style/LinearShowStyle">
+
+      <TextView
+        style="@style/ChartFieldKeyStyle"
+        android:text="所属地区"/>
+
+      <TextView
+        android:id="@+id/et_area"
+        style="@style/ChartFieldValueStyle"/>
+    </LinearLayout>
+    <LinearLayout
+      style="@style/LinearShowStyle">
+
+      <TextView
+        style="@style/ChartFieldKeyStyle"
+        android:text="所属乡镇"/>
+
+      <TextView
+        android:id="@+id/tv_town"
+        style="@style/ChartFieldValueStyle"/>
+    </LinearLayout>
+
+    <LinearLayout
+      style="@style/LinearShowStyle">
+
+      <TextView
+        style="@style/ChartFieldKeyStyle"
+        android:text="联系电话"/>
+
+      <TextView
+        android:id="@+id/et_phone"
+        style="@style/ChartFieldValueStyle"/>
+    </LinearLayout>
+
+    <LinearLayout
+      style="@style/LinearShowStyle">
+
+      <TextView
+        style="@style/ChartFieldKeyStyle"
+        android:text="工作单位"/>
+
+      <TextView
+        android:id="@+id/et_work_address"
+        style="@style/ChartFieldValueStyle"/>
+    </LinearLayout>
+
+    <LinearLayout
+      style="@style/LinearShowStyle">
+
+      <TextView
+        style="@style/ChartFieldKeyStyle"
+        android:text="居住地"/>
+
+      <TextView
+        android:id="@+id/et_address"
+        style="@style/ChartFieldValueStyle"/>
+    </LinearLayout>
+
+    <LinearLayout
+      style="@style/LinearShowStyle">
+
+      <TextView
+        style="@style/ChartFieldKeyStyle"
+        android:text="户籍地"/>
+
+      <TextView
+        android:id="@+id/et_home_address"
+        style="@style/ChartFieldValueStyle"/>
+    </LinearLayout>
+
+  </LinearLayout>
+
+  <LinearLayout
+    android:id="@+id/ll_agency"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <View
+      android:layout_width="match_parent"
+      android:layout_height="8dp"
+      android:background="@color/qmui_config_color_gray_9"/>
+
+    <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:gravity="center_vertical"
+      android:orientation="horizontal">
+
+      <View
+        android:layout_width="4dp"
+        android:layout_height="18dp"
+        android:background="#63aeff"/>
+
+      <TextView
+        style="@style/ChartFieldStyle"
+        android:text="代理人基本情况"/>
+    </LinearLayout>
+
+    <View style="@style/DividingLineStyle_horizontal"/>
+
+    <LinearLayout
+      style="@style/LinearShowStyle">
+
+      <TextView
+        style="@style/ChartFieldKeyStyle"
+        android:text="姓名"/>
+
+      <TextView
+        android:id="@+id/et_agent_name"
+        style="@style/ChartFieldValueStyle"/>
+    </LinearLayout>
+
+    <LinearLayout
+      style="@style/LinearShowStyle">
+
+      <TextView
+        style="@style/ChartFieldKeyStyle"
+        android:text="@string/id_card_num"/>
+
+      <TextView
+        android:id="@+id/et_agent_id_card_num"
+        style="@style/ChartFieldValueStyle"/>
+    </LinearLayout>
+
+    <LinearLayout
+      style="@style/LinearShowStyle">
+
+      <TextView
+        style="@style/ChartFieldKeyStyle"
+        android:text="代理人类型"/>
+
+      <TextView
+        android:id="@+id/et_agent_person"
+        style="@style/ChartFieldValueStyle"/>
+    </LinearLayout>
+
+  </LinearLayout>
+
+  <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <View
+      android:layout_width="match_parent"
+      android:layout_height="8dp"
+      android:background="@color/qmui_config_color_gray_9"/>
+
+    <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:gravity="center_vertical"
+      android:orientation="horizontal">
+
+      <View
+        android:layout_width="4dp"
+        android:layout_height="18dp"
+        android:background="#63aeff"/>
+
+      <TextView
+        style="@style/ChartFieldStyle"
+        android:text="案件信息"/>
+    </LinearLayout>
+
+    <View style="@style/DividingLineStyle_horizontal"/>
+
+    <LinearLayout
+      style="@style/LinearShowStyle">
+
+      <TextView
+        style="@style/ChartFieldKeyStyle"
+        android:text="案件标题"/>
+
+      <TextView
+        android:id="@+id/et_title"
+        style="@style/ChartFieldValueStyle"/>
+    </LinearLayout>
+
+    <LinearLayout
+      style="@style/LinearShowStyle">
+
+      <TextView
+        style="@style/ChartFieldKeyStyle"
+        android:text="案件类型"/>
+
+      <TextView
+        android:id="@+id/et_type"
+        style="@style/ChartFieldValueStyle"/>
+    </LinearLayout>
+
+    <LinearLayout
+      style="@style/LinearShowStyle">
+
+      <TextView
+        style="@style/ChartFieldKeyStyle"
+        android:text="所属分类"/>
+
+      <TextView
+        android:id="@+id/tv_aid_category"
+        style="@style/ChartFieldValueStyle"/>
+    </LinearLayout>
+
+    <LinearLayout
+      style="@style/LinearShowStyle">
+
+      <TextView
+        style="@style/ChartFieldKeyStyle"
+        android:text="案件性质"/>
+
+      <TextView
+        android:id="@+id/tv_case_nature"
+        style="@style/ChartFieldValueStyle"/>
+    </LinearLayout>
+
+    <LinearLayout
+      style="@style/LinearShowStyle">
+
+      <TextView
+        style="@style/ChartFieldKeyStyle"
+        android:text="涉及蒙语"/>
+
+      <TextView
+        android:id="@+id/et_line_mengyu"
+        style="@style/ChartFieldValueStyle"/>
+    </LinearLayout>
+
+    <include layout="@layout/duplicate_annex"/>
+
+    <LinearLayout
+      android:id="@+id/ll_annex1"
+      style="@style/LinearShowStyle"
+      android:orientation="vertical"
+      android:visibility="gone">
+
+      <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+          style="@style/ChartFieldKeyStyle"
+          android:layout_width="wrap_content"
+          android:layout_weight="3"
+          android:layout_marginBottom="@dimen/dp_12"
+          android:text="承办人办理附件"/>
+      </LinearLayout>
+
+      <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_annex1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layoutManager="android.support.v7.widget.LinearLayoutManager"
+        tools:listitem="@layout/annex_item"/>
+    </LinearLayout>
+
+    <LinearLayout
+      style="@style/LinearShowStyle"
+      android:orientation="vertical">
+
+      <TextView
+        style="@style/ChartFieldKeyStyle"
+        android:layout_width="match_parent"
+        android:text="案情及申请理由"/>
+
+      <TextView
+        android:id="@+id/et_content"
+        style="@style/BigEditText"
+        android:textColor="#858C96"
+        android:hint="@string/please_show_your_question_details"/>
+    </LinearLayout>
+  </LinearLayout>
+</LinearLayout>

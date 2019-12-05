@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="match_parent"
+  android:layout_height="wrap_content"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_marginTop="8dp"
+  android:background="@drawable/search_shape">
+
+  <TextView
+    android:id="@+id/tv_task_name"
+    android:textStyle="bold"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:maxLines="1"
+    android:singleLine="true"
+    tools:text="指定承办人"
+    android:textColor="#63aeff"
+    android:textSize="12sp"/>
+
+  <TextView
+    android:id="@+id/tv_title"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="3dp"
+    android:layout_marginStart="10dp"
+    android:layout_marginLeft="10dp"
+    android:layout_below="@id/tv_task_name"
+    tools:text="财产纠纷"
+    android:textSize="14sp"/>
+
+  <LinearLayout
+    android:id="@+id/ll_bottom"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="5dp"
+    android:layout_marginStart="10dp"
+    android:layout_marginLeft="10dp"
+    android:layout_below="@id/tv_title">
+
+    <TextView
+      android:id="@+id/tv_create_time"
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:layout_weight="1"
+      android:maxLines="1"
+      android:singleLine="true"
+      tools:text="2018-1-3"
+      android:textColor="@color/qmui_config_color_gray_5"
+      android:textSize="12sp"/>
+
+    <TextView
+      android:id="@+id/tv_proc_def_name"
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:layout_weight="1"
+      android:layout_marginEnd="10dp"
+      android:layout_marginRight="10dp"
+      android:gravity="end"
+      android:maxLines="1"
+      android:singleLine="true"
+      tools:text="申请法律援助"
+      android:textColor="@color/qmui_config_color_gray_5"
+      android:textSize="12sp"/>
+  </LinearLayout>
+
+  <View
+    android:layout_width="3dp"
+    android:layout_height="wrap_content"
+    android:layout_alignBottom="@id/ll_bottom"
+    android:layout_alignTop="@id/tv_title"
+    android:background="#63aeff"/>
+</RelativeLayout>

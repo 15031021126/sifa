@@ -1,0 +1,27 @@
+ext {
+    versions = [
+            compileSdk : 27,
+
+            minSdk     : 16,
+            targetSdk  : 27,
+            code       : 50,
+            name       : "5.0",
+
+            supportLibs: "27.1.1",
+            junit      : "4.12",
+            butterknife: "8.8.1"
+    ]
+
+    libraries = [
+            supportv7          : "com.android.support:appcompat-v7:$versions.supportLibs",
+            supportv4          : "com.android.support:support-v4:$versions.supportLibs",
+            design             : "com.android.support:design:$versions.supportLibs",
+            recyclerview       : "com.android.support:recyclerview-v7:$versions.supportLibs",
+            cardview           : "com.android.support:cardview-v7:$versions.supportLibs",
+
+            junit              : "junit:junit:$versions.junit",
+
+            butterknife        : "com.jakewharton:butterknife:$versions.butterknife",
+            butterknifecompiler: "com.jakewharton:butterknife-compiler:$versions.butterknife"
+    ]
+}

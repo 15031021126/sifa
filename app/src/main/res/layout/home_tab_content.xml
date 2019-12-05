@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center">
+
+    <ImageView
+        android:id="@+id/iv_mongolian"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="2dp"
+        tools:src="@drawable/home_page_service" />
+
+    <ImageView
+        android:id="@+id/tab_content_image"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="5dp"
+        android:contentDescription="@string/my"
+        android:scaleType="centerCrop"
+        tools:src="@drawable/my" />
+
+    <TextView
+        android:id="@+id/tab_content_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tab_content_image"
+        android:paddingTop="4dp"
+        android:textColor="@android:color/black"
+        android:textSize="10sp"
+        android:typeface="sans"
+        tools:ignore="SmallSp"
+        tools:text="@string/my" />
+</RelativeLayout>

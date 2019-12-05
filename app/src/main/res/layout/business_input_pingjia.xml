@@ -1,0 +1,47 @@
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:id="@+id/ll__disanfangrenyuanpingfen"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:fitsSystemWindows="true"
+  android:orientation="vertical">
+
+  <TextView
+    style="@style/ChartFieldStyle"
+    android:text="第三方机构人员评分"/>
+
+  <View style="@style/DividingLineStyle_horizontal"/>
+
+  <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="3dp">
+
+    <TextView
+      style="@style/ChartFieldKeyStyle"
+      android:text="分数"/>
+
+    <TextView
+      android:id="@+id/tv_score"
+      style="@style/ChartFieldInputValueStyle"/>
+  </LinearLayout>
+
+  <View style="@style/DividingLineStyle_horizontal"/>
+
+  <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="3dp">
+
+    <TextView
+      style="@style/ChartFieldKeyStyle"
+      android:text="备注"/>
+
+    <TextView
+      android:id="@+id/tv_beizhu"
+      style="@style/ChartFieldInputValueStyle"/>
+  </LinearLayout>
+
+  <View style="@style/DividingLineStyle_horizontal"/>
+
+</LinearLayout>

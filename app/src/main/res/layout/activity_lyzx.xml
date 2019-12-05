@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:fitsSystemWindows="true"
+  android:orientation="vertical"
+  tools:context="com.liuhezhineng.ximengsifa.module.mine.consultingcomplaint.MyConsultationActivity">
+
+  <include layout="@layout/title_bar"/>
+
+  <android.support.v4.widget.NestedScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="none">
+
+    <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_margin="@dimen/dp_12"
+      android:orientation="vertical">
+
+      <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:baselineAligned="false"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageView
+          android:layout_width="15dp"
+          android:layout_height="15dp"
+          android:scaleType="fitXY"
+          android:src="@drawable/comment_map"
+          tools:ignore="ContentDescription"/>
+
+        <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginStart="@dimen/dp_12"
+          android:layout_marginLeft="@dimen/dp_12"
+          android:text="@string/comment_area"
+          android:textSize="14sp"/>
+      </LinearLayout>
+
+      <TextView
+        android:id="@+id/tv_area"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dp_12"
+        android:hint="@string/please_select"
+        android:textColor="#000000"
+        android:textSize="14sp"/>
+
+      <View
+        style="@style/DividingLineStyle_horizontal"
+        android:layout_marginBottom="@dimen/dp_12"
+        android:layout_marginLeft="@dimen/dp_12"
+        android:layout_marginRight="@dimen/dp_12"/>
+
+      <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:baselineAligned="false"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageView
+          android:layout_width="15dp"
+          android:layout_height="15dp"
+          android:scaleType="fitXY"
+          android:src="@drawable/advisory_type"/>
+
+        <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginStart="@dimen/dp_12"
+          android:layout_marginLeft="@dimen/dp_12"
+          android:text="业务类型"
+          android:textSize="14sp"/>
+      </LinearLayout>
+
+      <TextView
+        android:id="@+id/tv_problem_type"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dp_12"
+        android:hint="@string/please_select"
+        android:textColor="#000000"
+        android:textSize="14sp"/>
+
+      <View
+        style="@style/DividingLineStyle_horizontal"
+        android:layout_marginBottom="@dimen/dp_12"
+        android:layout_marginLeft="@dimen/dp_12"
+        android:layout_marginRight="@dimen/dp_12"/>
+
+      <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:baselineAligned="false"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageView
+          android:layout_width="15dp"
+          android:layout_height="15dp"
+          android:scaleType="fitXY"
+          android:src="@drawable/advisory_type"/>
+
+        <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginStart="@dimen/dp_12"
+          android:layout_marginLeft="@dimen/dp_12"
+          android:text="问题类型"
+          android:textSize="14sp"/>
+      </LinearLayout>
+
+      <TextView
+        android:id="@+id/tv_type"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dp_12"
+        android:hint="@string/please_select"
+        android:textColor="#000000"
+        android:textSize="14sp"/>
+
+      <View
+        style="@style/DividingLineStyle_horizontal"
+        android:layout_marginBottom="@dimen/dp_12"
+        android:layout_marginLeft="@dimen/dp_12"
+        android:layout_marginRight="@dimen/dp_12"/>
+
+      <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:baselineAligned="false"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageView
+          android:layout_width="15dp"
+          android:layout_height="15dp"
+          android:scaleType="fitXY"
+          android:src="@drawable/advisory_type"/>
+
+        <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginStart="@dimen/dp_12"
+          android:layout_marginLeft="@dimen/dp_12"
+          android:text="联系电话"
+          android:textSize="14sp"/>
+      </LinearLayout>
+
+      <EditText
+        android:id="@+id/et_phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dp_12"
+        android:background="@null"
+        android:hint="@string/please_enter"
+        android:inputType="phone"
+        android:maxLength="11"
+        android:textColor="#000000"
+        android:textSize="14sp"/>
+
+      <View
+        style="@style/DividingLineStyle_horizontal"
+        android:layout_marginBottom="@dimen/dp_12"
+        android:layout_marginLeft="@dimen/dp_12"
+        android:layout_marginRight="@dimen/dp_12"/>
+
+      <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageView
+          android:layout_width="15dp"
+          android:layout_height="15dp"
+          android:scaleType="fitXY"
+          android:src="@drawable/advisory_theme"/>
+
+        <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginStart="@dimen/dp_12"
+          android:layout_marginLeft="@dimen/dp_12"
+          android:text="@string/advisory_theme"
+          android:textSize="14sp"/>
+      </LinearLayout>
+
+      <EditText
+        android:id="@+id/et_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dp_12"
+        android:background="@null"
+        android:hint="@string/please_enter"
+        android:textColor="#000000"
+        android:textSize="14sp"/>
+
+      <View
+        style="@style/DividingLineStyle_horizontal"
+        android:layout_marginBottom="@dimen/dp_12"
+        android:layout_marginLeft="@dimen/dp_12"
+        android:layout_marginRight="@dimen/dp_12"/>
+
+      <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageView
+          android:layout_width="15dp"
+          android:layout_height="15dp"
+          android:scaleType="fitXY"
+          android:src="@drawable/advisory_content"/>
+
+        <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginStart="@dimen/dp_12"
+          android:layout_marginLeft="@dimen/dp_12"
+          android:text="@string/advisory_content"
+          android:textSize="14sp"/>
+      </LinearLayout>
+
+      <EditText
+        android:id="@+id/et_content"
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:layout_marginTop="@dimen/dp_12"
+        android:padding="5dp"
+        android:background="@drawable/border"
+        android:baselineAligned="false"
+        android:gravity="start"
+        android:hint="@string/please_show_your_question_details"
+        android:inputType="textMultiLine"
+        android:textSize="14sp"
+        tools:text="@string/test"/>
+
+      <Button
+        android:id="@+id/btn_commit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_marginBottom="30dp"
+        android:layout_marginLeft="@dimen/dp_12"
+        android:layout_marginRight="@dimen/dp_12"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/circle_shape"
+        android:gravity="center"
+        android:text="@string/commit_question"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"/>
+    </LinearLayout>
+  </android.support.v4.widget.NestedScrollView>
+</LinearLayout>

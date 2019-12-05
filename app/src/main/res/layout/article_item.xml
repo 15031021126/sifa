@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:tool="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="wrap_content"
+  android:padding="12dp">
+
+  <ImageView
+    android:id="@+id/iv_article_show"
+    android:layout_width="150dp"
+    android:layout_height="80dp"
+    android:layout_alignParentEnd="true"
+    android:layout_alignParentRight="true"
+    android:contentDescription="@string/article_pic"
+    android:src="@drawable/info_show_test"/>
+
+  <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignBottom="@id/iv_article_show"
+    android:layout_alignTop="@id/iv_article_show"
+    android:layout_toLeftOf="@id/iv_article_show"
+    android:layout_toStartOf="@id/iv_article_show"
+    android:gravity="start"
+    android:orientation="vertical">
+
+    <TextView
+      android:id="@+id/tv_article_title"
+      style="@style/TextViewStyle"
+      android:layout_height="0dp"
+      android:layout_weight="1"
+      android:paddingTop="8dp"
+      android:textSize="14sp"
+      android:paddingBottom="8dp"
+      android:ellipsize="end"
+      android:gravity="start"
+      android:maxLines="2"
+      tool:text="@string/test"/>
+
+    <TextView
+      android:id="@+id/tv_info_from"
+      style="@style/TextViewStyle"
+      android:textColor="#c0c2c2"
+      tool:text="@string/app_name"/>
+  </LinearLayout>
+</RelativeLayout>

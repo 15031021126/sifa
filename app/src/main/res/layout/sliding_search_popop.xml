@@ -1,0 +1,322 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:orientation="vertical">
+
+  <ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:overScrollMode="never">
+
+    <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:orientation="horizontal">
+
+      <View
+        android:id="@+id/view_mask"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:alpha="0.5"
+        android:background="@color/qmui_config_color_gray_5"/>
+
+      <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="3"
+        android:paddingTop="16dp"
+        android:background="#ffffff"
+        android:orientation="vertical">
+
+        <include layout="@layout/sliding_filter_channel"/>
+
+        <View
+          style="@style/DividingLineStyle_horizontal"
+          android:layout_marginTop="16dp"
+          android:layout_marginBottom="10dp"/>
+
+        <include layout="@layout/sliding_filter_case_category"/>
+
+        <View
+          style="@style/DividingLineStyle_horizontal"
+          android:layout_marginTop="16dp"
+          android:layout_marginBottom="10dp"/>
+
+        <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginLeft="10dp"
+          android:text="案件进度"/>
+
+        <android.support.v7.widget.RecyclerView
+          android:id="@+id/rv_case_process"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="16dp"
+          app:layoutManager="GridLayoutManager"
+          app:spanCount="3"
+          tools:listitem="@layout/sliding_filter_item"/>
+
+        <View
+          style="@style/DividingLineStyle_horizontal"
+          android:layout_marginTop="16dp"
+          android:layout_marginBottom="10dp"/>
+
+        <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginLeft="10dp"
+          android:text="案发地区"/>
+
+        <TextView
+          android:id="@+id/tv_area"
+          android:layout_width="match_parent"
+          android:layout_height="30dp"
+          android:layout_marginTop="10dp"
+          android:layout_marginLeft="10dp"
+          android:layout_marginRight="10dp"
+          android:background="@drawable/gray_shape"
+          android:gravity="center_vertical"
+          android:hint="请点击选择案发地区"
+          android:singleLine="true"
+          android:textSize="12sp"/>
+
+        <View
+          style="@style/DividingLineStyle_horizontal"
+          android:layout_marginTop="16dp"
+          android:layout_marginBottom="10dp"/>
+
+        <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginLeft="10dp"
+          android:text="案件标题"/>
+
+        <EditText
+          android:id="@+id/et_title"
+          android:layout_width="match_parent"
+          android:layout_height="30dp"
+          android:layout_marginTop="10dp"
+          android:layout_marginLeft="10dp"
+          android:layout_marginRight="10dp"
+          android:background="@drawable/gray_shape"
+          android:gravity="center_vertical"
+          android:hint="请输入案件标题"
+          android:singleLine="true"
+          android:textColor="#000000"
+          android:textSize="12sp"/>
+
+        <View
+          style="@style/DividingLineStyle_horizontal"
+          android:layout_marginTop="16dp"
+          android:layout_marginBottom="10dp"/>
+
+        <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginLeft="10dp"
+          android:text="申请时间"/>
+
+
+        <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="30dp"
+          android:layout_marginTop="10dp"
+          android:layout_marginLeft="10dp"
+          android:layout_marginRight="10dp">
+
+          <TextView
+            android:id="@+id/tv_request_start_date"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/gray_shape"
+            android:gravity="center"
+            android:hint="年/月/日"
+            android:textSize="12sp"/>
+
+          <View
+            android:layout_width="15dp"
+            android:layout_height="0.1dp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:layout_gravity="center_vertical"
+            android:background="#000000"/>
+
+          <TextView
+            android:id="@+id/tv_request_end_date"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/gray_shape"
+            android:gravity="center"
+            android:hint="年/月/日"
+            android:textSize="12sp"/>
+        </LinearLayout>
+
+        <View
+          style="@style/DividingLineStyle_horizontal"
+          android:layout_marginTop="16dp"
+          android:layout_marginBottom="10dp"/>
+
+        <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginLeft="10dp"
+          android:text="受理时间区间"/>
+
+
+        <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="30dp"
+          android:layout_marginTop="10dp"
+          android:layout_marginLeft="10dp"
+          android:layout_marginRight="10dp">
+
+          <TextView
+            android:id="@+id/tv_deal_start_date"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/gray_shape"
+            android:gravity="center"
+            android:hint="年/月/日"
+            android:textSize="12sp"/>
+
+          <View
+            android:layout_width="15dp"
+            android:layout_height="0.1dp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:layout_gravity="center_vertical"
+            android:background="#000000"/>
+
+          <TextView
+            android:id="@+id/tv_deal_end_date"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/gray_shape"
+            android:gravity="center"
+            android:hint="年/月/日"
+            android:textSize="12sp"/>
+        </LinearLayout>
+
+        <View
+          style="@style/DividingLineStyle_horizontal"
+          android:layout_marginTop="16dp"
+          android:layout_marginBottom="10dp"/>
+
+        <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginLeft="10dp"
+          android:text="严重等级"/>
+
+        <android.support.v7.widget.RecyclerView
+          android:id="@+id/rv_important_level"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="16dp"
+          app:layoutManager="GridLayoutManager"
+          app:spanCount="3"
+          tools:listitem="@layout/sliding_filter_item"/>
+
+        <View
+          style="@style/DividingLineStyle_horizontal"
+          android:layout_marginTop="16dp"
+          android:layout_marginBottom="10dp"/>
+
+        <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginLeft="10dp"
+          android:text="承办人"/>
+
+        <EditText
+          android:id="@+id/tv_undertaker"
+          android:layout_width="match_parent"
+          android:layout_height="30dp"
+          android:layout_marginTop="10dp"
+          android:layout_marginLeft="10dp"
+          android:layout_marginRight="10dp"
+          android:background="@drawable/gray_shape"
+          android:gravity="center_vertical"
+          android:hint="请输入承办人姓名"
+          android:singleLine="true"
+          android:textColor="#000000"
+          android:textSize="12sp"/>
+
+        <View
+          style="@style/DividingLineStyle_horizontal"
+          android:layout_marginTop="16dp"
+          android:layout_marginBottom="10dp"/>
+
+        <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginLeft="10dp"
+          android:text="申请人"/>
+
+        <EditText
+          android:id="@+id/tv_request_user"
+          android:layout_width="match_parent"
+          android:layout_height="30dp"
+          android:layout_marginTop="10dp"
+          android:layout_marginLeft="10dp"
+          android:layout_marginRight="10dp"
+          android:background="@drawable/gray_shape"
+          android:gravity="center_vertical"
+          android:hint="请输入申请人姓名"
+          android:singleLine="true"
+          android:textColor="#000000"
+          android:textSize="12sp"/>
+
+        <View
+          style="@style/DividingLineStyle_horizontal"
+          android:layout_marginTop="16dp"
+          android:layout_marginBottom="10dp"/>
+
+        <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="40dp"
+          android:background="#63affe">
+
+          <TextView
+            android:id="@+id/tv_reset"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="重置"
+            android:textColor="#ffffff"
+            android:textSize="12sp"/>
+
+          <View
+            android:layout_width="0.1dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:background="#ffffff"/>
+
+          <TextView
+            android:id="@+id/tv_ok"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="确定"
+            android:textColor="#ffffff"
+            android:textSize="12sp"/>
+        </LinearLayout>
+      </LinearLayout>
+    </LinearLayout>
+  </ScrollView>
+</LinearLayout>

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tl="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    tools:context="com.liuhezhineng.ximengsifa.module.mine.consultingcomplaint.ConsultingComplaintActivity">
+
+    <include layout="@layout/top_bar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <com.flyco.tablayout.SlidingTabLayout
+            android:id="@+id/sliding_tab_layout"
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            android:background="#ffffff"
+            tl:tl_bar_color="#ffffff"
+            tl:tl_indicator_color="#2C97DE"
+            tl:tl_indicator_corner_radius="8dp"
+            tl:tl_indicator_margin_left="10dp"
+            tl:tl_indicator_margin_right="10dp"
+            tl:tl_tab_padding="20dp"
+            tl:tl_tab_space_equal="true"
+            tl:tl_textSelectColor="#63aeff"
+            tl:tl_textUnselectColor="#000000" />
+
+        <View style="@style/DividingLineStyle_horizontal" />
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/view_pager"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <!--<com.scwang.smartrefresh.layout.SmartRefreshLayout-->
+        <!--android:id="@+id/refreshLayout"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="0dp"-->
+        <!--android:layout_weight="1"-->
+        <!--app:srlAccentColor="@android:color/black"-->
+        <!--app:srlEnablePreviewInEditMode="true"-->
+        <!--app:srlPrimaryColor="@android:color/white">-->
+
+        <!--<com.scwang.smartrefresh.layout.header.ClassicsHeader-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content" />-->
+
+        <!--<FrameLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:background="#f4f4f4">-->
+
+        <!--<android.support.v7.widget.RecyclerView-->
+        <!--android:id="@+id/rv_advisory"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:background="#f4f4f4"-->
+        <!--android:paddingTop="7.5dp"-->
+        <!--android:paddingBottom="7.5dp"-->
+        <!--app:layoutManager="LinearLayoutManager" />-->
+
+        <!--<include layout="@layout/no_data" />-->
+        <!--</FrameLayout>-->
+
+        <!--<com.scwang.smartrefresh.layout.footer.ClassicsFooter-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content" />-->
+        <!--</com.scwang.smartrefresh.layout.SmartRefreshLayout>-->
+
+        <TextView
+            android:id="@+id/tv_want_advisory"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/blue"
+            android:gravity="center"
+            android:text="@string/i_want_advisory"
+            android:textColor="#ffffff"
+            android:textSize="16sp" />
+    </LinearLayout>
+</LinearLayout>

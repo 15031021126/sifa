@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="match_parent"
+  android:layout_height="wrap_content"
+  android:orientation="vertical">
+
+  <TextView
+    android:id="@+id/tv_qa"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:paddingLeft="@dimen/dp_12"
+    android:text="追问："
+    android:textColor="@color/blue"/>
+
+  <TextView
+    android:id="@+id/tv_qa_content"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_toRightOf="@id/tv_qa"
+    android:paddingRight="@dimen/dp_12"
+    android:text="@string/test"/>
+
+  <TextView
+    android:id="@+id/tv_date"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/dp_12"
+    android:layout_marginBottom="@dimen/dp_12"
+    android:layout_alignParentRight="true"
+    android:layout_below="@id/tv_qa_content"
+    android:paddingRight="@dimen/dp_12"
+    android:text="2018-01-10"
+    android:textColor="#c1b3b3"/>
+</RelativeLayout>

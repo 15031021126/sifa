@@ -1,0 +1,212 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="QMUI.Compat.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@android:color/black</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:windowSoftInputMode">stateHidden</item>
+        <!--<item name="colorAccent">@android:color/black</item>-->
+    </style>
+
+    <style name="Theme_AudioDialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>    <!--半透明-->
+        <item name="android:backgroundDimEnabled">false</item>  <!--背景变暗-->
+    </style>
+
+    <style name="PopBottomDialogStyle" parent="@android:style/Theme.Dialog">
+        <!-- 背景透明 -->
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <!-- 浮于Activity之上 -->
+        <item name="android:windowIsFloating">true</item>
+        <!-- 边框 -->
+        <item name="android:windowFrame">@null</item>
+        <!-- Dialog以外的区域模糊效果 -->
+        <item name="android:backgroundDimEnabled">true</item>
+        <!-- 无标题 -->
+        <item name="android:windowNoTitle">true</item>
+        <!-- 半透明 -->
+        <item name="android:windowIsTranslucent">true</item>
+        <!-- Dialog进入及退出动画 -->
+        <item name="android:windowAnimationStyle">@style/ActionSheetDialogAnimation</item>
+    </style>
+    <!-- ActionSheet进出动画 -->
+    <style name="ActionSheetDialogAnimation" parent="@android:style/Animation.Dialog">
+        <item name="android:windowEnterAnimation">@anim/popwindow_enter</item>
+        <item name="android:windowExitAnimation">@anim/popwindow_exit</item>
+    </style>
+
+    <style name="TextViewStyle">
+        <item name="android:textSize">12sp</item>
+        <item name="android:typeface">sans</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:color">@android:color/black</item>
+    </style>
+
+    <style name="EditTextStyle">
+        <item name="android:maxLines">1</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <!--<item name="android:background">@null</item>-->
+    </style>
+
+    <style name="LinearStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_margin">12dp</item>
+    </style>
+
+    <style name="LinearShowStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_margin">6dp</item>
+    </style>
+
+    <style name="ChartFieldStyle">
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">@dimen/dp_12</item>
+        <item name="android:layout_marginBottom">@dimen/dp_12</item>
+        <item name="android:layout_marginLeft">@dimen/dp_12</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="ChartFieldKeyStyle">
+        <item name="android:textColor">@color/blue</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginRight">10dp</item>
+        <!--<item name="android:layout_weight">1</item>-->
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="ChartFieldValueStyle">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">3</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/qmui_config_color_gray_5</item>
+    </style>
+
+    <style name="BigEditText">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:minHeight">100dp</item>
+        <item name="android:layout_marginTop">3dp</item>
+        <item name="android:padding">3dp</item>
+        <item name="android:background">@drawable/border</item>
+        <item name="android:gravity">start</item>
+        <item name="android:inputType">textMultiLine</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColorHint">#858C96</item>
+        <item name="android:textColor">#000000</item>
+    </style>
+
+    <style name="EndChartFieldValueStyle">
+        <item name="android:gravity">end</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">3</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/qmui_config_color_gray_5</item>
+    </style>
+
+    <style name="TitleTopViewStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">8dp</item>
+        <item name="android:background">@color/qmui_config_color_gray_9</item>
+    </style>
+
+    <style name="TitleLeftViewStyle">
+        <item name="android:layout_width">4dp</item>
+        <item name="android:layout_height">18dp</item>
+        <item name="android:background">#63aeff</item>
+    </style>
+
+    <style name="BottomButton">
+        <item name="android:textColor">#ffffff</item>
+        <item name="android:background">@drawable/circle_shape</item>
+        <item name="android:layout_margin">12dp</item>
+    </style>
+
+    <!-- chart field input style 表单输入样式（带提示）-->
+    <style name="ChartFieldInputValueStyle" parent="ChartFieldShowValueStyle">
+        <item name="android:hint">@string/please_enter</item>
+    </style>
+
+    <!-- chart field input style 表单输入样式（不带提示）-->
+    <style name="ChartFieldShowValueStyle">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">3</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:layout_marginLeft">10dp</item>
+        <item name="android:textColorHint">#858C96</item>
+        <item name="android:textColor">#000000</item>
+        <item name="android:background">@null</item>
+    </style>
+
+
+    <!-- chart field input style 表单输入样式（不带提示）-->
+    <style name="LegaShowValueStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">100dp</item>
+        <item name="android:layout_weight">3</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:layout_marginLeft">10dp</item>
+        <item name="android:textColorHint">#858C96</item>
+        <item name="android:textColor">#000000</item>
+        <item name="android:hint">@string/please_enter</item>
+        <item name="android:background">@null</item>
+    </style>
+
+    <!-- Dialog样式-->
+    <style name="DialogTheme" parent="@android:style/Theme.Dialog">
+        <!-- 边框 -->
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <!-- 是否浮现在activity之上 -->
+        <item name="android:windowIsFloating">true</item>
+        <!-- 半透明 -->
+        <item name="android:windowIsTranslucent">false</item>
+        <!-- 无标题 -->
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:background">@android:color/transparent</item>
+        <!-- 模糊 -->
+        <item name="android:backgroundDimEnabled">true</item>
+        <!-- 遮罩层 -->
+        <item name="android:backgroundDimAmount">0.5</item>
+    </style>
+    <style name="DividingLineStyle_horizontal">
+        <item name="android:background">@android:color/darker_gray</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">0.1dp</item>
+    </style>
+
+    <style name="RadingStyle" parent="@android:style/Widget.RatingBar">
+        <!-- 定义星星图片 -->
+        <item name="android:progressDrawable">@drawable/layer_live_rating_bar</item>
+        <!-- 根据自定义星星图片的大小,设置相应的值,否则可能显示不全 -->
+        <item name="android:numColumns">5</item>
+    </style>
+
+    <style name="loading_dialog" parent="@android:style/Theme.Dialog"><!--自定义对话框风格-->
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:backgroundDimEnabled">false</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+</resources>

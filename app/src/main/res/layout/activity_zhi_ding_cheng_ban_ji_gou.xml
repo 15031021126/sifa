@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:fitsSystemWindows="true"
+  android:orientation="vertical">
+
+  <include layout="@layout/top_bar"/>
+
+  <ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:orientation="vertical">
+
+      <include layout="@layout/business_base"/>
+
+      <LinearLayout
+        android:id="@+id/ll_zhiding_chengbanjigou"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true"
+        android:orientation="vertical">
+
+        <View
+          android:layout_width="match_parent"
+          android:layout_height="8dp"
+          android:background="@color/qmui_config_color_gray_9"/>
+
+        <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:gravity="center_vertical"
+          android:orientation="horizontal">
+
+          <View
+            android:layout_width="4dp"
+            android:layout_height="18dp"
+            android:background="#63aeff"/>
+
+          <TextView
+            style="@style/ChartFieldStyle"
+            android:text="指定承办机构"/>
+        </LinearLayout>
+
+        <View style="@style/DividingLineStyle_horizontal"/>
+
+        <LinearLayout
+          style="@style/LinearStyle">
+
+          <TextView
+            style="@style/ChartFieldKeyStyle"
+            android:text="法援中心"/>
+
+          <TextView
+            android:id="@+id/tv_aid_center"
+            style="@style/ChartFieldInputValueStyle"
+            android:hint="请指定法援中心"/>
+        </LinearLayout>
+
+        <View style="@style/DividingLineStyle_horizontal"/>
+
+        <LinearLayout
+          android:id="@+id/ll_law_office"
+          style="@style/LinearStyle">
+
+          <TextView
+            style="@style/ChartFieldKeyStyle"
+            android:text="律所"/>
+
+          <TextView
+            android:id="@+id/tv_lawyer_office"
+            style="@style/ChartFieldInputValueStyle"
+            android:hint="请选择指定的律所"/>
+        </LinearLayout>
+
+        <View style="@style/DividingLineStyle_horizontal"/>
+
+        <LinearLayout
+          android:id="@+id/ll_legal_office"
+          style="@style/LinearStyle">
+
+          <TextView
+            style="@style/ChartFieldKeyStyle"
+            android:text="基层法律服务所"/>
+
+          <TextView
+            android:id="@+id/tv_legal_office"
+            style="@style/ChartFieldInputValueStyle"
+            android:hint="请选择指定的基层法律服务所"/>
+        </LinearLayout>
+
+        <View style="@style/DividingLineStyle_horizontal"/>
+
+      </LinearLayout>
+
+      <LinearLayout
+        android:id="@+id/ll_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <include layout="@layout/layout_break_business"/>
+
+        <Button
+          android:id="@+id/btn_yes"
+          style="@style/BottomButton"
+          android:layout_width="0dp"
+          android:layout_height="wrap_content"
+          android:layout_weight="1"
+          android:text="通过"/>
+      </LinearLayout>
+    </LinearLayout>
+  </ScrollView>
+</LinearLayout>

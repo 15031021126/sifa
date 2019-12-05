@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tool="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="wrap_content"
+  android:layout_marginBottom="@dimen/dp_12"
+  android:layout_marginStart="@dimen/dp_12"
+  android:layout_marginEnd="@dimen/dp_12"
+  android:layout_marginLeft="@dimen/dp_12"
+  android:layout_marginRight="@dimen/dp_12"
+  app:cardCornerRadius="3dp">
+
+  <RelativeLayout
+    android:id="@+id/rl_personnel_institutions"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/qmui_config_color_white">
+
+    <ImageView
+      android:id="@+id/iv_institutions"
+      android:layout_width="150dp"
+      android:layout_height="80dp"
+      android:layout_alignParentLeft="true"
+      android:layout_alignParentStart="true"
+      android:layout_alignParentTop="true"
+      android:contentDescription="@string/article_pic"
+      android:src="@drawable/info_show_test"/>
+
+    <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_alignBottom="@id/iv_institutions"
+      android:layout_alignTop="@id/iv_institutions"
+      android:layout_toEndOf="@id/iv_institutions"
+      android:layout_toRightOf="@id/iv_institutions"
+      android:gravity="start"
+      android:orientation="vertical">
+
+      <TextView
+        android:id="@+id/tv_institutions_name"
+        style="@style/TextViewStyle"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:ellipsize="end"
+        android:gravity="start|center"
+        android:maxLines="1"
+        android:singleLine="true"
+        android:textSize="14sp"
+        tool:text="@string/test"/>
+
+      <TextView
+        android:id="@+id/tv_institutions_tel"
+        style="@style/TextViewStyle"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginTop="3dp"
+        android:ellipsize="end"
+        android:gravity="start|center"
+        android:maxLines="1"
+        android:singleLine="true"
+        android:textColor="#c0c2c2"
+        tool:text="@string/test"/>
+
+      <TextView
+        android:id="@+id/tv_institutions_address"
+        style="@style/TextViewStyle"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:ellipsize="end"
+        android:gravity="start|center"
+        android:maxLines="1"
+        android:singleLine="true"
+        android:textColor="#c0c2c2"
+        tool:text="@string/test"/>
+    </LinearLayout>
+  </RelativeLayout>
+</android.support.v7.widget.CardView>

@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:fitsSystemWindows="true"
+  android:orientation="vertical"
+  tools:context="com.liuhezhineng.ximengsifa.business.legalaid.ApplyForLegalAidActivity">
+
+  <include layout="@layout/top_bar"/>
+
+  <ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:fitsSystemWindows="true"
+      android:orientation="vertical">
+
+      <LinearLayout
+        style="@style/LinearStyle">
+
+        <TextView
+          style="@style/ChartFieldKeyStyle"
+          android:text="编号"/>
+
+        <TextView
+          android:id="@+id/tv_code"
+          style="@style/ChartFieldInputValueStyle"/>
+      </LinearLayout>
+
+      <View style="@style/DividingLineStyle_horizontal"/>
+
+      <LinearLayout
+        style="@style/LinearStyle">
+
+        <TextView
+          style="@style/ChartFieldKeyStyle"
+          android:text="回访时间"/>
+
+        <TextView
+          android:id="@+id/tv_date"
+          style="@style/ChartFieldInputValueStyle"
+          android:hint="@string/please_select"/>
+      </LinearLayout>
+
+      <View style="@style/DividingLineStyle_horizontal"/>
+
+      <LinearLayout
+        style="@style/LinearStyle">
+
+        <TextView
+          style="@style/ChartFieldKeyStyle"
+          android:text="回访事由"/>
+
+        <EditText
+          android:id="@+id/et_reason"
+          style="@style/ChartFieldInputValueStyle"
+          android:singleLine="false"
+          tools:text="@string/test"/>
+      </LinearLayout>
+
+      <View style="@style/DividingLineStyle_horizontal"/>
+
+      <LinearLayout
+        style="@style/LinearStyle">
+
+        <TextView
+          style="@style/ChartFieldKeyStyle"
+          android:text="申请人"/>
+
+        <TextView
+          android:id="@+id/tv_plaintiff"
+          style="@style/ChartFieldInputValueStyle"/>
+      </LinearLayout>
+
+      <View style="@style/DividingLineStyle_horizontal"/>
+
+      <LinearLayout
+        style="@style/LinearStyle">
+
+        <TextView
+          style="@style/ChartFieldKeyStyle"
+          android:text="被申请人"/>
+
+        <TextView
+          android:id="@+id/tv_defendant"
+          style="@style/ChartFieldInputValueStyle"/>
+      </LinearLayout>
+
+      <View style="@style/DividingLineStyle_horizontal"/>
+
+      <LinearLayout
+        style="@style/LinearStyle">
+
+        <TextView
+          style="@style/ChartFieldKeyStyle"
+          android:text="回访人"/>
+
+        <TextView
+          android:id="@+id/tv_return_visit_people"
+          style="@style/ChartFieldInputValueStyle"/>
+      </LinearLayout>
+
+      <View style="@style/DividingLineStyle_horizontal"/>
+
+      <LinearLayout
+        style="@style/LinearStyle">
+
+        <TextView
+          style="@style/ChartFieldKeyStyle"
+          android:text="案件标题"/>
+
+        <TextView
+          android:id="@+id/tv_case_title"
+          style="@style/ChartFieldInputValueStyle"
+          android:singleLine="false"/>
+      </LinearLayout>
+
+      <View style="@style/DividingLineStyle_horizontal"/>
+
+      <include layout="@layout/duplicate_annex"/>
+
+      <View style="@style/DividingLineStyle_horizontal"/>
+
+      <LinearLayout
+        style="@style/LinearStyle"
+        android:orientation="vertical">
+
+        <TextView
+          style="@style/ChartFieldKeyStyle"
+          android:layout_width="match_parent"
+          android:text="回访内容"/>
+
+        <EditText
+          android:id="@+id/et_content"
+          android:layout_width="match_parent"
+          android:layout_height="100dp"
+          android:layout_marginTop="3dp"
+          android:padding="3dp"
+          android:background="@drawable/border"
+          android:baselineAligned="false"
+          android:gravity="start"
+          android:hint="请输入回访内容"
+          android:inputType="textMultiLine"
+          android:textSize="14sp"/>
+      </LinearLayout>
+
+      <include layout="@layout/peoples_mediator"/>
+
+      <Button
+        android:id="@+id/btn_yes"
+        style="@style/BottomButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="提交申请"/>
+    </LinearLayout>
+  </ScrollView>
+</LinearLayout>

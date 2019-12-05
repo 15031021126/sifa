@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:fitsSystemWindows="true"
+  android:orientation="vertical"
+  tools:context="com.liuhezhineng.ximengsifa.business.legalaid.ApplyForLegalAidActivity">
+
+  <include layout="@layout/top_bar"/>
+
+  <ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:orientation="vertical">
+
+      <include layout="@layout/business_base"/>
+
+      <include layout="@layout/legal_aid_office"/>
+
+      <include layout="@layout/legal_aid_office_people"/>
+
+      <LinearLayout
+        android:id="@+id/ll__disanfangrenyuanpingfen"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true"
+        android:orientation="vertical">
+
+        <View
+          android:layout_width="match_parent"
+          android:layout_height="8dp"
+          android:background="@color/qmui_config_color_gray_9"/>
+
+        <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:gravity="center_vertical"
+          android:orientation="horizontal">
+
+          <View
+            android:layout_width="4dp"
+            android:layout_height="18dp"
+            android:background="#63aeff"/>
+
+          <TextView
+            style="@style/ChartFieldStyle"
+            android:text="第三方机构人员评分"/>
+        </LinearLayout>
+
+        <View style="@style/DividingLineStyle_horizontal"/>
+
+        <LinearLayout
+          style="@style/LinearStyle">
+
+          <TextView
+            style="@style/ChartFieldKeyStyle"
+            android:text="分数"/>
+
+          <EditText
+            android:id="@+id/tv_score"
+            style="@style/ChartFieldInputValueStyle"
+            android:hint="请输入本次服务的评分"
+            android:inputType="number"
+            android:maxLength="3"/>
+        </LinearLayout>
+
+        <View style="@style/DividingLineStyle_horizontal"/>
+
+        <LinearLayout
+          style="@style/LinearStyle"
+          android:orientation="vertical">
+
+          <TextView
+            style="@style/ChartFieldKeyStyle"
+            android:text="备注"/>
+
+          <EditText
+            android:id="@+id/tv_beizhu"
+            style="@style/BigEditText"
+            android:hint="请输入本次评价备注"/>
+        </LinearLayout>
+
+        <View style="@style/DividingLineStyle_horizontal"/>
+
+      </LinearLayout>
+
+      <Button
+        android:id="@+id/btn_yes"
+        style="@style/BottomButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="评价"/>
+    </LinearLayout>
+  </ScrollView>
+</LinearLayout>

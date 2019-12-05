@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:orientation="vertical">
+
+  <FrameLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#f4f4f4">
+
+    <TextView
+      android:id="@+id/tv_cancel"
+      android:layout_width="40dp"
+      android:layout_height="40dp"
+      android:gravity="center"
+      android:text="取消"/>
+
+    <TextView
+      android:id="@+id/tv_confirm"
+      android:layout_width="40dp"
+      android:layout_height="40dp"
+      android:layout_gravity="end"
+      android:gravity="center"
+      android:text="确认"/>
+  </FrameLayout>
+
+  <android.support.v7.widget.RecyclerView
+    android:id="@+id/rv_crime"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:minHeight="100dp"
+    app:layoutManager="LinearLayoutManager"
+    tools:listitem="@layout/crime_item"/>
+</LinearLayout>

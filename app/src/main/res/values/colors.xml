@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <color name="colorPrimary">#3F51B5</color>
+  <color name="colorPrimaryDark">#303F9F</color>
+  <color name="colorAccent">@color/blue</color>
+  <color name="btn_pressed_color">#0323f5</color>
+
+  <color name="blue">#63aeff</color>
+
+  <color name="gray">#f4f4f4</color>
+
+  // vidyo
+  <color name="SearchingColor">#A0000000</color>
+  <color name="black">#000000</color>
+  <color name="white">#FFFFFF</color>
+  <color name="dark_gray">#444444</color>
+  <color name="light_yellow">#FFFF00</color>
+  <color name="yellow">#FFCC00</color>
+  <color name="dark_yellow">#FF9900</color>
+  <color name="light_green">#BBFFBB</color>
+  <color name="dark_green">#4A7210</color>
+  <color name="green">#669B15</color>
+  <color name="light_blue">#BBBBFF</color>
+  <color name="dark_blue">#101D6C</color>
+
+  <color name="login_text">#999</color>
+  <color name="login_divide_bg">#bfbfbf</color>
+  <color name="login_text_portal">#333</color>
+
+  <color name="conference_divide_bg">#e2e2e2</color>
+  <color name="light_white">#F8FBFF</color>
+  <color name="transparent">#00000000</color>
+</resources>

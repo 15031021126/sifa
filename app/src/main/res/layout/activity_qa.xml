@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:fitsSystemWindows="true"
+  android:orientation="vertical"
+  tools:context="com.liuhezhineng.ximengsifa.module.mine.consultingcomplaint.ConsultingComplaintFragment$QaActivity">
+
+  <include layout="@layout/top_bar"/>
+
+  <EditText
+    android:id="@+id/et_qa"
+    android:layout_width="match_parent"
+    android:layout_height="200dp"
+    android:layout_margin="6dp"
+    android:layout_marginTop="3dp"
+    android:layout_marginBottom="@dimen/dp_12"
+    android:padding="3dp"
+    android:background="@drawable/border"
+    android:baselineAligned="false"
+    android:gravity="start"
+    android:hint="请输入你追问的详细信息"
+    android:textColor="@color/qmui_config_color_gray_5"
+    android:textSize="14sp"/>
+</LinearLayout>

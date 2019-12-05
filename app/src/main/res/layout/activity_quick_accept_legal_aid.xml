@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    tools:context="com.liuhezhineng.ximengsifa.business.legalaid.ApplyForLegalAidActivity">
+
+    <include layout="@layout/top_bar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <include layout="@layout/layout_fast_legal_accept_info" />
+
+                <View style="@style/DividingLineStyle_horizontal" />
+
+                <View style="@style/TitleTopViewStyle" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <View style="@style/TitleLeftViewStyle" />
+
+                    <TextView
+                        style="@style/ChartFieldStyle"
+                        android:text="申请人基本情况" />
+                </LinearLayout>
+
+                <View style="@style/DividingLineStyle_horizontal" />
+
+                <LinearLayout style="@style/LinearStyle">
+
+                    <include layout="@layout/required" />
+
+                    <TextView
+                        style="@style/ChartFieldKeyStyle"
+                        android:text="姓名" />
+
+                    <EditText
+                        android:id="@+id/et_name"
+                        style="@style/ChartFieldInputValueStyle" />
+                </LinearLayout>
+
+                <View style="@style/DividingLineStyle_horizontal" />
+
+                <LinearLayout style="@style/LinearStyle">
+
+                    <include layout="@layout/required" />
+
+                    <TextView
+                        style="@style/ChartFieldKeyStyle"
+                        android:text="@string/ethnic" />
+
+                    <TextView
+                        android:id="@+id/tv_ethnic"
+                        style="@style/ChartFieldInputValueStyle"
+                        android:hint="@string/please_select" />
+                </LinearLayout>
+
+                <View style="@style/DividingLineStyle_horizontal" />
+
+                <LinearLayout
+                    android:id="@+id/ll_staff_office"
+                    style="@style/LinearStyle">
+
+                    <TextView
+                        style="@style/ChartFieldKeyStyle"
+                        android:text="所属机构：" />
+
+                    <TextView
+                        android:id="@+id/tv_staff_office"
+                        style="@style/ChartFieldShowValueStyle" />
+                </LinearLayout>
+
+                <View style="@style/DividingLineStyle_horizontal" />
+
+                <LinearLayout style="@style/LinearStyle">
+
+                    <include layout="@layout/required" />
+
+                    <TextView
+                        style="@style/ChartFieldKeyStyle"
+                        android:text="@string/id_card_num" />
+
+                    <EditText
+                        android:id="@+id/et_id_card_num"
+                        style="@style/ChartFieldInputValueStyle"
+                        android:maxLength="18" />
+                </LinearLayout>
+
+                <View style="@style/DividingLineStyle_horizontal" />
+
+                <LinearLayout
+                    android:id="@+id/ll_sex_and_birthday"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout style="@style/LinearStyle">
+
+                        <include layout="@layout/required" />
+
+                        <TextView
+                            style="@style/ChartFieldKeyStyle"
+                            android:text="@string/sex" />
+
+                        <TextView
+                            android:id="@+id/tv_sex"
+                            style="@style/ChartFieldInputValueStyle"
+                            android:hint="@string/please_select" />
+                    </LinearLayout>
+
+                    <View style="@style/DividingLineStyle_horizontal" />
+
+                    <LinearLayout style="@style/LinearStyle">
+
+                        <include layout="@layout/required" />
+
+                        <TextView
+                            style="@style/ChartFieldKeyStyle"
+                            android:text="@string/birthday" />
+
+                        <TextView
+                            android:id="@+id/tv_birthday"
+                            style="@style/ChartFieldInputValueStyle"
+                            android:hint="@string/please_select" />
+                    </LinearLayout>
+
+                    <View style="@style/DividingLineStyle_horizontal" />
+                </LinearLayout>
+
+                <LinearLayout style="@style/LinearStyle">
+
+                    <include layout="@layout/required" />
+
+                    <TextView
+                        style="@style/ChartFieldKeyStyle"
+                        android:text="联系电话" />
+
+                    <EditText
+                        android:id="@+id/et_phone"
+                        style="@style/ChartFieldInputValueStyle"
+                        android:inputType="phone"
+                        android:maxLength="11" />
+                </LinearLayout>
+
+                <View style="@style/DividingLineStyle_horizontal" />
+
+                <LinearLayout style="@style/LinearStyle">
+
+                    <include layout="@layout/required" />
+
+                    <TextView
+                        style="@style/ChartFieldKeyStyle"
+                        android:text="所在地区" />
+
+                    <TextView
+                        android:id="@+id/tv_county"
+                        style="@style/ChartFieldInputValueStyle"
+                        android:hint="@string/please_select" />
+                </LinearLayout>
+
+                <View style="@style/DividingLineStyle_horizontal" />
+
+                <LinearLayout style="@style/LinearStyle">
+
+                    <TextView
+                        style="@style/ChartFieldKeyStyle"
+                        android:text="所在乡镇" />
+
+                    <TextView
+                        android:id="@+id/tv_town"
+                        style="@style/ChartFieldInputValueStyle"
+                        android:hint="@string/please_select" />
+                </LinearLayout>
+
+                <View style="@style/DividingLineStyle_horizontal" />
+
+            </LinearLayout>
+
+            <include
+                android:id="@+id/layout_fast_accept_case_info"
+                layout="@layout/layout_fast_accept_case_info" />
+
+            <include
+                android:id="@+id/layout_fast_accept_case_nature"
+                layout="@layout/layout_fast_accept_case_nature" />
+
+            <include
+                android:id="@+id/layout_fast_accept_select_organize"
+                layout="@layout/layout_fast_accept_select_organize" />
+
+            <include
+                android:id="@+id/layout_fast_accept_assign_undertaker"
+                layout="@layout/layout_fast_accept_assign_undertaker"
+                android:visibility="gone" />
+
+            <include
+                android:id="@+id/layout_fast_accept_undertaker_deal"
+                layout="@layout/layout_fast_accept_undertaker_deal"
+                android:visibility="gone" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="8dp"
+                android:background="@color/qmui_config_color_gray_9" />
+
+            <LinearLayout
+                android:id="@+id/ll_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:gravity="center_vertical">
+
+                <!--<include layout="@layout/layout_break_business" />-->
+
+                <Button
+                    android:id="@+id/btn_no"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/circle_shape"
+                    android:text="退回"
+                    android:textColor="#ffffff" />
+
+                <Button
+                    android:id="@+id/btn_save"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/circle_shape"
+                    android:text="保存"
+                    android:textColor="#ffffff" />
+
+                <Button
+                    android:id="@+id/btn_yes"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/circle_shape"
+                    android:text="快速受理"
+                    android:textColor="#ffffff" />
+
+                <Button
+                    android:id="@+id/btn_vidyo"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/circle_shape"
+                    android:text="@string/video"
+                    android:textColor="#ffffff" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

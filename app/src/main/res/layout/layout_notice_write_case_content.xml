@@ -1,0 +1,33 @@
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="match_parent"
+  android:layout_height="wrap_content"
+  android:orientation="vertical">
+
+  <View
+    style="@style/TitleTopViewStyle"/>
+
+  <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:orientation="horizontal">
+
+    <View
+      style="@style/TitleLeftViewStyle"/>
+
+    <TextView
+      style="@style/ChartFieldStyle"
+      android:text="案件办理过程录入"/>
+  </LinearLayout>
+
+  <LinearLayout
+    style="@style/LinearStyle"
+    android:orientation="vertical">
+
+    <EditText
+      android:id="@+id/tv_write_case_content"
+      style="@style/BigEditText"
+      android:hint="请输入案件办理过程"/>
+  </LinearLayout>
+</LinearLayout>

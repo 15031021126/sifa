@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:fitsSystemWindows="true"
+  android:orientation="vertical">
+
+  <include layout="@layout/top_bar"/>
+
+  <FrameLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:orientation="vertical">
+
+      <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+          android:layout_width="80dp"
+          android:layout_height="80dp"
+          android:src="@drawable/login_logo"/>
+
+        <TextView
+          style="@style/TextViewStyle"
+          android:layout_marginTop="20dp"
+          android:text="@string/app_name"
+          android:textSize="18sp"/>
+      </LinearLayout>
+
+      <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp">
+
+        <ImageView
+          android:layout_width="20dp"
+          android:layout_height="20dp"
+          android:layout_gravity="center"
+          android:background="@drawable/login_user"/>
+
+        <EditText
+          android:id="@+id/et_account"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:layout_marginStart="10dp"
+          android:layout_marginLeft="10dp"
+          android:background="@null"
+          android:gravity="center_vertical"
+          android:hint="@string/please_enter_phone_number_or_account"
+          android:imeOptions="actionNext"
+          android:maxLines="1"
+          android:singleLine="true"
+          android:textSize="14sp"/>
+      </LinearLayout>
+
+      <View
+        style="@style/DividingLineStyle_horizontal"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"/>
+
+      <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp">
+
+        <ImageView
+          android:layout_width="20dp"
+          android:layout_height="20dp"
+          android:layout_gravity="center"
+          android:background="@drawable/login_password"/>
+
+        <EditText
+          android:id="@+id/et_password"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:layout_marginStart="10dp"
+          android:layout_marginLeft="10dp"
+          android:background="@null"
+          android:gravity="center_vertical"
+          android:hint="请输入密码"
+          android:imeOptions="actionDone"
+          android:inputType="textPassword"
+          android:maxLines="1"
+          android:singleLine="true"
+          android:textSize="14sp"/>
+      </LinearLayout>
+
+      <View
+        style="@style/DividingLineStyle_horizontal"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"/>
+
+      <Button
+        android:id="@+id/btn_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="12dp"
+        android:background="@drawable/circle_shape"
+        android:text="@string/login"
+        android:textColor="#ffffff"
+        android:textSize="18sp"/>
+
+      <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp">
+
+        <TextView
+          android:id="@+id/tv_forget_pwd"
+          style="@style/TextViewStyle"
+          android:layout_height="match_parent"
+          android:layout_gravity="start"
+          android:paddingLeft="20dp"
+          android:text="@string/forget_pwd"
+          android:textSize="14sp"/>
+
+        <TextView
+          android:id="@+id/tv_register"
+          style="@style/TextViewStyle"
+          android:layout_height="match_parent"
+          android:layout_gravity="end"
+          android:paddingRight="20dp"
+          android:text="@string/register"
+          android:textSize="14sp"/>
+      </FrameLayout>
+    </LinearLayout>
+  </FrameLayout>
+</LinearLayout>

@@ -1,0 +1,256 @@
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="match_parent"
+  android:layout_height="wrap_content"
+  android:orientation="vertical">
+
+  <View
+    style="@style/TitleTopViewStyle"/>
+
+  <LinearLayout
+    android:id="@+id/ll_user_info_header"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:orientation="horizontal">
+
+    <View
+      style="@style/TitleLeftViewStyle"/>
+
+    <TextView
+      style="@style/ChartFieldStyle"
+      android:text="申请人信息"/>
+  </LinearLayout>
+
+  <View style="@style/DividingLineStyle_horizontal"/>
+
+  <LinearLayout
+    style="@style/LinearStyle">
+
+    <include layout="@layout/required"/>
+
+    <TextView
+      style="@style/ChartFieldKeyStyle"
+      android:text="姓名"/>
+
+    <EditText
+      android:id="@+id/tv_name"
+      style="@style/ChartFieldInputValueStyle"/>
+  </LinearLayout>
+
+  <View style="@style/DividingLineStyle_horizontal"/>
+
+  <LinearLayout
+    style="@style/LinearStyle">
+
+    <include layout="@layout/required"/>
+
+    <TextView
+      style="@style/ChartFieldKeyStyle"
+      android:text="@string/ethnic"/>
+
+    <TextView
+      android:id="@+id/tv_ethnic"
+      style="@style/ChartFieldInputValueStyle"
+      android:hint="@string/please_select"/>
+  </LinearLayout>
+
+  <View style="@style/DividingLineStyle_horizontal"/>
+
+  <LinearLayout
+    style="@style/LinearStyle">
+
+    <include layout="@layout/required"/>
+
+    <TextView
+      style="@style/ChartFieldKeyStyle"
+      android:text="@string/id_card_num"/>
+
+    <EditText
+      android:id="@+id/tv_id_card"
+      style="@style/ChartFieldInputValueStyle"
+      android:maxLength="18"/>
+  </LinearLayout>
+
+  <View style="@style/DividingLineStyle_horizontal"/>
+
+  <LinearLayout
+    android:id="@+id/ll_sex_and_birthday"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:visibility="gone">
+
+    <LinearLayout
+      style="@style/LinearStyle">
+
+      <!--<include layout="@layout/required"/>-->
+
+      <TextView
+        style="@style/ChartFieldKeyStyle"
+        android:text="@string/sex"/>
+
+      <TextView
+        android:id="@+id/tv_sex"
+        style="@style/ChartFieldInputValueStyle"
+        android:hint="@string/please_select"/>
+    </LinearLayout>
+
+    <View style="@style/DividingLineStyle_horizontal"/>
+
+    <LinearLayout
+      style="@style/LinearStyle">
+
+      <!--<include layout="@layout/required"/>-->
+
+      <TextView
+        style="@style/ChartFieldKeyStyle"
+        android:text="@string/birthday"/>
+
+      <TextView
+        android:id="@+id/tv_birthday"
+        style="@style/ChartFieldInputValueStyle"
+        android:hint="@string/please_select"/>
+    </LinearLayout>
+
+    <View style="@style/DividingLineStyle_horizontal"/>
+  </LinearLayout>
+
+  <LinearLayout
+    style="@style/LinearStyle">
+
+    <TextView
+      style="@style/ChartFieldKeyStyle"
+      android:text="文化程度"/>
+
+    <TextView
+      android:id="@+id/tv_education"
+      style="@style/ChartFieldInputValueStyle"
+      android:hint="@string/please_select"/>
+  </LinearLayout>
+
+  <View style="@style/DividingLineStyle_horizontal"/>
+
+  <LinearLayout
+    style="@style/LinearStyle">
+
+    <TextView
+      style="@style/ChartFieldKeyStyle"
+      android:text="同案人数"/>
+
+    <EditText
+      android:id="@+id/tv_case_involved_count"
+      style="@style/ChartFieldInputValueStyle"
+      android:inputType="number"
+      android:maxLength="5"/>
+  </LinearLayout>
+
+  <View style="@style/DividingLineStyle_horizontal"/>
+
+  <LinearLayout
+    style="@style/LinearStyle">
+
+    <include layout="@layout/required"/>
+
+    <TextView
+      style="@style/ChartFieldKeyStyle"
+      android:text="户籍地"/>
+
+    <TextView
+      android:id="@+id/tv_domicile"
+      style="@style/ChartFieldInputValueStyle"
+      android:hint="@string/please_select"/>
+  </LinearLayout>
+
+  <View style="@style/DividingLineStyle_horizontal"/>
+
+  <LinearLayout
+    style="@style/LinearStyle">
+
+    <TextView
+      style="@style/ChartFieldKeyStyle"
+      android:text="户籍详细地址"/>
+
+    <EditText
+      android:id="@+id/tv_domicile_details"
+      style="@style/ChartFieldInputValueStyle"
+      android:hint="@string/please_select"
+      android:singleLine="false"/>
+  </LinearLayout>
+
+  <View style="@style/DividingLineStyle_horizontal"/>
+
+  <LinearLayout
+    style="@style/LinearStyle">
+
+    <include layout="@layout/required"/>
+
+    <TextView
+      style="@style/ChartFieldKeyStyle"
+      android:text="羁押地"/>
+
+    <EditText
+      android:id="@+id/tv_custody"
+      style="@style/ChartFieldInputValueStyle"/>
+  </LinearLayout>
+
+  <View style="@style/DividingLineStyle_horizontal"/>
+
+  <LinearLayout
+    style="@style/LinearStyle">
+
+    <TextView
+      style="@style/ChartFieldKeyStyle"
+      android:text="国籍"/>
+
+    <TextView
+      android:id="@+id/tv_nationality"
+      style="@style/ChartFieldInputValueStyle"/>
+  </LinearLayout>
+
+  <View style="@style/DividingLineStyle_horizontal"/>
+
+  <LinearLayout
+    style="@style/LinearStyle">
+
+    <TextView
+      style="@style/ChartFieldKeyStyle"
+      android:text="联系人"/>
+
+    <EditText
+      android:id="@+id/tv_contract"
+      style="@style/ChartFieldInputValueStyle"/>
+  </LinearLayout>
+
+  <View style="@style/DividingLineStyle_horizontal"/>
+
+  <LinearLayout
+    style="@style/LinearStyle">
+
+    <TextView
+      style="@style/ChartFieldKeyStyle"
+      android:text="联系电话"/>
+
+    <EditText
+      android:id="@+id/tv_phone"
+      style="@style/ChartFieldInputValueStyle"
+      android:inputType="phone"
+      android:maxLength="11"/>
+  </LinearLayout>
+
+  <View style="@style/DividingLineStyle_horizontal"/>
+
+  <LinearLayout
+    style="@style/LinearStyle">
+
+    <TextView
+      style="@style/ChartFieldKeyStyle"
+      android:text="受援人类别"/>
+
+    <TextView
+      android:id="@+id/tv_aid_person_category"
+      style="@style/ChartFieldInputValueStyle"/>
+  </LinearLayout>
+
+  <View style="@style/DividingLineStyle_horizontal"/>
+</LinearLayout>

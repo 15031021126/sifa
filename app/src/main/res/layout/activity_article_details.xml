@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tool="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <include layout="@layout/top_bar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_marginTop="@dimen/title_bar"
+            android:layout_weight="1"
+            android:background="#f9f7f7">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:id="@+id/rv_article"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#ffffff">
+
+                    <TextView
+                        android:id="@+id/tv_article_title"
+                        style="@style/TextViewStyle"
+                        android:layout_width="match_parent"
+                        android:layout_below="@id/top_bar"
+                        android:focusable="true"
+                        android:focusableInTouchMode="true"
+                        android:gravity="start"
+                        android:padding="@dimen/dp_12"
+                        android:textSize="18sp"
+                        tool:text="@string/test" />
+
+                    <TextView
+                        android:id="@+id/tv_article_from"
+                        style="@style/TextViewStyle"
+                        android:layout_below="@id/tv_article_title"
+                        android:layout_marginLeft="7dp"
+                        android:padding="5dp"
+                        android:textColor="@color/qmui_config_color_gray_3"
+                        android:textSize="10sp"
+                        tool:text="律师服务" />
+
+                    <TextView
+                        android:id="@+id/tv_article_date"
+                        style="@style/TextViewStyle"
+                        android:layout_below="@id/tv_article_title"
+                        android:layout_marginLeft="10dp"
+                        android:layout_toRightOf="@id/tv_article_from"
+                        android:padding="5dp"
+                        android:textColor="@color/qmui_config_color_gray_3"
+                        android:textSize="10sp"
+                        tool:text="2018-10-10" />
+
+                    <TextView
+                        android:id="@+id/tv_article_content"
+                        style="@style/TextViewStyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tv_article_date"
+                        android:layout_margin="@dimen/dp_12"
+                        android:gravity="start|top"
+                        android:lineSpacingMultiplier="1.3"
+                        android:textSize="14sp"
+                        tool:text="@string/test" />
+
+                    <RelativeLayout
+                        android:id="@+id/rv_views"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tv_article_content"
+                        android:layout_marginLeft="@dimen/dp_12"
+                        android:layout_marginRight="@dimen/dp_12"
+                        android:layout_marginBottom="16dp">
+
+                        <TextView
+                            android:id="@+id/tv_views_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:text="浏览量 "
+                            android:textColor="@color/qmui_config_color_gray_5"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:id="@+id/tv_views"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_toRightOf="@id/tv_views_text"
+                            android:text="1"
+                            android:textColor="@color/qmui_config_color_gray_5" />
+
+                        <ImageView
+                            android:id="@+id/iv_evaluate"
+                            android:layout_width="15dp"
+                            android:layout_height="15dp"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="5dp"
+                            android:layout_toLeftOf="@id/tv_evaluate_count"
+                            android:background="@drawable/normal_praise" />
+
+                        <TextView
+                            android:id="@+id/tv_evaluate_count"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:text="0"
+                            android:textColor="@color/qmui_config_color_gray_5" />
+                    </RelativeLayout>
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@id/rv_article"
+                    android:orientation="vertical"
+                    android:paddingTop="20dp">
+
+                    <LinearLayout
+                        android:id="@+id/layout_annex"
+                        style="@style/LinearStyle"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                style="@style/ChartFieldKeyStyle"
+                                android:layout_width="0dp"
+                                android:layout_weight="3"
+                                android:text="@string/annex"
+                                android:textColor="@color/qmui_config_color_gray_5" />
+                        </LinearLayout>
+
+                        <android.support.v7.widget.RecyclerView
+                            android:id="@+id/rv_annex"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            app:layoutManager="android.support.v7.widget.LinearLayoutManager"
+                            tool:listitem="@layout/annex_item" />
+                    </LinearLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="@dimen/dp_12"
+                            android:text="评论列表"
+                            android:textColor="@color/qmui_config_color_gray_3"
+                            android:textSize="14sp" />
+
+                        <!--<TextView-->
+                        <!--android:roomId="@+roomId/tv_write_a_comment"-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_alignParentEnd="true"-->
+                        <!--android:layout_alignParentRight="true"-->
+                        <!--android:layout_centerVertical="true"-->
+                        <!--android:text="写评论"-->
+                        <!--android:textSize="12sp"/>-->
+                    </RelativeLayout>
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/rv_comments"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dp_12"
+                        android:layout_marginRight="@dimen/dp_12" />
+                </LinearLayout>
+            </RelativeLayout>
+        </ScrollView>
+
+        <View style="@style/DividingLineStyle_horizontal" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#ffffff"
+            android:minHeight="42dp">
+
+            <EditText
+                android:id="@+id/et_evaluate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="3dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="3dp"
+                android:layout_toLeftOf="@id/tv_evaluate"
+                android:background="@drawable/border"
+                android:inputType="textMultiLine"
+                android:minHeight="30dp"
+                android:textSize="14sp"
+                tool:text="@string/test" />
+
+            <TextView
+                android:id="@+id/tv_evaluate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="12dp"
+                android:background="@drawable/blue_wrapper_shape"
+                android:text="评论"
+                android:textSize="14sp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <com.qmuiteam.qmui.widget.QMUIEmptyView
+        android:id="@+id/empty_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/title_bar"
+        android:background="@color/qmui_config_color_white"
+        app:qmui_btn_text="@string/click_try_again"
+        app:qmui_title_text="@string/load_fail" />
+</FrameLayout>

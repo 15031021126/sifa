@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:fitsSystemWindows="true"
+  android:orientation="vertical"
+  tools:context="com.liuhezhineng.ximengsifa.business.legalaid.ApplyForLegalAidActivity">
+
+  <include layout="@layout/top_bar"/>
+
+  <ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:orientation="vertical">
+
+      <include layout="@layout/layout_notice_details_user_info"/>
+
+      <include layout="@layout/layout_notice_details_request_info"/>
+
+      <include layout="@layout/layout_notice_select_aid_center"/>
+
+      <include
+        android:id="@+id/layout_notice_review"
+        layout="@layout/layout_notice_review"/>
+
+      <include
+        android:id="@+id/layout_notice_approval"
+        layout="@layout/layout_notice_approval"/>
+
+      <include
+        android:id="@+id/layout_notice_assign_lawyer"
+        layout="@layout/layout_notice_assign_lawyer"/>
+
+      <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <include layout="@layout/layout_break_business"/>
+
+        <Button
+          android:id="@+id/btn_commit"
+          android:layout_width="0dp"
+          android:layout_height="wrap_content"
+          android:layout_weight="1"
+          android:layout_margin="@dimen/dp_12"
+          android:background="@drawable/circle_shape"
+          android:text="提交申请"
+          android:textColor="#ffffff"/>
+      </LinearLayout>
+    </LinearLayout>
+  </ScrollView>
+</LinearLayout>

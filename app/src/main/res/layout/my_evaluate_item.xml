@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="wrap_content"
+  android:background="#ffffff"
+  android:orientation="vertical">
+
+  <TextView
+    android:id="@+id/tv_title"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="12dp"
+    android:layout_marginLeft="10dp"
+    android:textColor="#333333"
+    android:textSize="16sp"
+    tools:text="涉外理会诉说"/>
+
+  <TextView
+    android:id="@+id/tv_type"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="10dp"
+    android:layout_marginLeft="10dp"
+    android:textColor="#666666"
+    android:textSize="14sp"
+    tools:text="类型：人名调解"/>
+
+  <View
+    style="@style/DividingLineStyle_horizontal"
+    android:layout_marginTop="12dp"/>
+
+  <FrameLayout
+    android:layout_width="match_parent"
+    android:layout_height="44dp">
+
+    <TextView
+      android:id="@+id/tv_date"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginLeft="10dp"
+      android:layout_gravity="center_vertical"
+      android:textColor="#999999"
+      android:textSize="12sp"
+      tools:text="2018-10-10"/>
+
+    <TextView
+      android:id="@+id/tv_evaluate"
+      android:layout_width="70dp"
+      android:layout_height="30dp"
+      android:layout_marginRight="10dp"
+      android:layout_gravity="end|center_vertical"
+      android:background="@drawable/circle_shape"
+      android:gravity="center"
+      android:text="去评价"
+      android:textColor="#ffffff"
+      android:textSize="14sp"/>
+  </FrameLayout>
+
+  <View
+    android:layout_width="match_parent"
+    android:layout_height="5dp"
+    android:background="#f4f4f4"/>
+</LinearLayout>

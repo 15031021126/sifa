@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_oversea_case"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="8dp"
+        android:background="@color/qmui_config_color_gray_9" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <View
+            android:layout_width="4dp"
+            android:layout_height="18dp"
+            android:background="#63aeff" />
+
+        <TextView
+            style="@style/ChartFieldStyle"
+            android:text="选择案件督办设置" />
+    </LinearLayout>
+
+    <View style="@style/DividingLineStyle_horizontal" />
+
+    <LinearLayout
+        android:id="@+id/ll_allow_timeout"
+        style="@style/LinearStyle">
+
+        <TextView
+            style="@style/ChartFieldKeyStyle"
+            android:text="是否允许超时办理" />
+
+        <TextView
+            android:id="@+id/tv_allow_timeout"
+            style="@style/ChartFieldInputValueStyle"
+            android:hint="@string/please_select" />
+    </LinearLayout>
+
+    <View style="@style/DividingLineStyle_horizontal" />
+
+    <LinearLayout
+        android:id="@+id/ll_timeout_date"
+        style="@style/LinearStyle">
+
+        <TextView
+            style="@style/ChartFieldKeyStyle"
+            android:text="超时办理时间" />
+
+        <TextView
+            android:id="@+id/tv_timeout_date"
+            style="@style/ChartFieldInputValueStyle"
+            android:hint="@string/please_select" />
+    </LinearLayout>
+
+    <View style="@style/DividingLineStyle_horizontal" />
+</LinearLayout>

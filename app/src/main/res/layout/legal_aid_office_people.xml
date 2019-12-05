@@ -1,0 +1,72 @@
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:id="@+id/ll_zhiding_chengbanren"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:orientation="vertical">
+
+  <View
+    style="@style/TitleTopViewStyle"/>
+
+  <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:orientation="horizontal">
+
+    <View
+      style="@style/TitleLeftViewStyle"/>
+
+    <TextView
+      style="@style/ChartFieldStyle"
+      android:text="指定承办人"/>
+  </LinearLayout>
+
+  <View style="@style/DividingLineStyle_horizontal"/>
+
+  <LinearLayout
+    android:id="@+id/ll_aid_lawyer"
+    style="@style/LinearShowStyle"
+    android:visibility="gone">
+
+    <TextView
+      style="@style/ChartFieldKeyStyle"
+      android:text="法律援助律师"/>
+
+    <TextView
+      android:id="@+id/tv_aid_lawyer"
+      style="@style/ChartFieldValueStyle"/>
+  </LinearLayout>
+
+  <View style="@style/DividingLineStyle_horizontal"/>
+
+  <LinearLayout
+    android:id="@+id/ll_lawyer"
+    style="@style/LinearShowStyle"
+    android:visibility="gone">
+
+    <TextView
+      style="@style/ChartFieldKeyStyle"
+      android:text="律师"/>
+
+    <TextView
+      android:id="@+id/tv_lawyer"
+      style="@style/ChartFieldValueStyle"/>
+  </LinearLayout>
+
+  <LinearLayout
+    android:id="@+id/ll_legal_person"
+    style="@style/LinearShowStyle"
+    android:visibility="gone">
+
+    <TextView
+      style="@style/ChartFieldKeyStyle"
+      android:text="基层法律服务工作者"/>
+
+    <TextView
+      android:id="@+id/tv_legal_person"
+      style="@style/ChartFieldValueStyle"/>
+  </LinearLayout>
+
+  <View style="@style/DividingLineStyle_horizontal"/>
+</LinearLayout>

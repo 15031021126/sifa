@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:fitsSystemWindows="true"
+  android:orientation="vertical"
+  tools:context="com.liuhezhineng.ximengsifa.business.legalaid.ApplyForLegalAidActivity">
+
+  <include layout="@layout/top_bar"/>
+
+  <ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:orientation="vertical">
+
+      <include layout="@layout/layout_notice_user_info"/>
+
+      <include layout="@layout/layout_notice_request_info"/>
+
+      <include layout="@layout/layout_notice_select_aid_center"/>
+
+      <include
+        android:id="@+id/layout_notice_review"
+        layout="@layout/layout_notice_review"
+        android:visibility="gone"/>
+
+      <include
+        android:id="@+id/layout_notice_assign_lawyer"
+        layout="@layout/layout_notice_assign_lawyer"
+        android:visibility="gone"/>
+
+      <include
+        android:id="@+id/layout_notice_write_case_content"
+        layout="@layout/layout_notice_write_case_content"
+        android:visibility="gone"/>
+
+      <include
+        android:id="@+id/layout_notice_evaluation"
+        layout="@layout/layout_notice_evaluation"
+        android:visibility="gone"/>
+
+      <include
+        android:id="@+id/layout_notice_subsidy"
+        layout="@layout/layout_notice_subsidy"
+        android:visibility="gone"/>
+
+      <LinearLayout
+        android:id="@+id/ll_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+          android:id="@+id/btn_return"
+          android:layout_width="0dp"
+          android:layout_height="wrap_content"
+          android:layout_weight="1"
+          android:layout_margin="@dimen/dp_12"
+          android:background="@drawable/circle_shape"
+          android:text="暂时保存"
+          android:textColor="#ffffff"/>
+
+        <Button
+          android:id="@+id/btn_commit"
+          android:layout_width="0dp"
+          android:layout_height="wrap_content"
+          android:layout_weight="1"
+          android:layout_margin="@dimen/dp_12"
+          android:background="@drawable/circle_shape"
+          android:text="提交申请"
+          android:textColor="#ffffff"/>
+      </LinearLayout>
+    </LinearLayout>
+  </ScrollView>
+</LinearLayout>

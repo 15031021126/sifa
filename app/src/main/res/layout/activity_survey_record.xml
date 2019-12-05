@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:fitsSystemWindows="true"
+  android:orientation="vertical"
+  tools:context="com.liuhezhineng.ximengsifa.business.legalaid.ApplyForLegalAidActivity">
+
+  <include layout="@layout/top_bar"/>
+
+  <ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:orientation="vertical">
+
+      <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/dp_12"
+        android:fitsSystemWindows="true"
+        android:orientation="vertical">
+
+        <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:padding="3dp">
+
+          <TextView
+            style="@style/ChartFieldKeyStyle"
+            android:text="调查时间"/>
+
+          <TextView
+            android:id="@+id/tv_survey_date"
+            style="@style/ChartFieldInputValueStyle"/>
+        </LinearLayout>
+
+        <View style="@style/DividingLineStyle_horizontal"/>
+
+        <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:padding="3dp">
+
+          <TextView
+            style="@style/ChartFieldKeyStyle"
+            android:text="调查地点"/>
+
+          <EditText
+            android:id="@+id/et_survey_address"
+            style="@style/ChartFieldInputValueStyle"/>
+        </LinearLayout>
+
+        <View style="@style/DividingLineStyle_horizontal"/>
+
+        <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:padding="3dp">
+
+          <TextView
+            style="@style/ChartFieldKeyStyle"
+            android:text="调查人"/>
+
+          <EditText
+            android:id="@+id/et_survey_people"
+            style="@style/ChartFieldInputValueStyle"/>
+        </LinearLayout>
+
+        <View style="@style/DividingLineStyle_horizontal"/>
+
+        <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:padding="3dp">
+
+          <TextView
+            style="@style/ChartFieldKeyStyle"
+            android:text="被调查人"/>
+
+          <EditText
+            android:id="@+id/et_survey_people_1"
+            style="@style/ChartFieldInputValueStyle"/>
+        </LinearLayout>
+
+        <View style="@style/DividingLineStyle_horizontal"/>
+
+        <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:padding="3dp">
+
+          <TextView
+            style="@style/ChartFieldKeyStyle"
+            android:text="参加人"/>
+
+          <EditText
+            android:id="@+id/et_participant"
+            style="@style/ChartFieldInputValueStyle"/>
+        </LinearLayout>
+
+        <View style="@style/DividingLineStyle_horizontal"/>
+
+        <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:padding="3dp">
+
+          <TextView
+            style="@style/ChartFieldKeyStyle"
+            android:text="记录人"/>
+
+          <EditText
+            android:id="@+id/et_recoder"
+            style="@style/ChartFieldInputValueStyle"/>
+        </LinearLayout>
+
+        <View style="@style/DividingLineStyle_horizontal"/>
+
+        <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:padding="3dp">
+
+          <TextView
+            style="@style/ChartFieldKeyStyle"
+            android:text="案件标题"/>
+
+          <EditText
+            android:id="@+id/et_case_title"
+            style="@style/ChartFieldInputValueStyle"/>
+        </LinearLayout>
+
+        <View style="@style/DividingLineStyle_horizontal"/>
+
+        <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:padding="3dp">
+
+          <TextView
+            style="@style/ChartFieldKeyStyle"
+            android:text="附件"/>
+          <TextView
+            android:id="@+id/tv_case_file"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:background="@drawable/border"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:textSize="10sp"/>
+
+          <Button
+            android:id="@+id/tv_file"
+            android:layout_width="0dp"
+            android:layout_height="16dp"
+            android:layout_weight="1"
+            android:layout_marginLeft="5dp"
+            android:background="@color/qmui_config_color_gray_9"
+            android:hint="上传附件"
+            android:textColor="@color/qmui_config_color_gray_5"
+            android:textSize="10sp"/>
+        </LinearLayout>
+
+        <View style="@style/DividingLineStyle_horizontal"/>
+
+        <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:padding="3dp"
+          android:orientation="vertical">
+
+          <TextView
+            style="@style/ChartFieldKeyStyle"
+            android:layout_width="match_parent"
+            android:text="记录内容"/>
+
+          <EditText
+            android:id="@+id/et_content"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginTop="3dp"
+            android:padding="3dp"
+            android:background="@drawable/border"
+            android:baselineAligned="false"
+            android:gravity="start"
+            android:hint="@string/please_show_your_question_details"
+            android:inputType="textMultiLine"
+            android:textSize="14sp"/>
+
+          <include layout="@layout/peoples_mediator"/>
+        </LinearLayout>
+        <LinearLayout
+          android:id="@+id/ll_btn"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content">
+
+          <Button
+            android:id="@+id/btn_no"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="暂时保存"/>
+
+          <Button
+            android:id="@+id/btn_yes"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="提交申请"/>
+        </LinearLayout>
+      </LinearLayout>
+    </LinearLayout>
+  </ScrollView>
+</LinearLayout>

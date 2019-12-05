@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:background="#ffffff"
+  android:orientation="vertical">
+
+  <View style="@style/DividingLineStyle_horizontal"/>
+
+  <TextView
+    android:id="@+id/tv_rating_all"
+    android:layout_width="match_parent"
+    android:layout_height="42dp"
+    android:paddingLeft="20dp"
+    android:gravity="start|center_vertical"
+    android:text="全部星级"
+    android:textSize="12sp"/>
+
+  <View style="@style/DividingLineStyle_horizontal"/>
+
+  <TextView
+    android:id="@+id/tv_rating_one"
+    android:layout_width="match_parent"
+    android:layout_height="42dp"
+    android:paddingLeft="20dp"
+    android:gravity="start|center_vertical"
+    android:text="一星"
+    android:textSize="12sp"/>
+
+  <View style="@style/DividingLineStyle_horizontal"/>
+
+  <TextView
+    android:id="@+id/tv_rating_two"
+    android:layout_width="match_parent"
+    android:layout_height="42dp"
+    android:paddingLeft="20dp"
+    android:gravity="start|center_vertical"
+    android:text="二星"
+    android:textSize="12sp"/>
+
+  <View style="@style/DividingLineStyle_horizontal"/>
+
+  <TextView
+    android:id="@+id/tv_rating_three"
+    android:layout_width="match_parent"
+    android:layout_height="42dp"
+    android:paddingLeft="20dp"
+    android:gravity="start|center_vertical"
+    android:text="三星"
+    android:textSize="12sp"/>
+
+  <View style="@style/DividingLineStyle_horizontal"/>
+
+  <TextView
+    android:id="@+id/tv_rating_four"
+    android:layout_width="match_parent"
+    android:layout_height="42dp"
+    android:paddingLeft="20dp"
+    android:gravity="start|center_vertical"
+    android:text="四星"
+    android:textSize="12sp"/>
+
+  <View style="@style/DividingLineStyle_horizontal"/>
+
+  <TextView
+    android:id="@+id/tv_rating_five"
+    android:layout_width="match_parent"
+    android:layout_height="42dp"
+    android:paddingLeft="20dp"
+    android:gravity="start|center_vertical"
+    android:text="五星"
+    android:textSize="12sp"/>
+
+  <View style="@style/DividingLineStyle_horizontal"/>
+</LinearLayout>

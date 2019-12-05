@@ -1,0 +1,465 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    tools:context=".form.RemoteVisitorReviewActivity">
+
+    <include layout="@layout/top_bar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="8dp"
+                android:background="@color/qmui_config_color_gray_9" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <View
+                    android:layout_width="4dp"
+                    android:layout_height="18dp"
+                    android:background="#63aeff" />
+
+                <TextView
+                    style="@style/ChartFieldStyle"
+                    android:text="@string/request_user_info" />
+            </LinearLayout>
+
+            <View style="@style/DividingLineStyle_horizontal" />
+
+            <LinearLayout style="@style/LinearStyle">
+
+
+                <TextView
+                    style="@style/ChartFieldKeyStyle"
+                    android:text="@string/request_user_name" />
+
+                <TextView
+                    android:id="@+id/et_request_user_name"
+                    style="@style/ChartFieldShowValueStyle" />
+            </LinearLayout>
+
+            <View style="@style/DividingLineStyle_horizontal" />
+
+            <LinearLayout style="@style/LinearStyle">
+
+                <TextView
+                    style="@style/ChartFieldKeyStyle"
+                    android:text="@string/contact_phone_number" />
+
+                <TextView
+                    android:id="@+id/et_contact_phone_number"
+                    style="@style/ChartFieldShowValueStyle"
+                    android:inputType="phone"
+                    android:maxLines="11" />
+            </LinearLayout>
+
+            <View style="@style/DividingLineStyle_horizontal" />
+
+            <LinearLayout style="@style/LinearStyle">
+
+                <TextView
+                    style="@style/ChartFieldKeyStyle"
+                    android:text="@string/sex" />
+
+                <TextView
+                    android:id="@+id/tv_sex"
+                    style="@style/ChartFieldShowValueStyle" />
+            </LinearLayout>
+
+            <View style="@style/DividingLineStyle_horizontal" />
+
+            <LinearLayout style="@style/LinearStyle">
+
+                <TextView
+                    style="@style/ChartFieldKeyStyle"
+                    android:text="@string/native_place" />
+
+                <TextView
+                    android:id="@+id/et_native_place"
+                    style="@style/ChartFieldShowValueStyle" />
+            </LinearLayout>
+
+            <View style="@style/DividingLineStyle_horizontal" />
+
+            <LinearLayout style="@style/LinearStyle">
+
+                <TextView
+                    style="@style/ChartFieldKeyStyle"
+                    android:text="@string/visitor_relations" />
+
+                <TextView
+                    android:id="@+id/et_visitor_relations"
+                    style="@style/ChartFieldShowValueStyle" />
+            </LinearLayout>
+
+            <View style="@style/DividingLineStyle_horizontal" />
+
+            <LinearLayout style="@style/LinearStyle">
+
+                <TextView
+                    style="@style/ChartFieldKeyStyle"
+                    android:text="@string/id_card_num" />
+
+                <TextView
+                    android:id="@+id/et_id_card"
+                    style="@style/ChartFieldShowValueStyle" />
+            </LinearLayout>
+
+            <View style="@style/DividingLineStyle_horizontal" />
+
+            <LinearLayout style="@style/LinearStyle">
+
+                <TextView
+                    style="@style/ChartFieldKeyStyle"
+                    android:text="@string/now_address" />
+
+                <TextView
+                    android:id="@+id/et_now_address"
+                    style="@style/ChartFieldShowValueStyle" />
+            </LinearLayout>
+
+            <View style="@style/DividingLineStyle_horizontal" />
+
+            <LinearLayout style="@style/LinearStyle">
+
+                <TextView
+                    style="@style/ChartFieldKeyStyle"
+                    android:text="@string/work_unit" />
+
+                <TextView
+                    android:id="@+id/et_work_unit"
+                    style="@style/ChartFieldShowValueStyle" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_proxy"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="8dp"
+                    android:background="@color/qmui_config_color_gray_9" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <View
+                        android:layout_width="4dp"
+                        android:layout_height="18dp"
+                        android:background="#63aeff" />
+
+                    <TextView
+                        style="@style/ChartFieldStyle"
+                        android:text="@string/agent_info" />
+                </LinearLayout>
+
+                <View style="@style/DividingLineStyle_horizontal" />
+
+                <LinearLayout style="@style/LinearStyle">
+
+                    <TextView
+                        style="@style/ChartFieldKeyStyle"
+                        android:text="@string/agent_name" />
+
+                    <TextView
+                        android:id="@+id/et_agent_name"
+                        style="@style/ChartFieldShowValueStyle" />
+                </LinearLayout>
+
+                <View style="@style/DividingLineStyle_horizontal" />
+
+                <LinearLayout style="@style/LinearStyle">
+
+                    <TextView
+                        style="@style/ChartFieldKeyStyle"
+                        android:text="@string/agent_phone_number" />
+
+                    <TextView
+                        android:id="@+id/et_agent_phone_number"
+                        style="@style/ChartFieldShowValueStyle" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="8dp"
+                android:background="@color/qmui_config_color_gray_9" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <View
+                    android:layout_width="4dp"
+                    android:layout_height="18dp"
+                    android:background="#63aeff" />
+
+                <TextView
+                    style="@style/ChartFieldStyle"
+                    android:layout_width="400dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/visitor_info" />
+            </LinearLayout>
+
+            <View style="@style/DividingLineStyle_horizontal" />
+
+            <LinearLayout style="@style/LinearStyle">
+
+                <TextView
+                    style="@style/ChartFieldKeyStyle"
+                    android:text="@string/visitor" />
+
+                <TextView
+                    android:id="@+id/et_visitor_name"
+                    style="@style/ChartFieldShowValueStyle" />
+            </LinearLayout>
+
+            <View style="@style/DividingLineStyle_horizontal" />
+
+            <LinearLayout style="@style/LinearStyle">
+
+                <TextView
+                    style="@style/ChartFieldKeyStyle"
+                    android:text="@string/sex" />
+
+                <TextView
+                    android:id="@+id/tv_visitor_sex"
+                    style="@style/ChartFieldShowValueStyle" />
+            </LinearLayout>
+
+            <View style="@style/DividingLineStyle_horizontal" />
+
+            <LinearLayout style="@style/LinearStyle">
+
+                <TextView
+                    style="@style/ChartFieldKeyStyle"
+                    android:text="@string/native_place" />
+
+                <TextView
+                    android:id="@+id/et_visitor_native_place"
+                    style="@style/ChartFieldShowValueStyle" />
+            </LinearLayout>
+
+            <View style="@style/DividingLineStyle_horizontal" />
+
+            <LinearLayout
+                android:visibility="gone"
+                style="@style/LinearStyle">
+
+                <TextView
+                    style="@style/ChartFieldKeyStyle"
+                    android:text="@string/supervision_place_type" />
+
+                <TextView
+                    android:id="@+id/tv_supervision_place_type"
+                    style="@style/ChartFieldShowValueStyle" />
+            </LinearLayout>
+
+            <View style="@style/DividingLineStyle_horizontal" />
+
+            <LinearLayout style="@style/LinearStyle">
+
+                <TextView
+                    style="@style/ChartFieldKeyStyle"
+                    android:text="@string/supervision_place" />
+
+                <TextView
+                    android:id="@+id/tv_supervision_place"
+                    style="@style/ChartFieldShowValueStyle" />
+            </LinearLayout>
+
+            <View style="@style/DividingLineStyle_horizontal" />
+
+            <LinearLayout style="@style/LinearStyle">
+
+                <TextView
+                    style="@style/ChartFieldKeyStyle"
+                    android:text="@string/id_card_num" />
+
+                <TextView
+                    android:id="@+id/et_visitor_id_card"
+                    style="@style/ChartFieldShowValueStyle" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="8dp"
+                android:background="@color/qmui_config_color_gray_9" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <View
+                    android:layout_width="4dp"
+                    android:layout_height="18dp"
+                    android:background="#63aeff" />
+
+                <TextView
+                    style="@style/ChartFieldStyle"
+                    android:layout_width="400dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/visit_info" />
+            </LinearLayout>
+
+            <View style="@style/DividingLineStyle_horizontal" />
+
+            <LinearLayout style="@style/LinearStyle">
+
+                <TextView
+                    style="@style/ChartFieldKeyStyle"
+                    android:text="@string/visit_the_approval_judicial_bureau" />
+
+                <TextView
+                    android:id="@+id/tv_judicial_bureau"
+                    style="@style/ChartFieldShowValueStyle" />
+            </LinearLayout>
+
+            <View style="@style/DividingLineStyle_horizontal" />
+
+            <LinearLayout
+                style="@style/LinearStyle"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <include layout="@layout/required" />
+
+                    <TextView
+                        style="@style/ChartFieldKeyStyle"
+                        android:text="@string/visit_time_range" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="10dp">
+
+                    <TextView
+                        android:id="@+id/tv_start_date"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/gray_shape"
+                        android:gravity="center"
+                        android:hint="年/月/日"
+                        android:textSize="12sp" />
+
+                    <View
+                        android:layout_width="15dp"
+                        android:layout_height="0.1dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="12dp"
+                        android:layout_marginRight="12dp"
+                        android:background="#000000" />
+
+                    <TextView
+                        android:id="@+id/tv_end_date"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/gray_shape"
+                        android:gravity="center"
+                        android:hint="年/月/日"
+                        android:textSize="12sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <View style="@style/DividingLineStyle_horizontal" />
+
+            <LinearLayout
+                android:id="@+id/ll_examine_time"
+                style="@style/LinearStyle"
+                android:visibility="gone">
+
+                <TextView
+                    style="@style/ChartFieldKeyStyle"
+                    android:text="@string/examine_time" />
+
+                <TextView
+                    android:id="@+id/tv_examine_time"
+                    style="@style/ChartFieldShowValueStyle" />
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/LinearStyle"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/ChartFieldKeyStyle"
+                    android:text="@string/apply_reason" />
+
+                <TextView
+                    android:id="@+id/et_apply_reason"
+                    style="@style/BigEditText" />
+            </LinearLayout>
+
+            <include layout="@layout/duplicate_annex" />
+
+            <LinearLayout
+                android:id="@+id/ll_reject_reason"
+                style="@style/LinearStyle"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <TextView
+                    style="@style/ChartFieldKeyStyle"
+                    android:text="@string/reject_reason" />
+
+                <TextView
+                    android:id="@+id/tv_reject_reason"
+                    style="@style/BigEditText" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone">
+
+                <Button
+                    android:id="@+id/btn_reject"
+                    style="@style/BottomButton"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/reject" />
+
+                <Button
+                    android:id="@+id/btn_pass"
+                    style="@style/BottomButton"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/review_pass" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

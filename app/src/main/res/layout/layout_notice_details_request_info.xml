@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:fitsSystemWindows="true"
+  android:orientation="vertical">
+
+  <View
+    style="@style/TitleTopViewStyle"/>
+
+  <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:orientation="horizontal">
+
+    <View
+      style="@style/TitleLeftViewStyle"/>
+
+    <TextView
+      style="@style/ChartFieldStyle"
+      android:text="申请事项信息"/>
+  </LinearLayout>
+
+  <View style="@style/DividingLineStyle_horizontal"/>
+
+  <LinearLayout
+    style="@style/LinearStyle">
+
+    <TextView
+      style="@style/ChartFieldKeyStyle"
+      android:text="受理时间："/>
+
+    <TextView
+      android:id="@+id/tv_accept_time"
+      style="@style/ChartFieldInputValueStyle"
+      android:hint=""/>
+  </LinearLayout>
+
+  <View style="@style/DividingLineStyle_horizontal"/>
+
+  <LinearLayout
+    style="@style/LinearStyle">
+
+    <TextView
+      style="@style/ChartFieldKeyStyle"
+      android:text="案件名称："/>
+
+    <TextView
+      android:id="@+id/tv_case_name"
+      style="@style/ChartFieldInputValueStyle"
+      android:hint=""/>
+  </LinearLayout>
+
+  <View style="@style/DividingLineStyle_horizontal"/>
+
+  <LinearLayout
+    style="@style/LinearStyle">
+
+    <TextView
+      style="@style/ChartFieldKeyStyle"
+      android:text="通知机关类型："/>
+
+    <TextView
+      android:id="@+id/tv_notice_office_category"
+      style="@style/ChartFieldInputValueStyle"
+      android:hint=""/>
+  </LinearLayout>
+
+  <View style="@style/DividingLineStyle_horizontal"/>
+
+  <LinearLayout
+    style="@style/LinearStyle">
+
+    <TextView
+      style="@style/ChartFieldKeyStyle"
+      android:text="通知机关名称："/>
+
+    <TextView
+      android:id="@+id/tv_notice_office_name"
+      style="@style/ChartFieldInputValueStyle"
+      android:hint=""/>
+  </LinearLayout>
+
+  <View style="@style/DividingLineStyle_horizontal"/>
+
+  <LinearLayout
+    style="@style/LinearStyle">
+
+    <TextView
+      style="@style/ChartFieldKeyStyle"
+      android:text="机关联系人："/>
+
+    <TextView
+      android:id="@+id/tv_office_contract"
+      style="@style/ChartFieldInputValueStyle"
+      android:hint=""/>
+  </LinearLayout>
+
+  <View style="@style/DividingLineStyle_horizontal"/>
+
+  <LinearLayout
+    style="@style/LinearStyle">
+
+    <TextView
+      style="@style/ChartFieldKeyStyle"
+      android:text="手机号码："/>
+
+    <TextView
+      android:id="@+id/tv_notice_phone"
+      style="@style/ChartFieldInputValueStyle"
+      android:hint=""
+      android:inputType="phone"
+      android:maxLength="11"/>
+  </LinearLayout>
+
+  <View style="@style/DividingLineStyle_horizontal"/>
+
+  <LinearLayout
+    style="@style/LinearStyle">
+
+    <TextView
+      style="@style/ChartFieldKeyStyle"
+      android:text="案件涉及："/>
+
+    <TextView
+      android:id="@+id/tv_case_involved"
+      style="@style/ChartFieldInputValueStyle"
+      android:hint=""/>
+  </LinearLayout>
+
+  <View style="@style/DividingLineStyle_horizontal"/>
+
+  <LinearLayout
+    style="@style/LinearStyle">
+
+    <TextView
+      style="@style/ChartFieldKeyStyle"
+      android:text="通知涵号："/>
+
+    <TextView
+      android:id="@+id/tv_notice_number"
+      style="@style/ChartFieldInputValueStyle"
+      android:hint=""/>
+  </LinearLayout>
+
+  <View style="@style/DividingLineStyle_horizontal"/>
+
+  <LinearLayout
+    style="@style/LinearStyle">
+
+    <TextView
+      style="@style/ChartFieldKeyStyle"
+      android:text="涉及罪名："/>
+
+    <TextView
+      android:id="@+id/tv_involved_crime"
+      style="@style/ChartFieldInputValueStyle"
+      android:hint=""/>
+  </LinearLayout>
+
+  <TextView
+    android:id="@+id/tv_crime_content"
+    style="@style/BigEditText"
+    android:layout_marginBottom="@dimen/dp_12"
+    android:layout_marginLeft="@dimen/dp_12"
+    android:layout_marginRight="@dimen/dp_12"/>
+
+  <View style="@style/DividingLineStyle_horizontal"/>
+
+  <LinearLayout
+    style="@style/LinearStyle">
+
+    <TextView
+      style="@style/ChartFieldKeyStyle"
+      android:text="案件年号："/>
+
+    <TextView
+      android:id="@+id/tv_case_year_no"
+      style="@style/ChartFieldInputValueStyle"
+      android:hint=""/>
+  </LinearLayout>
+
+  <View style="@style/DividingLineStyle_horizontal"/>
+
+  <LinearLayout
+    style="@style/LinearStyle">
+
+    <TextView
+      style="@style/ChartFieldKeyStyle"
+      android:text="案件期号："/>
+
+    <TextView
+      android:id="@+id/tv_case_number"
+      style="@style/ChartFieldInputValueStyle"
+      android:hint=""/>
+  </LinearLayout>
+
+  <View style="@style/DividingLineStyle_horizontal"/>
+
+  <LinearLayout
+    style="@style/LinearStyle">
+
+    <TextView
+      style="@style/ChartFieldKeyStyle"
+      android:text="通知原因："/>
+
+    <TextView
+      android:id="@+id/tv_notice_reason"
+      style="@style/ChartFieldInputValueStyle"
+      android:hint=""
+      android:singleLine="false"/>
+  </LinearLayout>
+
+  <View style="@style/DividingLineStyle_horizontal"/>
+
+  <LinearLayout
+    style="@style/LinearStyle">
+
+    <TextView
+      style="@style/ChartFieldKeyStyle"
+      android:text="诉讼阶段："/>
+
+    <TextView
+      android:id="@+id/tv_litigation_stage"
+      style="@style/ChartFieldInputValueStyle"
+      android:hint=""/>
+  </LinearLayout>
+
+  <View style="@style/DividingLineStyle_horizontal"/>
+
+  <LinearLayout
+    style="@style/LinearStyle">
+
+    <TextView
+      style="@style/ChartFieldKeyStyle"
+      android:text="附带民诉原告人："/>
+
+    <TextView
+      android:id="@+id/tv_incidental_plaintiff"
+      style="@style/ChartFieldInputValueStyle"
+      android:hint=""/>
+  </LinearLayout>
+
+  <View style="@style/DividingLineStyle_horizontal"/>
+
+  <LinearLayout
+    style="@style/LinearStyle"
+    android:orientation="vertical">
+
+    <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content">
+
+
+      <TextView
+        style="@style/ChartFieldKeyStyle"
+        android:layout_width="match_parent"
+        android:text="备注："/>
+    </LinearLayout>
+
+    <TextView
+      android:id="@+id/tv_review_opinion"
+      style="@style/BigEditText"
+      android:hint=""/>
+  </LinearLayout>
+
+  <include layout="@layout/duplicate_annex"/>
+</LinearLayout>

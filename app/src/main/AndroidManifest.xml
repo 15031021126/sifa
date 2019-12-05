@@ -1,0 +1,323 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.liuhezhineng.ximengsifa">
+
+    <uses-permission android:name="android.permission.DISABLE_KEYGUARD" />
+    <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <!-- 连接网络权限，用于执行云端语音能力 -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!-- 读取网络信息状态 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <!-- 获取当前wifi状态 -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <!-- 允许程序改变网络连接状态 -->
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <!-- 获取手机录音机使用权限，听写、识别、语义理解需要用到此权限 -->
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <!-- 读取手机信息权限 -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.FLASHLIGHT" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BROADCAST_STICKY" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature
+        android:name="android.hardware.camera.autofocus"
+        android:required="false" />
+
+    <!-- To auto-complete the email text field in the login form with the user's emails -->
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.READ_PROFILE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.READ_CALL_LOG" />
+
+    <!-- baidu map start -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    //获取设备网络状态，禁用后无法获取网络状态
+    <uses-permission android:name="android.permission.INTERNET" />
+    //网络权限，当禁用后，无法进行检索等相关业务
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    //读取设备硬件信息，统计数据
+    <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS" />
+    //读取系统信息，包含系统版本等信息，用作统计
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    //获取设备的网络状态，鉴权所需网络代理
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    //允许sd卡写权限，需写入地图数据，禁用后无法显示地图
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    //获取统计数据
+    <uses-permission android:name="android.permission.CAMERA" />
+    //使用步行AR导航，配置Camera权限
+
+    <!-- baidu location start -->
+    <!-- 这个权限用于进行网络定位 -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <!-- 这个权限用于访问GPS定位 -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <!-- 用于访问wifi网络信息，wifi信息会用于进行网络定位 -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <!-- 获取运营商信息，用于支持提供运营商信息相关的接口 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <!-- 这个权限用于获取wifi的获取权限，wifi信息会用来进行网络定位 -->
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <!-- 用于读取手机当前的状态 -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <!-- 写入扩展存储，向扩展卡写入数据，用于写入离线定位数据 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <!-- 访问网络，网络定位需要上网 -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!-- SD卡读取权限，用户写入离线定位数据 -->
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+
+    <!-- baidu location end -->
+    <!-- baidu map end -->
+
+
+    <!-- ease mob im start -->
+    <!-- Required -->
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_MOCK_LOCATION" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+
+    <!-- ease mob im end -->
+    <application
+        android:name=".base.MyApplication"
+        android:allowBackup="true"
+        android:fullBackupContent="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher"
+        android:theme="@style/AppTheme">
+        <meta-data
+            android:name="com.baidu.lbsapi.API_KEY"
+            android:value="Bhaoi3DWNZzDTPoIi1MZbbZ7urVbv9mw" />
+
+        <service
+            android:name="com.baidu.location.f"
+            android:enabled="true"
+            android:process=":remote" />
+
+        <!-- 这是杨璐申请的 -->
+        <meta-data
+            android:name="EASEMOB_APPKEY"
+            android:value="1111181207090449#bubble20160804yang" />
+        <!-- 这是我申请的 -->
+        <!-- android:value="1105181207019161#wisdomjustice" /> -->
+
+
+        <!-- 声明SDK所需的service SDK核心功能 -->
+        <service
+            android:name="com.hyphenate.chat.EMChatService"
+            android:exported="true" />
+        <service
+            android:name="com.hyphenate.chat.EMJobService"
+            android:exported="true"
+            android:permission="android.permission.BIND_JOB_SERVICE" />
+        <!-- 声明SDK所需的receiver -->
+        <receiver android:name="com.hyphenate.chat.EMMonitorReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_REMOVED" />
+
+                <data android:scheme="package" />
+            </intent-filter>
+            <!-- 可选filter -->
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.intent.action.USER_PRESENT" />
+            </intent-filter>
+        </receiver>
+
+        <activity android:name=".module.splash.SplashActivity" />
+        <activity android:name=".base.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".module.home.ArticleDetailsActivity" />
+        <activity
+            android:name=".module.mine.login.LoginActivity"
+            android:launchMode="singleTask" />
+        <activity android:name=".module.mine.login.RegisterActivity" />
+        <activity android:name=".module.mine.ProfileActivity" />
+        <activity android:name=".module.mine.SettingsActivity" />
+        <activity android:name=".module.mine.ForgetPwdActivity" />
+        <activity android:name=".module.mine.consultingcomplaint.MyConsultationActivity" />
+        <activity android:name=".module.service.webview.WebViewBaseActivity" />
+        <activity android:name=".module.mine.FeedbackActivity" />
+        <activity
+            android:name=".module.service.article.ArticleActivity"
+            android:windowSoftInputMode="adjustPan" />
+        <activity android:name=".comment.CommentActivity" />
+        <activity android:name=".business.legalaid.ApplyForLegalAidActivity" />
+        <activity android:name=".module.mine.business.MyBusinessActivity" />
+        <activity android:name=".business.legalaid.ZHaveDoneActivity" />
+        <activity android:name=".business.legalaid.AReviewActivity" />
+        <activity android:name=".business.legalaid.CDesignatedOrganizerActivity" />
+        <activity android:name=".business.legalaid.DZhuRenActivity" />
+        <activity android:name=".business.legalaid.EUndertakerActivity" />
+        <activity android:name=".business.legalaid.FEvaluationActivity" />
+        <activity android:name=".business.legalaid.GSubsidyActivity" />
+        <activity android:name=".business.legalaid.BDesignatedUndertakerActivity" />
+        <activity android:name=".business.legalaid.ModifyRequestActivity" />
+        <activity
+            android:name=".business.peoplesmediation.ApplyForPeoplesMediationActivity"
+            android:windowSoftInputMode="stateHidden" />
+        <activity android:name=".business.peoplesmediation.AAssignPeoplesMediatorActivity" />
+        <activity android:name=".business.peoplesmediation.BReviewActivity" />
+        <activity android:name=".business.peoplesmediation.ModifyRequestActivity" />
+        <activity android:name=".business.peoplesmediation.DRecordActivity" />
+        <activity android:name=".business.peoplesmediation.FAgreementActivity" />
+        <activity android:name=".business.peoplesmediation.GReturnVisitActivity" />
+        <activity android:name=".business.peoplesmediation.HDossierActivity" />
+        <activity android:name=".business.peoplesmediation.CRegisterFromActivity" />
+        <activity android:name=".business.peoplesmediation.EMediateRecordActivity" />
+        <activity android:name=".business.peoplesmediation.havedone.RequestActivity" />
+        <activity android:name=".business.peoplesmediation.havedone.HaveDoneDossierActivity" />
+        <activity android:name=".business.peoplesmediation.havedone.HaveDoneReturnVisitActivity" />
+        <activity android:name=".business.peoplesmediation.havedone.HaveDoneAgreementActivity" />
+        <activity android:name=".business.peoplesmediation.havedone.HaveDoneRecordActivity" />
+        <activity android:name=".business.peoplesmediation.havedone.HaveDoneRegisterActivity" />
+        <activity android:name=".business.peoplesmediation.havedone.HDMediateRecordeActivity" />
+        <activity android:name=".business.peoplesmediation.WorkflowActivity" />
+        <activity android:name=".services.legaladvocacy.LegalAdvocacyActivity" />
+        <activity android:name=".module.mine.consultingcomplaint.ConsultingComplaintDetailsActivity" />
+        <activity android:name=".module.mine.consultingcomplaint.QaActivity" />
+        <activity
+            android:name=".module.service.personnelinstitutions.PersonnelInstitutionsActivity"
+            android:windowSoftInputMode="adjustPan" />
+        <activity android:name=".module.service.deprecate.PersonnelDetailsActivity" />
+        <activity
+            android:name=".module.mine.consultingcomplaint.ConsultingComplaintActivity"
+            android:launchMode="singleTask" />
+        <activity
+            android:name=".module.mine.consultingcomplaint.MyComplaintsActivity"
+            android:label="我的投诉"
+            android:launchMode="singleTask" />
+        <activity android:name=".module.service.deprecate.InstitutionsDetailsActivity" />
+        <activity android:name=".module.service.personnelinstitutions.evaluate.EvaluateDetailsActivity" />
+        <activity android:name=".module.service.personnelinstitutions.evaluate.EvaluateCommitActivity" />
+        <activity android:name=".module.home.ArticleWebViewActivity" />
+        <activity android:name=".module.service.personnelinstitutions.PersonnelInstitutionsDetailsActivity" />
+        <activity android:name=".business.peoplesmediation.havedone.MyDraftActivity" />
+        <activity android:name=".module.mine.ModifyPhoneActivity" />
+        <activity android:name=".module.mine.MyEvaluateActivity" />
+        <activity
+            android:name=".business.fastlegal.QuickLegalAidActivity"
+            android:windowSoftInputMode="stateHidden" />
+        <activity android:name=".business.fastlegal.AQuickAcceptLegalAidActivity" />
+        <activity
+            android:name=".business.noticedefense.NoticeDefenseActivity"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".business.legalaid.LegalAidDoorActivity"
+            android:windowSoftInputMode="stateHidden" />
+        <activity android:name=".business.fastlegal.havedone.HaveDoneActivity" />
+        <activity android:name=".business.fastlegal.BAssignUndertakerActivity" />
+        <activity android:name=".business.noticedefense.AReviewActivity" />
+        <activity android:name=".business.noticedefense.NoticeDetailsActivity" />
+        <activity android:name=".business.noticedefense.BApprovalActivity" />
+        <activity android:name=".business.noticedefense.CAssignLawyerActivity" />
+        <activity android:name=".business.noticedefense.DLawyerDealActivity" />
+        <activity android:name=".business.noticedefense.ModifyActivity" />
+        <activity android:name=".module.IntegratedQueryActivity" />
+        <activity android:name=".module.StatisticalAnalysisActivity" />
+        <activity android:name=".business.fastlegal.havedone.HaveDoneStartActivity" />
+        <activity android:name=".vidyo.ConferenceActivity" />
+        <activity android:name=".vidyo.GuestActivity" />
+
+        <provider
+            android:name=".provider.MyFileProvider"
+            android:authorities="${applicationId}.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+
+        <service android:name=".utils.DownloadService" />
+
+        <receiver
+            android:name=".receiver.jpush.MyJPushBroadcastReceiver"
+            android:enabled="true"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="cn.jpush.android.intent.REGISTRATION" />
+                <action android:name="cn.jpush.android.intent.MESSAGE_RECEIVED" />
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_RECEIVED" />
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_OPENED" />
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_CLICK_ACTION" />
+                <action android:name="cn.jpush.android.intent.CONNECTION" />
+
+                <category android:name="com.liuhezhineng.ximengsifa" />
+            </intent-filter>
+        </receiver>
+
+        <activity android:name=".vidyo.VideoResponseActivity" />
+        <activity android:name=".vidyo.VideoRequestActivity" />
+        <activity android:name=".video.RecordVideoActivity" />
+        <activity
+            android:name=".video.AnalyzeResultActivity"
+            android:exported="true" />
+        <activity android:name=".video.RectificationPersonnelActivity" />
+        <activity android:name=".video.AnalyzeResultTableActivity" />
+        <activity android:name=".test.TestActivity" />
+        <activity android:name=".MapActivity" />
+        <activity android:name=".im.ConversationsActivity" />
+        <activity android:name=".im.ChatActivity" />
+        <activity android:name=".LocalMsgActivity" />
+        <activity android:name=".MsgDetailsActivity" />
+        <activity android:name=".module.mine.order.MyOrderActivity" />
+        <activity android:name=".module.mine.order.ApplyAppointmentActivity" />
+        <activity android:name=".module.mine.order.OrderDetailsActivity" />
+        <activity android:name=".UserHelpActivity" />
+        <activity android:name=".UserHelp2Activity" />
+        <activity android:name=".module.mine.consultingcomplaint.ComplaintDistributionActivity" />
+        <activity android:name=".module.mine.consultingcomplaint.ComplaintDistributeActivity" />
+        <activity android:name=".form.RemoteVisitFormActivity" />
+        <activity android:name=".form.RemoteVisitorReviewActivity" />
+        <activity android:name=".form.MyRemoteVisitApplyListActivity" />
+        <activity android:name=".business.fastlegal.WorkerActivity" />
+        <activity android:name=".base.PickerActivity"></activity>
+        <activity android:name=".callback.MechanismActivity"/>
+        <activity android:name=".callback.MechPeopleActivity"/>
+        <activity android:name=".callback.PeopleDetailsActivity"/>
+        <activity android:name=".callback.ALEnforcementActivity"/>
+        <activity android:name=".callback.RFLegalAidActivity"/>
+        <activity android:name=".callback.ReconsiderationActivity"/>
+        <activity android:name=".callback.MyLegalAgentActivity"/>
+        <activity android:name=".callback.LegaCorrectionActivity"/>
+        <activity android:name=".callback.PersonneDetailsActivity"/>
+        <activity android:name=".callback.DetailsActivity"/>
+        <activity android:name=".callback.NewWorkflowActivity"/>
+        <activity android:name=".callback.HaveDoneUpdataActivity"/>
+        <activity android:name=".callback.UpdataReviewActivity"/>
+    </application>
+
+</manifest>

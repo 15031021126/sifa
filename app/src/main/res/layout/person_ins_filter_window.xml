@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:orientation="vertical">
+
+  <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="20dp"
+    android:background="#ffffff"
+    android:orientation="vertical">
+
+    <EditText
+      android:id="@+id/et_name"
+      android:layout_width="match_parent"
+      android:layout_height="30dp"
+      android:background="@drawable/blue_wrapper_shape"
+      android:hint="请输入查询名称"
+      android:singleLine="true"
+      android:textSize="12sp"/>
+
+    <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="30dp"
+      android:layout_marginTop="10dp"
+      android:background="@drawable/blue_wrapper_shape">
+
+      <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:gravity="center"
+        android:text="旗 县"
+        android:textColor="@color/blue"
+        android:textSize="12sp"/>
+
+      <View
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:background="@color/blue"/>
+
+      <TextView
+        android:id="@+id/tv_county"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="@dimen/dp_12"
+        android:background="@null"
+        android:gravity="center|start"
+        android:hint="请选择旗县"
+        android:textSize="12sp"/>
+    </LinearLayout>
+
+    <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="30dp"
+      android:layout_marginTop="10dp"
+      android:background="@drawable/blue_wrapper_shape">
+
+      <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:gravity="center"
+        android:text="乡 镇"
+        android:textColor="@color/blue"
+        android:textSize="12sp"/>
+
+      <View
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:background="@color/blue"/>
+
+      <TextView
+        android:id="@+id/tv_town"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="@dimen/dp_12"
+        android:background="@null"
+        android:gravity="center|start"
+        android:hint="请选择乡镇"
+        android:textSize="12sp"/>
+    </LinearLayout>
+
+    <LinearLayout
+      android:id="@+id/ll_mongolian"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="10dp">
+
+      <View
+        android:layout_width="3dp"
+        android:layout_height="20dp"
+        android:background="@color/blue"/>
+
+      <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="12dp"
+        android:layout_gravity="center"
+        android:text="蒙汉双通"
+        android:textColor="@color/blue"
+        android:textSize="12sp"/>
+
+      <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <RadioButton
+          android:id="@+id/rb_all"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginLeft="10dp"
+          android:text="全部"
+          android:textColor="@color/blue"
+          android:textSize="12sp"/>
+
+        <RadioButton
+          android:id="@+id/rb_yes"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginLeft="10dp"
+          android:text="是"
+          android:textColor="@color/blue"
+          android:textSize="12sp"/>
+
+        <RadioButton
+          android:id="@+id/rb_no"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginLeft="10dp"
+          android:text="否"
+          android:textColor="@color/blue"
+          android:textSize="12sp"/>
+      </RadioGroup>
+    </LinearLayout>
+
+    <LinearLayout
+      android:id="@+id/ll_aid_layer_mongolian"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="10dp"
+      android:visibility="gone">
+
+      <View
+        android:layout_width="3dp"
+        android:layout_height="20dp"
+        android:background="@color/blue"/>
+
+      <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="12dp"
+        android:layout_gravity="center"
+        android:text="法援律师"
+        android:textColor="@color/blue"
+        android:textSize="12sp"/>
+
+      <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <RadioButton
+          android:id="@+id/rb_aid_layer_all"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginLeft="10dp"
+          android:text="全部"
+          android:textColor="@color/blue"
+          android:textSize="12sp"/>
+
+        <RadioButton
+          android:id="@+id/rb_aid_layer_yes"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginLeft="10dp"
+          android:text="是"
+          android:textColor="@color/blue"
+          android:textSize="12sp"/>
+
+        <RadioButton
+          android:id="@+id/rb_aid_layer_no"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginLeft="10dp"
+          android:text="否"
+          android:textColor="@color/blue"
+          android:textSize="12sp"/>
+      </RadioGroup>
+    </LinearLayout>
+  </LinearLayout>
+  <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    android:background="#63affe">
+
+    <TextView
+      android:id="@+id/tv_reset"
+      android:layout_width="0dp"
+      android:layout_height="match_parent"
+      android:layout_weight="1"
+      android:layout_gravity="center"
+      android:gravity="center"
+      android:text="重置"
+      android:textColor="#ffffff"
+      android:textSize="12sp"/>
+
+    <View
+      android:layout_width="0.1dp"
+      android:layout_height="match_parent"
+      android:layout_marginTop="5dp"
+      android:layout_marginBottom="5dp"
+      android:background="#ffffff"/>
+
+    <TextView
+      android:id="@+id/tv_ok"
+      android:layout_width="0dp"
+      android:layout_height="match_parent"
+      android:layout_weight="1"
+      android:layout_gravity="center"
+      android:gravity="center"
+      android:text="确定"
+      android:textColor="#ffffff"
+      android:textSize="12sp"/>
+  </LinearLayout>
+
+  <View
+    android:id="@+id/view_mask"
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_weight="1"
+    android:alpha="0.5"
+    android:background="@color/qmui_config_color_gray_5"/>
+</LinearLayout>

@@ -1,0 +1,134 @@
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:tool="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="wrap_content"
+  android:fitsSystemWindows="true"
+  android:orientation="vertical">
+
+  <View
+    style="@style/TitleTopViewStyle"/>
+
+  <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:orientation="horizontal">
+
+    <View
+      style="@style/TitleLeftViewStyle"/>
+
+    <TextView
+      style="@style/ChartFieldStyle"
+      android:text="案件信息"/>
+  </LinearLayout>
+
+  <View style="@style/DividingLineStyle_horizontal"/>
+
+  <LinearLayout
+    style="@style/LinearStyle">
+
+    <TextView
+      style="@style/ChartFieldKeyStyle"
+      android:text="案件标题"/>
+
+    <EditText
+      android:id="@+id/et_title"
+      style="@style/ChartFieldInputValueStyle"
+      android:singleLine="false"
+      tool:text="@string/test"/>
+  </LinearLayout>
+
+  <View style="@style/DividingLineStyle_horizontal"/>
+
+  <LinearLayout
+    style="@style/LinearStyle">
+    <include layout="@layout/required"/>
+
+    <TextView
+      style="@style/ChartFieldKeyStyle"
+      android:text="案件类型"/>
+
+    <TextView
+      android:id="@+id/et_type"
+      style="@style/ChartFieldInputValueStyle"/>
+  </LinearLayout>
+
+  <View style="@style/DividingLineStyle_horizontal"/>
+
+  <LinearLayout
+    style="@style/LinearStyle">
+
+    <include layout="@layout/required"/>
+
+    <TextView
+      style="@style/ChartFieldKeyStyle"
+      android:text="所属分类"/>
+
+    <TextView
+      android:id="@+id/tv_aid_category"
+      style="@style/ChartFieldInputValueStyle"
+      android:hint="@string/please_select"/>
+  </LinearLayout>
+
+  <View style="@style/DividingLineStyle_horizontal"/>
+
+  <LinearLayout
+    style="@style/LinearStyle">
+
+    <include layout="@layout/required"/>
+
+    <TextView
+      style="@style/ChartFieldKeyStyle"
+      android:text="案件性质"/>
+
+    <TextView
+      android:id="@+id/tv_case_nature"
+      style="@style/ChartFieldInputValueStyle"
+      android:hint="@string/please_select"/>
+  </LinearLayout>
+
+  <View style="@style/DividingLineStyle_horizontal"/>
+
+  <include layout="@layout/duplicate_annex"/>
+
+  <View style="@style/DividingLineStyle_horizontal"/>
+
+  <LinearLayout
+    style="@style/LinearStyle">
+    <include layout="@layout/required"/>
+
+    <TextView
+      style="@style/ChartFieldKeyStyle"
+      android:text="涉及蒙语"/>
+
+    <TextView
+      android:id="@+id/et_line_mengyu"
+      style="@style/ChartFieldInputValueStyle"
+      android:hint="@string/please_select"/>
+  </LinearLayout>
+
+  <View style="@style/DividingLineStyle_horizontal"/>
+
+  <LinearLayout
+    style="@style/LinearStyle"
+    android:orientation="vertical">
+
+    <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content">
+
+      <include layout="@layout/required"/>
+
+      <TextView
+        style="@style/ChartFieldKeyStyle"
+        android:layout_width="match_parent"
+        android:text="案情及申请理由"/>
+    </LinearLayout>
+
+    <EditText
+      android:id="@+id/et_content"
+      style="@style/BigEditText"
+      android:hint="@string/please_show_your_question_details"/>
+  </LinearLayout>
+</LinearLayout>

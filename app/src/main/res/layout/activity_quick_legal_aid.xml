@@ -1,0 +1,310 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    tools:context="com.liuhezhineng.ximengsifa.business.fastlegal.QuickLegalAidActivity">
+
+    <include layout="@layout/top_bar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:background="#f4f4f4" />
+
+            <LinearLayout style="@style/LinearStyle">
+                <include layout="@layout/required" />
+                <TextView
+                    style="@style/ChartFieldKeyStyle"
+                    android:text="姓名：" />
+
+                <EditText
+                    android:id="@+id/et_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:hint="请输入姓名"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:textColor="#333333"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <View style="@style/DividingLineStyle_horizontal" />
+
+            <LinearLayout style="@style/LinearStyle">
+
+                <include layout="@layout/required" />
+
+                <TextView
+                    style="@style/ChartFieldKeyStyle"
+                    android:text="联系电话：" />
+
+                <EditText
+                    android:id="@+id/et_phone"
+                    style="@style/ChartFieldInputValueStyle"
+                    android:inputType="phone"
+                    android:maxLength="11" />
+            </LinearLayout>
+
+            <View style="@style/DividingLineStyle_horizontal" />
+
+            <LinearLayout style="@style/LinearStyle">
+
+                <include layout="@layout/required" />
+
+                <TextView
+                    style="@style/ChartFieldKeyStyle"
+                    android:text="案发旗县：" />
+
+                <TextView
+                    android:id="@+id/tv_case_county"
+                    style="@style/ChartFieldInputValueStyle"
+                    android:hint="@string/please_select" />
+            </LinearLayout>
+
+            <View style="@style/DividingLineStyle_horizontal" />
+
+            <LinearLayout style="@style/LinearStyle">
+
+                <include layout="@layout/required" />
+
+                <TextView
+                    style="@style/ChartFieldKeyStyle"
+                    android:text="案发乡镇：" />
+
+                <TextView
+                    android:id="@+id/tv_case_town"
+                    style="@style/ChartFieldInputValueStyle"
+                    android:hint="@string/please_select" />
+            </LinearLayout>
+
+            <View style="@style/DividingLineStyle_horizontal" />
+
+            <LinearLayout style="@style/LinearStyle">
+
+            <include layout="@layout/required" />
+
+            <TextView
+                style="@style/ChartFieldKeyStyle"
+                android:text="案法地址:" />
+
+            <EditText
+                android:id="@+id/et_address"
+                style="@style/ChartFieldInputValueStyle"
+                android:maxLength="225" />
+        </LinearLayout>
+
+            <View style="@style/DividingLineStyle_horizontal" />
+
+            <LinearLayout style="@style/LinearStyle"
+                android:id="@+id/ll_case_data">
+
+                <include layout="@layout/required" />
+
+                <TextView
+                    style="@style/ChartFieldKeyStyle"
+                    android:text="案法时间:" />
+
+                <TextView
+                    android:id="@+id/et_data"
+                    style="@style/ChartFieldInputValueStyle"
+                    android:maxLength="225" />
+            </LinearLayout>
+
+            <View style="@style/DividingLineStyle_horizontal" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+            <LinearLayout style="@style/LinearStyle">
+                <include layout="@layout/required" />
+                <TextView
+                    style="@style/ChartFieldKeyStyle"
+                    android:text="案件标题：" />
+
+                <EditText
+                    android:id="@+id/et_title"
+                    style="@style/ChartFieldInputValueStyle"
+                    android:maxLines="1" />
+            </LinearLayout>
+
+            <View style="@style/DividingLineStyle_horizontal" />
+
+            <LinearLayout style="@style/LinearStyle">
+                <include layout="@layout/required" />
+                <TextView
+                    style="@style/ChartFieldKeyStyle"
+                    android:text="涉及人数：" />
+
+                <EditText
+                    android:id="@+id/et_case_involve_count"
+                    style="@style/ChartFieldInputValueStyle"
+                    android:inputType="number"
+                    android:maxLength="8"
+                    android:maxLines="1" />
+            </LinearLayout>
+
+            <View style="@style/DividingLineStyle_horizontal" />
+
+            <LinearLayout style="@style/LinearStyle">
+                <include layout="@layout/required" />
+                <TextView
+                    style="@style/ChartFieldKeyStyle"
+                    android:text="实际金额：" />
+
+                <EditText
+                    android:id="@+id/et_actual_amount"
+                    style="@style/ChartFieldInputValueStyle"
+                    android:hint="@string/please_select"
+                    android:inputType="number" />
+            </LinearLayout>
+
+            <View style="@style/DividingLineStyle_horizontal" />
+
+            <LinearLayout style="@style/LinearStyle">
+
+                <include layout="@layout/required" />
+
+                <TextView
+                    style="@style/ChartFieldKeyStyle"
+                    android:text="案件类别：" />
+
+                <TextView
+                    android:id="@+id/tv_case_category"
+                    style="@style/ChartFieldInputValueStyle"
+                    android:hint="@string/please_select" />
+            </LinearLayout>
+
+            <View style="@style/DividingLineStyle_horizontal" />
+
+            <LinearLayout style="@style/LinearStyle">
+
+                <include layout="@layout/required" />
+
+                <TextView
+                    style="@style/ChartFieldKeyStyle"
+                    android:text="案件类型：" />
+
+                <TextView
+                    android:id="@+id/tv_case_type"
+                    style="@style/ChartFieldInputValueStyle"
+                    android:hint="@string/please_select" />
+            </LinearLayout>
+
+            <View style="@style/DividingLineStyle_horizontal" />
+
+            <LinearLayout
+                style="@style/LinearStyle"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        style="@style/ChartFieldKeyStyle"
+                        android:text="案件简要说明：" />
+
+                    <TextView
+                        android:id="@+id/tv_voice_input"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="点击小话筒进行语音输入"
+                        android:textSize="10sp" />
+
+                    <ProgressBar
+                        android:id="@+id/pb_volume"
+                        style="@style/Base.Widget.AppCompat.ProgressBar.Horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:max="100"
+                        android:min="0"
+                        android:visibility="gone" />
+                </LinearLayout>
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <EditText
+                        android:id="@+id/et_case_content"
+                        style="@style/BigEditText"
+                        android:hint="请简要描述案件信息"
+                        android:paddingEnd="40dp"
+                        android:paddingRight="40dp" />
+
+                    <ImageView
+                        android:id="@+id/iv_voice_input"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_gravity="end"
+                        android:padding="12dp"
+                        android:src="@drawable/micro_phone" />
+                </FrameLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/LinearStyle"
+                android:orientation="vertical">
+
+                <com.liuhezhineng.ximengsifa.audiorecord.AudioRecordButton
+                    android:id="@+id/tv_recorder"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/btn_recorder_selector"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:gravity="center"
+                    android:text="点击进行语音留言"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/rv_audio"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    tools:listitem="@layout/item_audio" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_commit"
+                android:layout_width="match_parent"
+                android:layout_height="42dp"
+                android:layout_marginLeft="@dimen/dp_12"
+                android:layout_marginRight="@dimen/dp_12"
+                android:layout_marginBottom="30dp"
+                android:background="@drawable/circle_shape"
+                android:gravity="center"
+                android:text="快速登记"
+                android:textColor="#ffffff"
+                android:textSize="16sp" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

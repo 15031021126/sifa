@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:descendantFocusability="blocksDescendants"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_12">
+
+        <TextView
+            android:id="@+id/tv_reply_user"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="回复人：系统管理员"
+            android:textColor="@color/qmui_config_color_gray_5" />
+
+        <LinearLayout
+            android:id="@+id/ll_evaluate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="14dp"
+                android:layout_height="14dp"
+                android:layout_gravity="center"
+                android:layout_marginRight="5dp"
+                android:src="@drawable/evaluate" />
+
+            <TextView
+                android:id="@+id/tv_evaluate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/dp_12"
+                android:gravity="center"
+                android:text="评价"
+                android:textColor="@color/blue" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_reply_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_12"
+        android:text="回复内容" />
+
+
+    <LinearLayout
+        android:id="@+id/ll_qa"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_12"
+            android:layout_marginBottom="@dimen/dp_12"
+            android:drawableLeft="@drawable/dialogue"
+            android:drawablePadding="@dimen/dp_12"
+            android:text="追问对话"
+            android:textColor="#bbbbbb" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_qa"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#f1f4f4"
+            android:overScrollMode="never"
+            android:paddingTop="16dp"
+            android:paddingBottom="16dp" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_12"
+        android:layout_marginBottom="10dp"
+        android:gravity="center_vertical">
+
+        <LinearLayout
+            android:id="@+id/ll_praise"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/dp_12"
+            android:layout_toLeftOf="@id/ll_general">
+
+            <ImageView
+                android:id="@+id/iv_praise"
+                android:layout_width="14dp"
+                android:layout_height="14dp"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/praise" />
+
+            <TextView
+                android:id="@+id/tv_praise"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="(10)"
+                android:textColor="@color/qmui_config_color_gray_7" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_general"
+            android:layout_alignWithParentIfMissing="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/dp_12"
+            android:layout_toLeftOf="@id/tv_question">
+
+            <ImageView
+                android:id="@+id/iv_general"
+                android:layout_width="14dp"
+                android:layout_height="14dp"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/general" />
+
+            <TextView
+                android:id="@+id/tv_general"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="(10)"
+                android:textColor="@color/qmui_config_color_gray_7" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_question"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/dp_12"
+            android:background="@drawable/circle_btn"
+            android:gravity="center"
+            android:text="@string/asked"
+            android:textColor="@color/blue" />
+    </RelativeLayout>
+</LinearLayout>

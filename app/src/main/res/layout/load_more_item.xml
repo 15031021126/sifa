@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+  android:id="@+id/tv_load_more"
+  style="@style/TextViewStyle"
+  android:layout_width="match_parent"
+  android:layout_marginBottom="@dimen/sp_20"
+  android:padding="@dimen/dp_12"
+  android:text="@string/load_more"
+  android:textSize="16sp"/>

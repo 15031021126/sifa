@@ -1,0 +1,102 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tool="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <FrameLayout
+            android:id="@+id/glsurfaceview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center">
+
+        </FrameLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/transparent">
+
+            <ImageView
+                android:id="@+id/iv_avatar"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="40dp" />
+
+            <TextView
+                android:id="@+id/tv_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="50dp"
+                android:layout_toEndOf="@id/iv_avatar"
+                android:layout_toRightOf="@id/iv_avatar"
+                android:textColor="#ffffff"
+                android:textSize="20sp"
+                tool:text="刘亦菲" />
+
+            <TextView
+                android:id="@+id/tv_state"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_name"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_toEndOf="@id/iv_avatar"
+                android:layout_toRightOf="@id/iv_avatar"
+                android:textColor="#ffffff"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/tv_cancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="25dp"
+                android:text="挂断"
+                android:textColor="#ffffff" />
+
+            <ImageView
+                android:id="@+id/iv_cancel"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_above="@id/tv_cancel"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/video_call_hang_up"
+                android:src="@drawable/large_phone" />
+        </RelativeLayout>
+    </FrameLayout>
+
+    <ScrollView
+        android:id="@+id/scorllview1"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:background="#E1E7ED"
+        android:fillViewport="false">
+
+        <LinearLayout
+            android:id="@+id/chatwnd"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/pickerview_bgColor_default"
+            android:orientation="vertical"></LinearLayout>
+    </ScrollView>
+
+    <ListView
+        android:id="@+id/mylist"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:cacheColorHint="#00000000"
+        android:clipToPadding="false" />
+
+</LinearLayout>

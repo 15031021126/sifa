@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <declare-styleable name="Emojicon">
+    <attr format="dimension" name="emojiconSize"/>
+    <attr format="integer" name="emojiconTextStart"/>
+    <attr format="integer" name="emojiconTextLength"/>
+  </declare-styleable>
+  <declare-styleable name="FlowIndicator">
+    <attr format="integer" name="count"/>
+    <attr format="dimension" name="r"/>
+    <attr format="dimension" name="space"/>
+    <attr format="color|reference" name="normal_color"/>
+    <attr format="color|reference" name="focus_color"/>
+    <attr format="integer" name="focus"/>
+  </declare-styleable>
+</resources>

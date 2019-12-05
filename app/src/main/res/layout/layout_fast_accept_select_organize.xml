@@ -1,0 +1,119 @@
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="wrap_content"
+  android:orientation="vertical">
+
+  <View
+    style="@style/TitleTopViewStyle"/>
+
+  <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:orientation="horizontal">
+
+    <View
+      style="@style/TitleLeftViewStyle"/>
+
+    <TextView
+      style="@style/ChartFieldStyle"
+      android:text="选择案件承办方"/>
+  </LinearLayout>
+
+  <View style="@style/DividingLineStyle_horizontal"/>
+
+  <!--<LinearLayout-->
+  <!--style="@style/LinearStyle">-->
+
+  <!--<TextView-->
+  <!--style="@style/ChartFieldKeyStyle"-->
+  <!--android:text="法援中心"/>-->
+
+  <!--<TextView-->
+  <!--android:roomId="@+roomId/tv_legal_office"-->
+  <!--style="@style/ChartFieldInputValueStyle"-->
+  <!--android:hint="@string/please_select"/>-->
+  <!--</LinearLayout>-->
+
+  <!--<View style="@style/DividingLineStyle_horizontal"/>-->
+
+  <!--<LinearLayout-->
+  <!--style="@style/LinearStyle">-->
+
+
+  <!--<TextView-->
+  <!--style="@style/ChartFieldKeyStyle"-->
+  <!--android:text="律师事务所"/>-->
+
+  <!--<TextView-->
+  <!--android:roomId="@+roomId/tv_lawyer_office"-->
+  <!--style="@style/ChartFieldInputValueStyle"-->
+  <!--android:inputType="number"-->
+  <!--android:maxLength="5"/>-->
+  <!--</LinearLayout>-->
+
+  <!--<View style="@style/DividingLineStyle_horizontal"/>-->
+
+  <!--<LinearLayout-->
+  <!--style="@style/LinearStyle">-->
+
+
+  <!--<TextView-->
+  <!--style="@style/ChartFieldKeyStyle"-->
+  <!--android:text="人民调解委员会"/>-->
+
+  <!--<TextView-->
+  <!--android:roomId="@+roomId/tv_peoples_mediator_committee"-->
+  <!--style="@style/ChartFieldInputValueStyle"-->
+  <!--android:hint="@string/please_select"/>-->
+  <!--</LinearLayout>-->
+
+  <!--<View style="@style/DividingLineStyle_horizontal"/>-->
+
+  <!--<LinearLayout-->
+  <!--style="@style/LinearStyle">-->
+
+
+  <!--<TextView-->
+  <!--style="@style/ChartFieldKeyStyle"-->
+  <!--android:text="公证处"/>-->
+
+  <!--<TextView-->
+  <!--android:roomId="@+roomId/tv_notary_office"-->
+  <!--style="@style/ChartFieldInputValueStyle"-->
+  <!--android:hint="@string/please_select"/>-->
+  <!--</LinearLayout>-->
+
+  <!--<View style="@style/DividingLineStyle_horizontal"/>-->
+
+  <!--<LinearLayout-->
+  <!--style="@style/LinearStyle">-->
+
+  <!--<TextView-->
+  <!--style="@style/ChartFieldKeyStyle"-->
+  <!--android:text="司法鉴定处"/>-->
+
+  <!--<TextView-->
+  <!--android:roomId="@+roomId/tv_forensic_office"-->
+  <!--style="@style/ChartFieldInputValueStyle"-->
+  <!--tools:text="@string/test"/>-->
+  <!--</LinearLayout>-->
+
+  <LinearLayout
+    style="@style/LinearStyle">
+
+    <TextView
+      style="@style/ChartFieldKeyStyle"
+      android:text="承办机构"/>
+
+    <TextView
+      android:id="@+id/tv_undertaker_organize"
+      style="@style/ChartFieldInputValueStyle"
+      tools:text="@string/test"/>
+  </LinearLayout>
+
+  <View style="@style/DividingLineStyle_horizontal"/>
+
+</LinearLayout>

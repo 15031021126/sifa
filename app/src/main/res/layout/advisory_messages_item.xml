@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="4dp"
+    android:layout_marginTop="2.5dp"
+    android:layout_marginRight="4dp"
+    android:layout_marginBottom="2.5dp"
+    android:background="@drawable/search_shape"
+    android:orientation="vertical"
+    android:paddingLeft="16dp">
+
+    <TextView
+        android:id="@+id/tv_is_comment"
+        android:layout_width="80dp"
+        android:layout_height="23dp"
+        android:background="@drawable/circle_rectange"
+        android:gravity="center"
+        android:text="是否回复"
+        android:textColor="#ffffff"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="留言咨询"
+        android:textColor="#333333"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/tv_date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="5dp"
+        android:gravity="end"
+        android:text="2018-01-01"
+        android:textColor="#999999"
+        android:textSize="12sp" />
+</LinearLayout>

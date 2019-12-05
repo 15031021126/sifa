@@ -1,0 +1,108 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <View style="@style/TitleTopViewStyle" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <View style="@style/TitleLeftViewStyle" />
+
+        <TextView
+            style="@style/ChartFieldStyle"
+            android:text="案件性质" />
+    </LinearLayout>
+
+    <View style="@style/DividingLineStyle_horizontal" />
+
+    <LinearLayout style="@style/LinearStyle">
+
+        <include layout="@layout/required" />
+
+        <TextView
+            style="@style/ChartFieldKeyStyle"
+            android:text="案发时间" />
+
+        <TextView
+            android:id="@+id/tv_case_date"
+            style="@style/ChartFieldInputValueStyle"
+            android:hint="@string/please_select" />
+    </LinearLayout>
+
+    <View style="@style/DividingLineStyle_horizontal" />
+
+    <LinearLayout style="@style/LinearStyle">
+
+        <TextView
+            style="@style/ChartFieldKeyStyle"
+            android:text="涉案人数" />
+
+        <EditText
+            android:id="@+id/tv_case_count"
+            style="@style/ChartFieldInputValueStyle"
+            android:inputType="number"
+            android:maxLength="5" />
+    </LinearLayout>
+
+    <View style="@style/DividingLineStyle_horizontal" />
+
+    <LinearLayout style="@style/LinearStyle">
+
+        <TextView
+            style="@style/ChartFieldKeyStyle"
+            android:text="受理方式" />
+
+        <TextView
+            android:id="@+id/tv_accept_way"
+            style="@style/ChartFieldInputValueStyle"
+            android:hint="@string/please_select" />
+    </LinearLayout>
+
+    <View style="@style/DividingLineStyle_horizontal" />
+
+    <LinearLayout style="@style/LinearStyle">
+
+        <TextView
+            style="@style/ChartFieldKeyStyle"
+            android:text="实际金额：" />
+
+        <EditText
+            android:id="@+id/et_actual_amount"
+            style="@style/ChartFieldInputValueStyle"
+            android:hint="@string/please_select" />
+    </LinearLayout>
+
+    <View style="@style/DividingLineStyle_horizontal" />
+
+    <LinearLayout style="@style/LinearStyle">
+
+        <TextView
+            style="@style/ChartFieldKeyStyle"
+            android:text="涉及金额" />
+
+        <TextView
+            android:id="@+id/tv_case_money"
+            style="@style/ChartFieldInputValueStyle"
+            android:hint="@string/please_select" />
+    </LinearLayout>
+
+    <View style="@style/DividingLineStyle_horizontal" />
+
+    <LinearLayout style="@style/LinearStyle">
+
+        <TextView
+            style="@style/ChartFieldKeyStyle"
+            android:text="案件重要等级" />
+
+        <TextView
+            android:id="@+id/tv_case_level"
+            style="@style/ChartFieldInputValueStyle" />
+    </LinearLayout>
+
+    <View style="@style/DividingLineStyle_horizontal" />
+</LinearLayout>

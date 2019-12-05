@@ -1,0 +1,25 @@
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:id="@+id/ll_subsidy"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:fitsSystemWindows="true"
+  android:orientation="vertical">
+
+  <TextView
+    style="@style/ChartFieldStyle"
+    android:text="案件承办人领取补贴信息"/>
+
+  <EditText
+    android:id="@+id/et_subsidy"
+    android:layout_width="match_parent"
+    android:layout_height="200dp"
+    android:layout_marginTop="3dp"
+    android:padding="3dp"
+    android:background="@drawable/border"
+    android:baselineAligned="false"
+    android:gravity="start"
+    android:hint="请输入你需要领取的补贴信息详情"
+    android:inputType="textMultiLine"
+    android:textSize="10sp"/>
+</LinearLayout>

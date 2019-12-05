@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="match_parent"
+  android:layout_height="wrap_content"
+  android:paddingTop="8dp"
+  android:paddingBottom="8dp"
+  android:orientation="horizontal">
+
+  <View
+    android:id="@+id/selected_view"
+    android:layout_width="3dp"
+    android:layout_height="20dp"
+    android:layout_gravity="center_vertical"
+    android:background="@color/qmui_config_color_red"/>
+
+  <TextView
+    android:id="@+id/tv_service_category"
+    style="@style/TextViewStyle"
+    android:layout_width="match_parent"
+    android:layout_gravity="center_vertical"
+    android:padding="4dp"
+    android:text="法律援助"
+    android:textSize="10sp"/>
+</LinearLayout>

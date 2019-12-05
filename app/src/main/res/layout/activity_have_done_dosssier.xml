@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:fitsSystemWindows="true"
+  android:orientation="vertical"
+  tools:context="com.liuhezhineng.ximengsifa.business.legalaid.ApplyForLegalAidActivity">
+
+  <include layout="@layout/top_bar"/>
+
+  <ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="@dimen/dp_12"
+      android:fitsSystemWindows="true"
+      android:orientation="vertical">
+
+      <LinearLayout
+        style="@style/LinearStyle">
+
+        <TextView
+          style="@style/ChartFieldKeyStyle"
+          android:text="编号"/>
+
+        <TextView
+          android:id="@+id/tv_numbering"
+          style="@style/ChartFieldShowValueStyle"/>
+      </LinearLayout>
+
+      <View style="@style/DividingLineStyle_horizontal"/>
+
+      <LinearLayout
+        style="@style/LinearStyle">
+
+        <TextView
+          style="@style/ChartFieldKeyStyle"
+          android:text="卷宗标题"/>
+
+        <TextView
+          android:id="@+id/tv_dossier_title"
+          style="@style/ChartFieldShowValueStyle"/>
+      </LinearLayout>
+
+      <View style="@style/DividingLineStyle_horizontal"/>
+
+      <include layout="@layout/duplicate_annex"/>
+
+      <View style="@style/DividingLineStyle_horizontal"/>
+
+      <LinearLayout
+        style="@style/LinearStyle"
+        android:orientation="vertical">
+
+        <TextView
+          style="@style/ChartFieldKeyStyle"
+          android:layout_width="match_parent"
+          android:text="卷宗内容"/>
+
+        <TextView
+          android:id="@+id/tv_content"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="3dp"
+          android:padding="3dp"
+          android:background="@drawable/border"
+          android:baselineAligned="false"
+          android:gravity="start"
+          android:minHeight="100dp"
+          android:textSize="14sp"/>
+      </LinearLayout>
+
+      <include layout="@layout/peoples_mediator"/>
+
+    </LinearLayout>
+  </ScrollView>
+</LinearLayout>

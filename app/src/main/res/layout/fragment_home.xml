@@ -1,0 +1,276 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tool="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent">
+
+  <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/title_bar"/>
+
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout
+      android:id="@+id/refreshLayout"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      app:srlAccentColor="@android:color/black"
+      app:srlEnablePreviewInEditMode="true"
+      app:srlPrimaryColor="@android:color/white">
+
+      <com.scwang.smartrefresh.layout.header.ClassicsHeader
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+      <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:orientation="vertical">
+
+          <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/home_banner"/>
+
+          <ImageView
+            android:id="@+id/iv_weather_no_net"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_margin="@dimen/dp_12"
+            android:contentDescription="@string/weather_no_net"
+            android:scaleType="fitXY"
+            android:src="@drawable/weather_no_net"
+            android:visibility="gone"/>
+
+          <RelativeLayout
+            android:id="@+id/rl_weather"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_margin="@dimen/dp_12"
+            android:background="@color/blue">
+
+            <TextView
+              android:id="@+id/tv_no_permission"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_centerInParent="true"
+              android:paddingLeft="30dp"
+              android:paddingRight="30dp"
+              android:text="@string/no_locate_permission"
+              android:textColor="@color/qmui_config_color_white"
+              android:visibility="gone"/>
+
+            <LinearLayout
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_marginStart="20dp"
+              android:layout_marginLeft="20dp"
+              android:gravity="center_horizontal"
+              android:orientation="vertical">
+
+              <ImageView
+                android:id="@+id/iv_weather"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                tool:src="@drawable/home"/>
+
+              <TextView
+                android:id="@+id/tv_city"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="3dp"
+                android:gravity="center"
+                android:textColor="@color/qmui_config_color_white"
+                tool:text="@string/city_test"/>
+            </LinearLayout>
+
+            <TextView
+              android:id="@+id/tv_weather"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_marginEnd="25dp"
+              android:layout_marginRight="25dp"
+              android:layout_alignParentEnd="true"
+              android:layout_alignParentRight="true"
+              android:textColor="@color/qmui_config_color_white"
+              android:textSize="22sp"
+              tool:text="晴"/>
+
+            <TextView
+              android:id="@+id/tv_weather_temp"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_marginEnd="@dimen/dp_12"
+              android:layout_marginRight="@dimen/dp_12"
+              android:layout_alignBottom="@id/tv_weather"
+              android:layout_toLeftOf="@+id/tv_weather"
+              android:layout_toStartOf="@id/tv_weather"
+              android:paddingBottom="3dp"
+              android:textColor="@color/qmui_config_color_white"
+              tool:text="21°C"/>
+
+            <TextView
+              android:id="@+id/tv_weather_date"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_marginEnd="25dp"
+              android:layout_marginRight="25dp"
+              android:layout_alignParentEnd="true"
+              android:layout_alignParentRight="true"
+              android:layout_below="@id/tv_weather"
+              android:textColor="@color/qmui_config_color_white"
+              tool:text="2018-4-15 星期二"/>
+
+            <View
+              android:id="@+id/view_dividing"
+              style="@style/DividingLineStyle_horizontal"
+              android:layout_width="wrap_content"
+              android:layout_above="@id/tv_weather_date"
+              android:layout_alignEnd="@id/tv_weather_date"
+              android:layout_alignLeft="@id/tv_weather_date"
+              android:layout_alignRight="@id/tv_weather_date"
+              android:layout_alignStart="@id/tv_weather_date"
+              android:background="@color/qmui_config_color_white"/>
+          </RelativeLayout>
+
+          <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_services"
+            android:layout_width="match_parent"
+            android:layout_height="130dp"
+            android:layout_marginTop="@dimen/dp_12"
+            app:layoutManager="GridLayoutManager"
+            tool:listitem="@layout/services_item"
+            app:spanCount="4"/>
+
+          <com.liuhezhineng.ximengsifa.widget.FlowIndicator
+            android:id="@+id/flow_indicator"
+            android:layout_width="wrap_content"
+            android:layout_height="10dp"
+            android:layout_marginBottom="5dp"
+            android:layout_gravity="bottom|center_horizontal"
+            app:count="5"
+            app:focus="1"
+            app:focus_color="#dc0505"
+            app:normal_color="#4d9da4a1"
+            app:r="5dp"
+            app:space="10dp"/>
+
+          <View
+            style="@style/DividingLineStyle_horizontal"/>
+
+          <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/dp_12">
+
+            <ImageView
+              android:layout_width="40dp"
+              android:layout_height="20dp"
+              android:src="@drawable/hot"/>
+
+            <View
+              android:layout_width="0.1dp"
+              android:layout_height="match_parent"
+              android:layout_marginStart="@dimen/dp_12"
+              android:layout_marginLeft="@dimen/dp_12"
+              android:background="#999696"/>
+
+            <ViewFlipper
+              android:id="@+id/view_flipper"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:autoStart="true"
+              android:flipInterval="3000"
+              android:inAnimation="@anim/anim_marquee_in"
+              android:outAnimation="@anim/anim_marquee_out"/>
+          </LinearLayout>
+
+          <View
+            style="@style/DividingLineStyle_horizontal"/>
+
+          <View
+            android:layout_width="match_parent"
+            android:layout_height="12dp"
+            android:background="#f2efef"/>
+
+          <View
+            style="@style/DividingLineStyle_horizontal"/>
+
+          <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/dp_12">
+
+            <ImageView
+              android:layout_width="24dp"
+              android:layout_height="12dp"
+              android:layout_marginEnd="5dp"
+              android:layout_marginRight="5dp"
+              android:layout_centerVertical="true"
+              android:layout_toLeftOf="@id/tv_info"
+              android:layout_toStartOf="@id/tv_info"
+              android:src="@drawable/info_pic"/>
+
+            <TextView
+              android:id="@+id/tv_info"
+              style="@style/TextViewStyle"
+              android:layout_centerHorizontal="true"
+              android:layout_centerVertical="true"
+              android:text="@string/services_info"
+              android:textSize="18sp"/>
+
+            <ImageView
+              android:layout_width="24dp"
+              android:layout_height="12dp"
+              android:layout_marginStart="5dp"
+              android:layout_marginLeft="5dp"
+              android:layout_centerVertical="true"
+              android:layout_toEndOf="@id/tv_info"
+              android:layout_toRightOf="@id/tv_info"
+              android:src="@drawable/info_pic"/>
+
+            <TextView
+              android:id="@+id/tv_change"
+              style="@style/TextViewStyle"
+              android:layout_marginEnd="@dimen/dp_12"
+              android:layout_marginRight="@dimen/dp_12"
+              android:layout_alignParentEnd="true"
+              android:layout_alignParentRight="true"
+              android:layout_centerVertical="true"
+              android:text="@string/change"/>
+          </RelativeLayout>
+
+          <View style="@style/DividingLineStyle_horizontal"/>
+
+          <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_info"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+        </LinearLayout>
+      </android.support.v4.widget.NestedScrollView>
+
+      <com.scwang.smartrefresh.layout.footer.ClassicsFooter
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+  </LinearLayout>
+
+  <com.liuhezhineng.ximengsifa.widget.DragFloatActionButton
+    android:id="@+id/btn_float_phone"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="30dp"
+    android:layout_marginEnd="30dp"
+    android:layout_marginRight="30dp"
+    android:layout_gravity="bottom|end"
+    android:scaleType="centerInside"
+    android:src="@drawable/float_phone"
+    app:backgroundTint="@color/qmui_config_color_white"/>
+</FrameLayout>

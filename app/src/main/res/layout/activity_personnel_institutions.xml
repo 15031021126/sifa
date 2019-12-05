@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:background="@color/qmui_config_color_gray_9"
+  android:fitsSystemWindows="true"
+  android:orientation="vertical"
+  tools:context="com.liuhezhineng.ximengsifa.module.service.personnelinstitutions.PersonnelInstitutionsActivity">
+
+  <include layout="@layout/top_bar"/>
+
+  <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    android:background="@color/qmui_config_color_white"
+    android:baselineAligned="false"
+    android:orientation="horizontal">
+
+    <FrameLayout
+      android:id="@+id/fl_institutions"
+      android:layout_width="0dp"
+      android:layout_height="match_parent"
+      android:layout_weight="1"
+      android:orientation="vertical">
+
+      <TextView
+        android:id="@+id/tv_institutions"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="@string/institutions"
+        android:textColor="@color/blue"/>
+
+      <View
+        android:id="@+id/view_institutions"
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:layout_marginLeft="@dimen/dp_12"
+        android:layout_marginRight="@dimen/dp_12"
+        android:layout_gravity="bottom"
+        android:background="@color/blue"/>
+    </FrameLayout>
+
+    <FrameLayout
+      android:id="@+id/fl_personnel"
+      android:layout_width="0dp"
+      android:layout_height="match_parent"
+      android:layout_weight="1"
+      android:orientation="vertical">
+
+      <TextView
+        android:id="@+id/tv_personnel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="@string/personnel"/>
+
+      <View
+        android:id="@+id/view_personnel"
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:layout_marginTop="@dimen/dp_12"
+        android:layout_marginLeft="@dimen/dp_12"
+        android:layout_marginRight="@dimen/dp_12"
+        android:layout_gravity="bottom"
+        android:background="@color/qmui_config_color_white"/>
+    </FrameLayout>
+  </LinearLayout>
+
+  <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/dp_12"
+    android:padding="5dp"
+    android:background="@drawable/search_shape"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:gravity="center_vertical"
+    android:orientation="horizontal">
+
+    <EditText
+      android:id="@+id/et_search"
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:layout_weight="1"
+      android:layout_marginStart="@dimen/dp_12"
+      android:layout_marginLeft="@dimen/dp_12"
+      android:background="@null"
+      android:hint="@string/search"
+      android:textSize="12sp"/>
+
+    <LinearLayout
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:orientation="horizontal">
+
+      <ImageView
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        android:src="@drawable/black_search"/>
+
+      <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dp_12"
+        android:layout_marginEnd="@dimen/dp_12"
+        android:layout_marginLeft="@dimen/dp_12"
+        android:layout_marginRight="@dimen/dp_12"
+        android:layout_gravity="center_vertical"
+        android:text="@string/search"/>
+    </LinearLayout>
+  </LinearLayout>
+
+
+  <com.scwang.smartrefresh.layout.SmartRefreshLayout
+    android:id="@+id/refreshLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:srlAccentColor="@android:color/black"
+    app:srlEnablePreviewInEditMode="true"
+    app:srlPrimaryColor="@android:color/white">
+
+    <com.scwang.smartrefresh.layout.header.ClassicsHeader
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"/>
+
+    <android.support.v7.widget.RecyclerView
+      android:id="@+id/rv_personnel_institutions"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      app:layoutManager="LinearLayoutManager"/>
+  </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+</LinearLayout>
+

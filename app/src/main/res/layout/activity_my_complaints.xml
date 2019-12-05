@@ -1,0 +1,351 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:fitsSystemWindows="true"
+  android:orientation="vertical"
+  android:focusable="true"
+  android:focusableInTouchMode="true"
+  tools:context="com.liuhezhineng.ximengsifa.business.legalaid.ApplyForLegalAidActivity">
+
+  <include layout="@layout/top_bar"/>
+
+  <ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:orientation="vertical">
+
+      <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <View
+          style="@style/TitleTopViewStyle"/>
+
+        <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:gravity="center_vertical"
+          android:orientation="horizontal">
+
+          <View
+            style="@style/TitleLeftViewStyle"/>
+
+          <TextView
+            style="@style/ChartFieldStyle"
+            android:text="投诉人基本情况"/>
+        </LinearLayout>
+
+        <View style="@style/DividingLineStyle_horizontal"/>
+
+        <LinearLayout
+          style="@style/LinearStyle">
+
+          <TextView
+            style="@style/ChartFieldKeyStyle"
+            android:text="姓名"/>
+
+          <TextView
+            android:id="@+id/tv_name"
+            style="@style/ChartFieldInputValueStyle"/>
+        </LinearLayout>
+
+        <View style="@style/DividingLineStyle_horizontal"/>
+
+        <LinearLayout
+          style="@style/LinearStyle">
+
+          <include layout="@layout/required"/>
+
+          <TextView
+            style="@style/ChartFieldKeyStyle"
+            android:text="@string/sex"/>
+
+          <TextView
+            android:id="@+id/tv_sex"
+            style="@style/ChartFieldInputValueStyle"
+            android:hint="@string/please_select"/>
+        </LinearLayout>
+
+        <View style="@style/DividingLineStyle_horizontal"/>
+
+        <LinearLayout
+          style="@style/LinearStyle">
+
+          <include layout="@layout/required"/>
+
+          <TextView
+            style="@style/ChartFieldKeyStyle"
+            android:text="所在旗县"/>
+
+          <TextView
+            android:id="@+id/tv_county"
+            style="@style/ChartFieldInputValueStyle"
+            android:hint="@string/please_select"/>
+        </LinearLayout>
+
+        <View style="@style/DividingLineStyle_horizontal"/>
+      </LinearLayout>
+
+      <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <View
+          style="@style/TitleTopViewStyle"/>
+
+        <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:gravity="center_vertical"
+          android:orientation="horizontal">
+
+          <View
+            style="@style/TitleLeftViewStyle"/>
+
+          <TextView
+            style="@style/ChartFieldStyle"
+            android:text="被投诉人基本情况"/>
+        </LinearLayout>
+
+        <View style="@style/DividingLineStyle_horizontal"/>
+
+        <LinearLayout
+          style="@style/LinearStyle">
+
+          <TextView
+            style="@style/ChartFieldKeyStyle"
+            android:text="姓名"/>
+
+          <EditText
+            android:id="@+id/et_no_name"
+            style="@style/ChartFieldInputValueStyle"/>
+        </LinearLayout>
+
+        <View style="@style/DividingLineStyle_horizontal"/>
+
+        <LinearLayout
+          style="@style/LinearStyle">
+
+          <TextView
+            style="@style/ChartFieldKeyStyle"
+            android:text="工作人员类别"/>
+
+          <TextView
+            android:id="@+id/tv_class_worker"
+            style="@style/ChartFieldInputValueStyle"
+            android:layout_height="match_parent"
+            android:hint="@string/please_select"/>
+        </LinearLayout>
+
+        <View style="@style/DividingLineStyle_horizontal"/>
+
+        <LinearLayout
+          style="@style/LinearStyle">
+
+          <TextView
+            style="@style/ChartFieldKeyStyle"
+            android:text="执业证号"/>
+
+          <EditText
+            android:id="@+id/et_no_number"
+            style="@style/ChartFieldInputValueStyle"/>
+        </LinearLayout>
+
+        <View style="@style/DividingLineStyle_horizontal"/>
+
+        <LinearLayout
+          style="@style/LinearStyle">
+
+          <include layout="@layout/required"/>
+
+          <TextView
+            style="@style/ChartFieldKeyStyle"
+            android:text="所在旗县"/>
+
+          <TextView
+            android:id="@+id/tv_no_county"
+            style="@style/ChartFieldInputValueStyle"
+            android:hint="@string/please_select"/>
+        </LinearLayout>
+
+        <View style="@style/DividingLineStyle_horizontal"/>
+
+        <LinearLayout
+          style="@style/LinearStyle">
+
+          <include layout="@layout/required"/>
+
+          <TextView
+            style="@style/ChartFieldKeyStyle"
+            android:text="所在乡镇"/>
+
+          <TextView
+            android:id="@+id/tv_no_town"
+            style="@style/ChartFieldInputValueStyle"
+            android:hint="@string/please_select"/>
+        </LinearLayout>
+
+        <View style="@style/DividingLineStyle_horizontal"/>
+
+        <LinearLayout
+          style="@style/LinearStyle">
+
+          <include layout="@layout/required"/>
+
+          <TextView
+            style="@style/ChartFieldKeyStyle"
+            android:text="所属机构"/>
+
+          <TextView
+            android:id="@+id/tv_organization"
+            style="@style/ChartFieldInputValueStyle"
+            android:hint="@string/please_select"/>
+        </LinearLayout>
+
+        <View style="@style/DividingLineStyle_horizontal"/>
+      </LinearLayout>
+
+      <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true"
+        android:orientation="vertical">
+
+        <View
+          style="@style/TitleTopViewStyle"/>
+
+        <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:gravity="center_vertical"
+          android:orientation="horizontal">
+
+          <View
+            style="@style/TitleLeftViewStyle"/>
+
+          <TextView
+            style="@style/ChartFieldStyle"
+            android:text="投诉基本情况"/>
+        </LinearLayout>
+
+        <View style="@style/DividingLineStyle_horizontal"/>
+
+        <LinearLayout
+          style="@style/LinearStyle">
+
+          <include layout="@layout/required"/>
+
+          <TextView
+            style="@style/ChartFieldKeyStyle"
+            android:text="@string/type"/>
+
+          <TextView
+            android:id="@+id/tv_type"
+            android:hint="@string/please_select"
+            style="@style/ChartFieldShowValueStyle" />
+        </LinearLayout>
+
+        <View style="@style/DividingLineStyle_horizontal"/>
+
+        <LinearLayout
+          style="@style/LinearStyle">
+
+          <include layout="@layout/required"/>
+
+          <TextView
+            style="@style/ChartFieldKeyStyle"
+            android:text="投诉标题"/>
+
+          <EditText
+            android:id="@+id/et_title"
+            style="@style/ChartFieldInputValueStyle"
+            android:singleLine="false"
+            tools:text="@string/test"/>
+        </LinearLayout>
+
+        <View style="@style/DividingLineStyle_horizontal"/>
+
+        <LinearLayout
+          style="@style/LinearStyle">
+
+          <include layout="@layout/required"/>
+
+          <TextView
+            style="@style/ChartFieldKeyStyle"
+            android:text="投诉事项"/>
+
+          <TextView
+            android:id="@+id/tv_such_complaints"
+            style="@style/ChartFieldInputValueStyle"
+            android:hint="@string/please_select"/>
+        </LinearLayout>
+
+        <View style="@style/DividingLineStyle_horizontal"/>
+
+        <LinearLayout
+          style="@style/LinearStyle"
+          android:orientation="vertical">
+
+          <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <include layout="@layout/required"/>
+
+            <TextView
+              style="@style/ChartFieldKeyStyle"
+              android:layout_width="match_parent"
+              android:text="投诉详细内容"/>
+          </LinearLayout>
+
+          <EditText
+            android:id="@+id/et_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:padding="3dp"
+            android:background="@drawable/border"
+            android:baselineAligned="false"
+            android:gravity="start"
+            android:hint="@string/please_show_your_question_details"
+            android:inputType="textMultiLine"
+            android:minHeight="100dp"
+            android:textSize="14sp"/>
+        </LinearLayout>
+
+        <include layout="@layout/duplicate_annex" />
+
+        <CheckBox
+          android:id="@+id/cb_anonymous"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_gravity="center"
+          android:checked="true"
+          android:text="是否匿名"/>
+
+        <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content">
+
+          <Button
+            android:id="@+id/btn_yes"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_margin="@dimen/dp_12"
+            android:background="@drawable/circle_shape"
+            android:text="提交"
+            android:textColor="#ffffff"/>
+        </LinearLayout>
+      </LinearLayout>
+    </LinearLayout>
+  </ScrollView>
+</LinearLayout>
